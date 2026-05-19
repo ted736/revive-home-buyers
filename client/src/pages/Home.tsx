@@ -517,7 +517,7 @@ function Hero() {
 // ─── Trust Strip ──────────────────────────────────────────────────────────────
 function TrustStrip() {
   const items = [
-    { value: "500+", label: "Homes Purchased" },
+    { value: "50+", label: "Homes Purchased" },
     { value: "A+", label: "BBB Rating" },
     { value: "4.9★", label: "Google Reviews" },
     { value: "10+", label: "Years in Business" },
@@ -865,14 +865,14 @@ function ServiceArea() {
               We buy homes across
               <br />
               <em style={{ fontStyle: "italic", fontWeight: 300 }}>
-                the Mountain West.
+                the West.
               </em>
             </h2>
             <p className="text-[#3D4145]/65 text-sm leading-relaxed font-light mb-8">
-              Our local team operates across Utah, Idaho, Montana, Nevada, Arizona, and Colorado — with deep knowledge of each market and relationships with local title companies for fast, smooth closings.
+              Our local team operates across Utah, Idaho, Montana, Nevada, Arizona, Colorado, Wyoming, and Texas — with deep knowledge of each market and relationships with local title companies for fast, smooth closings.
             </p>
             <div className="flex flex-wrap gap-3">
-              {["Utah", "Idaho", "Montana", "Nevada", "Arizona", "Colorado"].map((state) => (
+              {["Utah", "Idaho", "Montana", "Nevada", "Arizona", "Colorado", "Wyoming", "Texas"].map((state) => (
                 <span
                   key={state}
                   className="border border-[#2D6A3F] text-[#2D6A3F] text-xs font-semibold tracking-widest uppercase px-4 py-2"
