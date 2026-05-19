@@ -596,24 +596,32 @@ function Testimonials() {
 
 // ─── Service Area Map (SVG) ───────────────────────────────────────────────────
 // State paths derived from GeoJSON (PublicaMundi/MappingAPI), equirectangular projection
-// ViewBox: 0 0 500 400, bounding box: lon [-117.24,-104.04], lat [37.00,49.00]
+// ViewBox: 0 0 560 480, bounding box: lon [-120.50,-101.54], lat [30.83,49.50]
 const STATE_PATHS = {
-  MT: "M 479.8,20.0 L 480.0,54.2 L 479.8,111.7 L 480.0,140.1 L 479.4,140.1 L 414.7,139.9 L 304.4,139.9 L 235.7,139.9 L 235.9,155.7 L 229.6,152.6 L 224.0,147.3 L 216.0,153.6 L 209.0,154.7 L 207.2,153.1 L 199.0,154.4 L 194.3,152.9 L 186.2,155.6 L 175.4,155.4 L 171.7,158.2 L 167.7,156.5 L 163.2,146.8 L 155.9,146.5 L 151.9,144.1 L 152.1,138.3 L 147.9,136.2 L 142.2,130.1 L 138.7,124.3 L 139.7,121.9 L 133.4,118.9 L 129.9,122.2 L 121.4,126.3 L 113.9,123.2 L 115.6,119.9 L 113.1,116.8 L 119.4,113.5 L 115.8,108.9 L 116.8,101.8 L 121.7,90.7 L 111.6,90.8 L 111.2,88.8 L 102.1,85.7 L 100.5,82.4 L 87.6,74.4 L 86.8,72.3 L 79.7,70.9 L 73.1,67.3 L 72.9,59.1 L 61.6,50.7 L 61.6,20.0 L 220.0,20.2 L 291.4,20.0 L 479.8,20.0 Z",
-  ID: "M 61.6,20.0 L 61.6,50.7 L 72.9,59.1 L 73.1,67.3 L 79.7,70.9 L 86.8,72.3 L 87.6,74.4 L 100.5,82.4 L 102.1,85.7 L 111.2,88.8 L 111.6,90.8 L 121.7,90.7 L 116.8,101.8 L 115.8,108.9 L 119.4,113.5 L 113.1,116.8 L 115.6,119.9 L 113.9,123.2 L 121.4,126.3 L 129.9,122.2 L 133.4,118.9 L 139.7,121.9 L 138.7,124.3 L 142.2,130.1 L 147.9,136.2 L 152.1,138.3 L 151.9,144.1 L 155.9,146.5 L 163.2,146.8 L 167.7,156.5 L 171.7,158.2 L 175.4,155.4 L 186.2,155.6 L 194.3,152.9 L 199.0,154.4 L 207.2,153.1 L 209.0,154.7 L 216.0,153.6 L 224.0,147.3 L 229.6,152.6 L 235.9,155.7 L 235.9,230.0 L 196.9,230.2 L 131.5,230.2 L 27.4,230.0 L 27.4,175.1 L 32.0,165.2 L 29.2,162.8 L 22.5,162.3 L 20.0,158.2 L 27.1,147.5 L 30.7,146.5 L 34.3,142.1 L 33.7,139.3 L 37.8,135.7 L 39.9,130.4 L 47.1,121.5 L 44.2,117.4 L 36.0,115.3 L 31.3,110.2 L 31.1,104.9 L 26.5,99.7 L 27.1,97.2 L 26.9,57.1 L 27.3,20.0 L 61.6,20.0 Z",
-  UT: "M 196.9,230.2 L 235.9,230.0 L 235.9,260.1 L 305.5,260.1 L 305.4,316.2 L 305.2,341.7 L 305.7,345.0 L 305.7,380.0 L 255.0,379.8 L 131.3,380.0 L 131.5,230.2 L 196.9,230.2 Z",
+  MT: "M 471.3,31.8 L 471.5,58.6 L 471.3,103.8 L 471.5,126.1 L 471.0,126.1 L 420.1,126.0 L 333.3,126.0 L 279.2,126.0 L 279.3,138.4 L 274.4,136.0 L 270.0,131.8 L 263.7,136.7 L 258.1,137.6 L 256.8,136.3 L 250.3,137.4 L 246.6,136.2 L 240.3,138.3 L 231.7,138.2 L 228.9,140.3 L 225.7,139.1 L 222.1,131.4 L 216.4,131.2 L 213.2,129.2 L 213.4,124.7 L 210.1,123.0 L 205.6,118.3 L 202.9,113.8 L 203.6,111.8 L 198.7,109.5 L 196.0,112.1 L 189.2,115.3 L 183.3,112.9 L 184.7,110.3 L 182.7,107.8 L 187.7,105.2 L 184.8,101.6 L 185.6,96.1 L 189.5,87.3 L 181.5,87.4 L 181.2,85.9 L 174.0,83.4 L 172.8,80.8 L 162.6,74.5 L 162.0,72.8 L 156.4,71.8 L 151.2,69.0 L 151.0,62.5 L 142.2,55.9 L 142.2,31.8 L 266.9,31.9 L 323.0,31.8 L 471.3,31.8 Z",
+  ID: "M 142.2,31.8 L 142.2,55.9 L 151.0,62.5 L 151.2,69.0 L 156.4,71.8 L 162.0,72.8 L 162.6,74.5 L 172.8,80.8 L 174.0,83.4 L 181.2,85.9 L 181.5,87.4 L 189.5,87.3 L 185.6,96.1 L 184.8,101.6 L 187.7,105.2 L 182.7,107.8 L 184.7,110.3 L 183.3,112.9 L 189.2,115.3 L 196.0,112.1 L 198.7,109.5 L 203.6,111.8 L 202.9,113.8 L 205.6,118.3 L 210.1,123.0 L 213.4,124.7 L 213.2,129.2 L 216.4,131.2 L 222.1,131.4 L 225.7,139.1 L 228.9,140.3 L 231.7,138.2 L 240.3,138.3 L 246.6,136.2 L 250.3,137.4 L 256.8,136.3 L 258.1,137.6 L 263.7,136.7 L 270.0,131.8 L 274.4,136.0 L 279.3,138.4 L 279.3,196.8 L 248.7,196.9 L 197.2,196.9 L 115.3,196.8 L 115.3,153.6 L 118.9,145.9 L 116.6,144.0 L 111.4,143.6 L 109.4,140.3 L 115.0,132.0 L 117.8,131.2 L 120.7,127.7 L 120.2,125.5 L 123.4,122.7 L 125.0,118.5 L 130.8,111.6 L 128.5,108.3 L 122.0,106.7 L 118.3,102.7 L 118.1,98.5 L 114.5,94.4 L 115.0,92.5 L 114.8,61.0 L 115.1,31.8 L 142.2,31.8 Z",
+  UT: "M 248.7,196.9 L 279.3,196.8 L 279.3,220.4 L 334.2,220.4 L 334.0,264.5 L 333.9,284.5 L 334.3,287.1 L 334.3,314.6 L 294.3,314.5 L 197.0,314.6 L 197.2,196.9 L 248.7,196.9 Z",
+  NV: "M 115.3,196.8 L 197.2,196.9 L 197.0,314.6 L 197.0,333.6 L 194.1,337.6 L 191.4,337.7 L 188.1,334.9 L 178.1,335.8 L 179.7,349.6 L 182.0,354.1 L 182.6,358.5 L 180.9,361.7 L 147.6,338.9 L 128.7,326.4 L 102.4,309.4 L 69.0,288.7 L 33.7,267.5 L 33.9,237.7 L 33.7,196.9 L 69.5,197.0 L 115.3,196.8 Z",
+  AZ: "M 334.3,314.6 L 334.2,448.2 L 278.6,448.2 L 246.4,439.4 L 176.0,420.8 L 178.5,415.6 L 183.9,414.7 L 185.4,412.6 L 183.9,408.2 L 180.2,408.1 L 178.4,399.3 L 183.9,395.9 L 184.7,392.5 L 183.6,386.9 L 186.9,382.8 L 191.3,381.2 L 194.6,378.1 L 189.2,374.8 L 185.4,368.6 L 180.9,364.7 L 180.9,361.7 L 182.6,358.5 L 182.0,354.1 L 179.7,349.6 L 178.1,335.8 L 188.1,334.9 L 191.4,337.7 L 194.1,337.6 L 197.0,333.6 L 197.0,314.6 L 294.3,314.5 L 334.3,314.6 Z",
+  CO: "M 365.1,220.2 L 425.2,220.4 L 471.2,220.2 L 526.0,220.2 L 526.0,243.9 L 526.3,314.7 L 500.0,314.6 L 463.3,314.7 L 393.9,314.7 L 378.8,314.6 L 334.3,314.6 L 334.3,287.1 L 333.9,284.5 L 334.0,264.5 L 334.2,220.4 L 365.1,220.2 Z",
 };
 
 function ServiceArea() {
   const cities = [
-    { name: "Salt Lake City", state: "UT", x: 206.4, y: 267.2 },
-    { name: "Provo", state: "UT", x: 214.5, y: 283.0 },
-    { name: "Ogden", state: "UT", x: 203.7, y: 253.3 },
-    { name: "Boise", state: "ID", x: 56.3, y: 181.5 },
-    { name: "Idaho Falls", state: "ID", x: 201.4, y: 185.2 },
-    { name: "Twin Falls", state: "ID", x: 116.8, y: 213.1 },
-    { name: "Billings", state: "MT", x: 324.5, y: 116.5 },
-    { name: "Missoula", state: "MT", x: 132.5, y: 83.8 },
-    { name: "Great Falls", state: "MT", x: 227.0, y: 65.0 },
+    { name: "Salt Lake City", state: "UT", x: 256.2, y: 226.0 },
+    { name: "Provo", state: "UT", x: 262.6, y: 238.4 },
+    { name: "Ogden", state: "UT", x: 254.0, y: 215.1 },
+    { name: "Boise", state: "ID", x: 138.0, y: 158.7 },
+    { name: "Idaho Falls", state: "ID", x: 252.3, y: 161.6 },
+    { name: "Twin Falls", state: "ID", x: 185.7, y: 183.5 },
+    { name: "Billings", state: "MT", x: 349.2, y: 107.6 },
+    { name: "Missoula", state: "MT", x: 198.0, y: 81.9 },
+    { name: "Great Falls", state: "MT", x: 272.4, y: 67.1 },
+    { name: "Denver", state: "CO", x: 445.5, y: 250.1 },
+    { name: "Las Vegas", state: "NV", x: 167.1, y: 334.1 },
+    { name: "Reno", state: "NV", x: 38.9, y: 255.0 },
+    { name: "Phoenix", state: "AZ", x: 251.2, y: 398.3 },
+    { name: "Tucson", state: "AZ", x: 282.6, y: 427.2 },
   ];
 
   return (
@@ -659,39 +667,33 @@ function ServiceArea() {
           <div className="reveal" style={{ transitionDelay: "150ms" }}>
             <div className="relative bg-[#F7F5F0] p-4 shadow-sm">
               <svg
-                viewBox="0 0 500 400"
+                viewBox="0 0 560 480"
                 className="w-full"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 {/* Montana */}
-                <path
-                  d={STATE_PATHS.MT}
-                  fill="#2D6A3F"
-                  fillOpacity="0.15"
-                  stroke="#2D6A3F"
-                  strokeWidth="1"
-                />
-                <text x="254.9" y="86" textAnchor="middle" fill="#2D6A3F" fontSize="10" fontFamily="Outfit" fontWeight="600" letterSpacing="2">MONTANA</text>
+                <path d={STATE_PATHS.MT} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
+                <text x="294.3" y="83.6" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">MONTANA</text>
 
                 {/* Idaho */}
-                <path
-                  d={STATE_PATHS.ID}
-                  fill="#2D6A3F"
-                  fillOpacity="0.15"
-                  stroke="#2D6A3F"
-                  strokeWidth="1"
-                />
-                <text x="90" y="200" textAnchor="middle" fill="#2D6A3F" fontSize="10" fontFamily="Outfit" fontWeight="600" letterSpacing="2">IDAHO</text>
+                <path d={STATE_PATHS.ID} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
+                <text x="184.6" y="137.9" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">IDAHO</text>
 
                 {/* Utah */}
-                <path
-                  d={STATE_PATHS.UT}
-                  fill="#2D6A3F"
-                  fillOpacity="0.15"
-                  stroke="#2D6A3F"
-                  strokeWidth="1"
-                />
-                <text x="210" y="310" textAnchor="middle" fill="#2D6A3F" fontSize="10" fontFamily="Outfit" fontWeight="600" letterSpacing="2">UTAH</text>
+                <path d={STATE_PATHS.UT} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
+                <text x="248" y="262" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">UTAH</text>
+
+                {/* Nevada */}
+                <path d={STATE_PATHS.NV} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
+                <text x="129.8" y="255.7" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">NEVADA</text>
+
+                {/* Arizona */}
+                <path d={STATE_PATHS.AZ} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
+                <text x="255" y="390" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">ARIZONA</text>
+
+                {/* Colorado */}
+                <path d={STATE_PATHS.CO} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
+                <text x="431.5" y="267.5" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">COLORADO</text>
 
                 {/* City dots */}
                 {cities.map((city) => (
