@@ -153,7 +153,7 @@ function Nav() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#3D4145]/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+        scrolled ? "bg-[#3D4145]/95 backdrop-blur-sm shadow-lg" : "bg-[#3D4145]/70 backdrop-blur-sm"
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
