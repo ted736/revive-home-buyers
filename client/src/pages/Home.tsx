@@ -23,7 +23,9 @@ import Footer from "@/components/shared/Footer";
 import TrustStrip from "@/components/shared/TrustStrip";
 import FAQ from "@/components/shared/FAQ";
 import LeadForm from "@/components/shared/LeadForm";
+import QuickCaptureForm from "@/components/shared/QuickCaptureForm";
 import { useReveal } from "@/hooks/useReveal";
+import { Link } from "wouter";
 
 // ─── Asset URLs ──────────────────────────────────────────────────────────────
 const HERO_IMG =
@@ -80,6 +82,29 @@ function Hero() {
           <p className="text-white/50 text-xs mt-4 tracking-wide">
             No obligation · No fees · 100% confidential
           </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── Buyer Email Capture Band ─────────────────────────────────────────────────
+function BuyerEmailCapture() {
+  return (
+    <section className="py-5 bg-[#2D6A3F]">
+      <div className="container">
+        <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+          <div className="shrink-0">
+            <p className="text-white font-semibold text-sm tracking-wide leading-tight">
+              Cash buyer? Get our deal alerts.
+            </p>
+            <p className="text-white/60 text-xs font-light mt-0.5">
+              Off-market properties before they hit the MLS.
+            </p>
+          </div>
+          <div className="flex-1">
+            <QuickCaptureForm />
+          </div>
         </div>
       </div>
     </section>
@@ -423,9 +448,17 @@ function RecentOffers() {
           ))}
         </div>
 
-        <p className="text-white/25 text-xs text-center mt-8 tracking-wide reveal" style={{ transitionDelay: "120ms" }}>
-          Property details shown with seller permission · Updated periodically
-        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-10 pt-8 border-t border-white/10 reveal" style={{ transitionDelay: "140ms" }}>
+          <p className="text-white/35 text-xs tracking-wide">
+            Property details shown with seller permission · Updated periodically
+          </p>
+          <Link
+            href="/deals"
+            className="inline-flex items-center gap-2 px-6 h-10 bg-[#2D6A3F] text-white text-xs font-semibold tracking-widest uppercase hover:bg-[#1F4D2E] transition-colors duration-150 shrink-0"
+          >
+            Want to see more? Join our buyer list →
+          </Link>
+        </div>
       </div>
     </section>
   );
@@ -612,6 +645,7 @@ export default function Home() {
     <div className="min-h-screen" style={{ backgroundColor: "#F7F5F0" }}>
       <Nav />
       <Hero />
+      <BuyerEmailCapture />
       <TrustStrip />
       <Process />
       <WhyRevive />

@@ -164,6 +164,7 @@ function BuyerForm() {
           financing: data.financing,
           pof_status: data.pof_status,
           source: data.source,
+          tier: "committed",
         }),
       });
 
