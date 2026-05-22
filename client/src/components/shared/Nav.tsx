@@ -4,9 +4,11 @@
  *
  * On non-home pages, hash links point back to the homepage (e.g. /#process)
  * so users land in the right section.
+ *
+ * v2 — Cash Buyers link added as a distinct CTA-style pill in the nav.
  */
 import { useEffect, useState } from "react";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, Tag } from "lucide-react";
 import LogoMark from "./LogoMark";
 
 const NAV_LINKS = [
@@ -28,7 +30,9 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
 
   // Hash links resolve to /#anchor when not on the homepage, so they actually navigate.
   const hrefFor = (anchor: string) => (onHome ? anchor : `/${anchor}`);
-  const ctaHref = onHome ? "#hero-form" : "/#hero-form";
+  // City pages have their own #hero-form, so always scroll to the local form.
+  // Only the homepage needs to navigate to itself first.
+  const ctaHref = "#hero-form";
 
   return (
     <nav
@@ -38,7 +42,7 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3 shrink-0">
           <LogoMark size={36} />
           <div>
             <div className="text-white font-bold text-sm tracking-[0.2em] uppercase leading-none">
@@ -51,7 +55,7 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {NAV_LINKS.map((l) => (
             <a
               key={l.label}
@@ -61,6 +65,15 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
               {l.label}
             </a>
           ))}
+
+          {/* Cash Buyers — distinct pill treatment */}
+          <a
+            href="/deals"
+            className="flex items-center gap-1.5 border border-[#2D6A3F] text-[#3d8a55] hover:bg-[#2D6A3F] hover:text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 transition-all duration-150"
+          >
+            <Tag className="w-3 h-3" />
+            Cash Buyers
+          </a>
         </div>
 
         {/* Phone + CTA */}
@@ -103,6 +116,17 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
               {l.label}
             </a>
           ))}
+
+          {/* Cash Buyers — highlighted row in mobile menu */}
+          <a
+            href="/deals"
+            className="flex items-center gap-2 border border-[#2D6A3F] text-[#3d8a55] text-sm font-semibold py-2 px-3"
+            onClick={() => setOpen(false)}
+          >
+            <Tag className="w-4 h-4" />
+            Cash Buyers — Off-Market Deals
+          </a>
+
           <a href="tel:8017832011" className="flex items-center gap-2 text-white/80 text-sm py-1">
             <Phone className="w-4 h-4" />
             (801) 783-2011
