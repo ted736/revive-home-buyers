@@ -5,12 +5,15 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import HomePage from "@/pages/Home";
+import CityPage from "@/pages/CityPage";
 
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={HomePage} />
+      {/* Dynamic city landing pages — slug is matched in client/src/data/cities.ts */}
+      <Route path={"/sell-my-house-fast-:city"} component={CityPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
