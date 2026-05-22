@@ -382,7 +382,7 @@ export default function AccessDeals() {
   useSeo({
     title: "Access Exclusive Off-Market Cash Deals | Revive Home Buyers",
     description: "Join our private cash buyer list. Get first look at off-market properties in Utah, Idaho, and Montana before they hit the MLS. Free — takes 2 minutes.",
-    canonical: "https://revivebuyers.com/access-deals",
+    canonical: "https://revivebuyers.com/deals",
   });
 
   return (

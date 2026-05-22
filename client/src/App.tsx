@@ -18,7 +18,8 @@ function Router() {
       <Route path={"/sell-my-house-fast-:city"} component={CityPage} />
       {/* Blog post pages — slug is matched in client/src/content/blog/index.ts */}
       <Route path={"/blog/:slug"} component={BlogPostPage} />
-      {/* Cash buyer registration */}
+      {/* Cash buyer registration — /deals is canonical; /access-deals kept as alias */}
+      <Route path={"/deals"} component={AccessDeals} />
       <Route path={"/access-deals"} component={AccessDeals} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
