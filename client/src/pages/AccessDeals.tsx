@@ -404,9 +404,13 @@ export default function AccessDeals() {
             <br />
             <em style={{ fontStyle: "italic", fontWeight: 300 }}>cash deals from Revive Buyers</em>
           </h1>
-          <p className="text-white/65 text-lg font-light max-w-xl mx-auto">
+          <p className="text-white/65 text-lg font-light max-w-xl mx-auto mb-6">
             Join our private buyer list. Get first access to pre-listed properties in Utah, Idaho, and Montana — before they hit the MLS.
           </p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D6A3F]/15 border border-[#2D6A3F]/40 text-[#3d8a55] text-sm font-semibold tracking-wide">
+            <span className="text-base">30–50%</span>
+            <span className="text-white/70 font-normal">below market value</span>
+          </div>
         </div>
       </section>
 
