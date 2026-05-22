@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import HomePage from "@/pages/Home";
 import CityPage from "@/pages/CityPage";
 import BlogPostPage from "@/pages/BlogPost";
+import AccessDeals from "@/pages/AccessDeals";
 
 
 function Router() {
@@ -17,6 +18,8 @@ function Router() {
       <Route path={"/sell-my-house-fast-:city"} component={CityPage} />
       {/* Blog post pages — slug is matched in client/src/content/blog/index.ts */}
       <Route path={"/blog/:slug"} component={BlogPostPage} />
+      {/* Cash buyer registration */}
+      <Route path={"/access-deals"} component={AccessDeals} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

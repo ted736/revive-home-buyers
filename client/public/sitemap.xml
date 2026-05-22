@@ -80,6 +80,13 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Buyer registration -->
+  <url>
+    <loc>https://revivebuyers.com/access-deals</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog posts -->
   <url>
     <loc>https://revivebuyers.com/blog/sell-house-fast-salt-lake-city-without-realtor</loc>
