@@ -13,16 +13,18 @@
  * shared components in client/src/components/shared/. Do NOT inline-duplicate
  * the form — another track is wiring Google Places autocomplete into it.
  */
-import { useParams } from "wouter";
+import { useParams, Link } from "wouter";
 import { CheckCircle, MapPin, Phone, ArrowRight } from "lucide-react";
 import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";
 import TrustStrip from "@/components/shared/TrustStrip";
 import FAQ from "@/components/shared/FAQ";
 import LeadForm from "@/components/shared/LeadForm";
-import { getCityBySlug, type CityData } from "@/data/cities";
+import { getCityBySlug, CITIES, type CityData } from "@/data/cities";
 import { useReveal } from "@/hooks/useReveal";
 import { useSeo } from "@/hooks/useSeo";
+
+const BASE_URL = "https://revivebuyers.com";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663302016813/QyqrbgfqY69HNHAj7ykVt6/hero-home-jBz6RHRR8Wk4ds9shb6M9f.png";
@@ -31,7 +33,6 @@ const CTA_BG =
 
 // ─── Fallback for unknown slugs ──────────────────────────────────────────────
 function fallbackCityData(slug: string): CityData {
-  // Try to humanize the slug: "salt-lake-city-utah" -> "Salt Lake City" + UT
   const stateMap: Record<string, { full: string; abbr: string }> = {
     utah: { full: "Utah", abbr: "UT" },
     idaho: { full: "Idaho", abbr: "ID" },
@@ -53,6 +54,8 @@ function fallbackCityData(slug: string): CityData {
     name,
     state: stateInfo.full,
     stateAbbr: stateInfo.abbr,
+    lat: 40.7608,
+    lng: -111.8910,
     headline: `Sell Your ${name} Home for Cash in 24 Hours`,
     subheadline: `A fair, no-obligation cash offer from a local team.`,
     body1: `Looking to sell your house fast in ${name}, ${stateInfo.full}? Revive Home Buyers purchases homes throughout ${name} for cash — as-is, on your timeline. No agents. No fees. No repairs.`,
@@ -66,32 +69,69 @@ function fallbackCityData(slug: string): CityData {
       "Out-of-state relocation",
     ],
     nearbyAreas: [],
-    metaTitle: `Sell My House Fast ${name}, ${stateInfo.abbr} | Cash Buyers | Revive Home Buyers`,
+    nearbyCities: [],
+    metaTitle: `Sell My House Fast ${name}, ${stateInfo.abbr} | Cash in 24 Hours | Revive Home Buyers`,
     metaDescription: `We buy houses in ${name}, ${stateInfo.full} for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (801) 783-2011.`,
   };
 }
 
-// ─── Schema.org LocalBusiness payload ────────────────────────────────────────
+// ─── Schema.org @graph (LocalBusiness + BreadcrumbList) ──────────────────────
 function buildJsonLd(city: CityData) {
+  const pageUrl = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
   return {
     "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": `Revive Home Buyers — ${city.name}`,
-    "image": HERO_IMG,
-    "url": `https://revivebuyers.com/sell-my-house-fast-${city.slug}`,
-    "telephone": "+1-801-783-2011",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": city.name,
-      "addressRegion": city.stateAbbr,
-      "addressCountry": "US",
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": `${city.name}, ${city.state}`,
-    },
-    "description": city.metaDescription,
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "RealEstateAgent"],
+        "@id": pageUrl,
+        "name": `Revive Home Buyers — ${city.name}`,
+        "image": HERO_IMG,
+        "url": pageUrl,
+        "telephone": "+1-801-783-2011",
+        "priceRange": "$$",
+        "description": city.metaDescription,
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": city.name,
+          "addressRegion": city.stateAbbr,
+          "addressCountry": "US",
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": city.lat,
+          "longitude": city.lng,
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": city.lat,
+            "longitude": city.lng,
+          },
+          "geoRadius": "50000",
+        },
+        "sameAs": [
+          "https://www.facebook.com/revivehomebuyers",
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": BASE_URL + "/",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": `Sell My House Fast ${city.name}, ${city.stateAbbr}`,
+            "item": pageUrl,
+          },
+        ],
+      },
+    ],
   };
 }
 
@@ -155,6 +195,10 @@ function CityHero({ city }: { city: CityData }) {
 
 // ─── City Body ───────────────────────────────────────────────────────────────
 function CityBody({ city }: { city: CityData }) {
+  const nearbyCityData = city.nearbyCities
+    .map((slug) => getCityBySlug(slug))
+    .filter((c): c is CityData => !!c);
+
   return (
     <section className="py-24 md:py-28 bg-[#F7F5F0]">
       <div className="container">
@@ -219,7 +263,7 @@ function CityBody({ city }: { city: CityData }) {
                 >
                   Nearby areas we also serve
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-10">
                   {city.nearbyAreas.map((area) => (
                     <span
                       key={area}
@@ -228,6 +272,33 @@ function CityBody({ city }: { city: CityData }) {
                       <MapPin size={11} className="text-[#2D6A3F]" aria-hidden="true" />
                       {area}
                     </span>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {nearbyCityData.length > 0 && (
+              <>
+                <h3
+                  className="text-[#3D4145] mb-4"
+                  style={{
+                    fontFamily: "'Cormorant Garamond', serif",
+                    fontSize: "1.25rem",
+                    fontWeight: 500,
+                  }}
+                >
+                  Also serving nearby cities
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {nearbyCityData.map((c) => (
+                    <Link
+                      key={c.slug}
+                      href={`/sell-my-house-fast-${c.slug}`}
+                      className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-medium text-[#2D6A3F] border border-[#2D6A3F]/30 bg-white hover:bg-[#2D6A3F] hover:text-white transition-colors duration-150"
+                    >
+                      <MapPin size={11} aria-hidden="true" />
+                      Sell My House Fast {c.name}, {c.stateAbbr}
+                    </Link>
                   ))}
                 </div>
               </>
@@ -329,10 +400,12 @@ export default function CityPage() {
   const params = useParams<{ city: string }>();
   const slug = params.city ?? "salt-lake-city-utah";
   const city = getCityBySlug(slug) ?? fallbackCityData(slug);
+  const canonical = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
 
   useSeo({
     title: city.metaTitle,
     description: city.metaDescription,
+    canonical,
     jsonLd: buildJsonLd(city),
   });
 
