@@ -10,6 +10,9 @@
  * Copy is intentionally varied per city — different headline angles, different
  * local-trust signals, different "homes purchased here" counts where we have
  * them. Keep it human; avoid template-stamping.
+ *
+ * v2 — heroImage field added per city for city-page hero backgrounds.
+ *       All other fields are unchanged.
  */
 
 export type CityData = {
@@ -29,6 +32,7 @@ export type CityData = {
   nearbyCities: string[]; // Slugs of other main city pages for internal linking
   metaTitle: string;      // <title> for SEO
   metaDescription: string; // <meta name="description">
+  heroImage?: string;     // Optional city-specific hero background image URL
 };
 
 export const CITIES: CityData[] = [
@@ -57,6 +61,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["provo-utah", "ogden-utah"],
     metaTitle: "Sell My House Fast Salt Lake City, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Salt Lake City, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/YdWezwBzFqWgHTIe.jpg",
   },
   {
     slug: "provo-utah",
@@ -82,6 +87,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["salt-lake-city-utah", "st-george-utah"],
     metaTitle: "Sell My House Fast Provo, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Provo and Utah Valley for cash. As-is, no fees, close in 7 days. Get a fair cash offer in 24 hours. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/gZRtPKquwalLCXsZ.jpg",
   },
   {
     slug: "ogden-utah",
@@ -107,6 +113,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["salt-lake-city-utah", "logan-utah"],
     metaTitle: "Sell My House Fast Ogden, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "Sell your Ogden home for cash. We buy houses as-is in Weber County — no fees, no repairs, close in 7 days. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/lEDgxEWziSiQQsof.jpg",
   },
   {
     slug: "logan-utah",
@@ -131,6 +138,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["ogden-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Logan, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Logan and Cache Valley for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/vXlNPGotydoqpVsM.jpg",
   },
   {
     slug: "st-george-utah",
@@ -155,6 +163,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["provo-utah"],
     metaTitle: "Sell My House Fast St. George, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in St. George and Washington County for cash. As-is, no fees, close in 7 days. Call (801) 783-2011 for a 24-hour offer.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/DgcBwDfgREmjKHfe.jpg",
   },
 
   // ─── IDAHO ───────────────────────────────────────────────────────────────
@@ -181,6 +190,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["rexburg-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Idaho Falls, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Idaho Falls and Bonneville County for cash. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/sRKSDpBRIoqZVeWf.jpg",
   },
   {
     slug: "pocatello-idaho",
@@ -205,6 +215,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["idaho-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Pocatello, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Pocatello and Bannock County for cash, as-is. Close in 7 days, no fees. Call (801) 783-2011 for a 24-hour offer.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/AeTDStkLeSxeQDKr.jpg",
   },
   {
     slug: "twin-falls-idaho",
@@ -229,6 +240,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["burley-idaho", "boise-idaho"],
     metaTitle: "Sell My House Fast Twin Falls, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Twin Falls and the Magic Valley for cash, as-is. Close in 7 days, no fees. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/MnnCSBCLdHAwWklS.jpg",
   },
   {
     slug: "burley-idaho",
@@ -252,7 +264,8 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Rupert", "Heyburn", "Paul", "Declo", "Oakley", "Albion"],
     nearbyCities: ["twin-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Burley, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Burley, Rupert, and the Mini-Cassia area for cash. As-is, close in 7 days, no fees. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Burley, Rupert, and the Mini-Cassia area for cash. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/KKZHYGoUJeJKmckg.jpg",
   },
   {
     slug: "rexburg-idaho",
@@ -277,6 +290,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["idaho-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Rexburg, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Rexburg and Madison County for cash, including rentals. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/rNXxyDRnSTqXOeHZ.jpg",
   },
   {
     slug: "boise-idaho",
@@ -302,6 +316,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Boise, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Boise and the Treasure Valley for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/ZVKXhMqQGlLzBwMZ.jpg",
   },
 
   // ─── MONTANA ─────────────────────────────────────────────────────────────
@@ -328,6 +343,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["great-falls-montana", "missoula-montana"],
     metaTitle: "Sell My House Fast Billings, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Billings and Yellowstone County for cash. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/PRTXyczoPNUcwxeJ.jpg",
   },
   {
     slug: "missoula-montana",
@@ -352,6 +368,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["billings-montana", "great-falls-montana"],
     metaTitle: "Sell My House Fast Missoula, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Missoula for cash. As-is, no fees, close in 7 days. Fair cash offer in 24 hours. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/uqlGzGyEWlaOEwar.jpg",
   },
   {
     slug: "great-falls-montana",
@@ -376,6 +393,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["billings-montana", "missoula-montana"],
     metaTitle: "Sell My House Fast Great Falls, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Great Falls and Cascade County for cash. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/sqEbxPsgtWEIfyfu.jpg",
   },
 ];
 

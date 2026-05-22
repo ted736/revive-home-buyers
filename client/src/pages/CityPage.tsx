@@ -141,11 +141,12 @@ function buildJsonLd(city: CityData) {
 
 // ─── Hero ────────────────────────────────────────────────────────────────────
 function CityHero({ city }: { city: CityData }) {
+  const heroBg = city.heroImage ?? HERO_IMG;
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${HERO_IMG})` }}
+        style={{ backgroundImage: `url(${heroBg})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#3D4145]/85 via-[#3D4145]/55 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#3D4145]/40 via-transparent to-transparent" />

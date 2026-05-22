@@ -54,9 +54,19 @@ function Hero() {
 
       <div className="relative container pt-28 pb-20 md:pt-36 md:pb-28">
         <div className="max-w-2xl">
-          <span className="section-label text-[#2D6A3F] mb-4 block" style={{ color: "#3d8a55" }}>
-            Cash Home Buyers
-          </span>
+          {/* Cash Home Buyers — elevated eyebrow label */}
+          <div className="inline-flex items-center gap-2 mb-5">
+            <span
+              className="inline-block px-3 py-1 text-xs font-bold tracking-[0.22em] uppercase"
+              style={{
+                backgroundColor: "#2D6A3F",
+                color: "#ffffff",
+                letterSpacing: "0.2em",
+              }}
+            >
+              Cash Home Buyers
+            </span>
+          </div>
           <h1
             className="text-white leading-[1.05] mb-6"
             style={{
@@ -82,6 +92,12 @@ function Hero() {
           <p className="text-white/50 text-xs mt-4 tracking-wide">
             No obligation · No fees · 100% confidential
           </p>
+          <p className="text-white/40 text-xs mt-3 tracking-wide">
+            Cash buyer?{" "}
+            <a href="#cash-buyers" className="text-[#3d8a55] hover:text-white underline underline-offset-2 transition-colors">
+              Get off-market deal alerts →
+            </a>
+          </p>
         </div>
       </div>
     </section>
@@ -91,16 +107,25 @@ function Hero() {
 // ─── Buyer Email Capture Band ─────────────────────────────────────────────────
 function BuyerEmailCapture() {
   return (
-    <section className="py-5 bg-[#2D6A3F]">
+    <section id="cash-buyers" className="py-10 md:py-12 bg-[#2D6A3F]">
       <div className="container">
-        <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-          <div className="shrink-0">
-            <p className="text-white font-semibold text-sm tracking-wide leading-tight">
-              Cash buyer? Get our deal alerts.
+        <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-12">
+          <div className="shrink-0 md:max-w-xs">
+            <p className="text-white/70 text-[10px] font-semibold tracking-[0.2em] uppercase mb-1">
+              For Cash Buyers
             </p>
-            <p className="text-white/60 text-xs font-light mt-0.5">
-              Off-market properties before they hit the MLS.
+            <p className="text-white font-bold text-xl leading-snug mb-1">
+              Get Off-Market Deal Alerts.
             </p>
+            <p className="text-white/70 text-sm font-light">
+              Exclusive properties before they hit the MLS — sent directly to your inbox.
+            </p>
+            <a
+              href="/deals"
+              className="inline-flex items-center gap-1.5 mt-3 text-white/80 hover:text-white text-xs font-semibold tracking-widest uppercase underline underline-offset-4 transition-colors"
+            >
+              View Full Buyer Portal →
+            </a>
           </div>
           <div className="flex-1">
             <QuickCaptureForm />
