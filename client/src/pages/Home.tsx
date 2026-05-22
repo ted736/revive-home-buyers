@@ -351,6 +351,79 @@ function Testimonials() {
   );
 }
 
+// ─── Recent Cash Offers ──────────────────────────────────────────────────────
+const RECENT_OFFERS = [
+  { address: "3447 S 3450 W", city: "West Valley City", state: "UT" },
+  { address: "1710 Hemlock St", city: "Rupert", state: "ID" },
+  { address: "730 10th Ave W", city: "Kalispell", state: "MT" },
+  { address: "726 N Sixth Ave", city: "Sandpoint", state: "ID" },
+  { address: "369 N State St", city: "Roosevelt", state: "UT" },
+  { address: "712 E 5th St", city: "Polson", state: "MT" },
+  { address: "120 Anderson St", city: "Caldwell", state: "ID" },
+  { address: "112 Ama Fille Ln", city: "Elk Ridge", state: "UT" },
+];
+
+function RecentOffers() {
+  return (
+    <section className="py-20 md:py-24 bg-[#3D4145] overflow-hidden">
+      <div className="container">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 reveal">
+          <div>
+            <span className="green-rule" />
+            <span className="section-label" style={{ color: "#3d8a55" }}>
+              Recent Cash Purchases
+            </span>
+            <h2
+              className="text-white mt-3"
+              style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                fontSize: "clamp(1.9rem, 3.6vw, 2.6rem)",
+                fontWeight: 500,
+                lineHeight: 1.15,
+              }}
+            >
+              Homes we've recently
+              <br />
+              <em style={{ fontStyle: "italic", fontWeight: 300 }}>
+                purchased across the region.
+              </em>
+            </h2>
+          </div>
+          <p className="text-white/45 text-sm font-light max-w-xs leading-relaxed md:pb-1">
+            Real properties, real sellers — closed for cash, as-is, on their
+            timeline.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 reveal" style={{ transitionDelay: "80ms" }}>
+          {RECENT_OFFERS.map(({ address, city, state }) => (
+            <div
+              key={`${address}-${city}`}
+              className="bg-white/05 border border-white/10 px-4 py-3 hover:border-[#2D6A3F]/50 hover:bg-white/08 transition-colors duration-150"
+            >
+              <div
+                className="text-[#2D6A3F] text-[10px] font-semibold tracking-[0.18em] uppercase mb-1"
+              >
+                Cash Offer Accepted
+              </div>
+              <div className="text-white/85 text-sm font-medium leading-tight">
+                {address}
+              </div>
+              <div className="text-white/40 text-xs mt-0.5">
+                {city}, {state}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-white/25 text-xs text-center mt-8 tracking-wide reveal" style={{ transitionDelay: "120ms" }}>
+          Addresses shown with seller permission · Updated periodically
+        </p>
+      </div>
+    </section>
+  );
+}
+
 // ─── Service Area Map (SVG) ───────────────────────────────────────────────────
 // State paths derived from GeoJSON (PublicaMundi/MappingAPI), equirectangular projection
 // ViewBox: 0 0 560 480, bounding box: lon [-120.50,-101.54], lat [30.83,49.50]
@@ -536,6 +609,7 @@ export default function Home() {
       <Process />
       <WhyRevive />
       <Testimonials />
+      <RecentOffers />
       <ServiceArea />
       <FAQ />
       <FinalCTA />

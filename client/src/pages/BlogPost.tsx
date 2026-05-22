@@ -11,7 +11,9 @@ import { ArrowLeft, Clock, Tag, MapPin } from "lucide-react";
 import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";
 import LeadForm from "@/components/shared/LeadForm";
+import RelatedLinks from "@/components/shared/RelatedLinks";
 import { getPostBySlug, BLOG_POSTS } from "@/content/blog";
+import { BLOG_TO_CITY } from "@/data/internalLinks";
 import { useSeo } from "@/hooks/useSeo";
 import { useReveal } from "@/hooks/useReveal";
 import type { BlogPost as BlogPostType, BlogSection } from "@/types/blog";
@@ -331,6 +333,10 @@ export default function BlogPostPage() {
               {post.sections.map((section, i) => (
                 <PostSection key={i} section={section} index={i} />
               ))}
+              <RelatedLinks
+                links={BLOG_TO_CITY[post.slug] ?? []}
+                heading="Sell your house fast in these areas"
+              />
             </article>
 
             {/* Sticky CTA sidebar */}

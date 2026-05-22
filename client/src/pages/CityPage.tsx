@@ -20,7 +20,9 @@ import Footer from "@/components/shared/Footer";
 import TrustStrip from "@/components/shared/TrustStrip";
 import FAQ from "@/components/shared/FAQ";
 import LeadForm from "@/components/shared/LeadForm";
+import RelatedLinks from "@/components/shared/RelatedLinks";
 import { getCityBySlug, CITIES, type CityData } from "@/data/cities";
+import { CITY_TO_BLOG } from "@/data/internalLinks";
 import { useReveal } from "@/hooks/useReveal";
 import { useSeo } from "@/hooks/useSeo";
 
@@ -309,6 +311,11 @@ function CityBody({ city }: { city: CityData }) {
                 {city.homesPurchased}
               </p>
             )}
+
+            <RelatedLinks
+              links={CITY_TO_BLOG[city.slug] ?? []}
+              heading="Helpful guides for sellers"
+            />
           </div>
 
           {/* Right: sticky form */}
