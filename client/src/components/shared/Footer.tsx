@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-white/25 text-xs">
-          <p>© {new Date().getFullYear()} Revive Home Buyers · All rights reserved.</p>
+          <p>© 2023–{new Date().getFullYear()} Revive Home Buyers · All rights reserved.</p>
           <p>
             Revive Home Buyers is not a licensed real estate brokerage. We are a direct cash buyer.
           </p>
