@@ -7,6 +7,7 @@
  */
 import LogoMark from "./LogoMark";
 import { CITIES } from "@/data/cities";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -89,13 +90,13 @@ export default function Footer() {
             </h4>
             <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-white/45 text-xs">
               {CITIES.map((c) => (
-                <a
+                <Link
                   key={c.slug}
                   href={`/sell-my-house-fast-${c.slug}`}
                   className="hover:text-white transition-colors leading-snug"
                 >
                   {c.name}, {c.stateAbbr}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
