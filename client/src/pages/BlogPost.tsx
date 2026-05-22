@@ -250,6 +250,7 @@ export default function BlogPostPage() {
     title: post ? post.metaTitle : "Blog | Revive Home Buyers",
     description: post ? post.metaDescription : "Seller guides and resources for Utah, Idaho, and Montana homeowners.",
     canonical: post ? `${BASE_URL}/blog/${post.slug}` : undefined,
+    ogImage: post ? `${BASE_URL}/og/${post.slug}.png` : undefined,
     jsonLd: post ? buildJsonLd(post) : undefined,
   });
 

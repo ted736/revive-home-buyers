@@ -401,11 +401,13 @@ export default function CityPage() {
   const slug = params.city ?? "salt-lake-city-utah";
   const city = getCityBySlug(slug) ?? fallbackCityData(slug);
   const canonical = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
+  const ogImage = `${BASE_URL}/og/${city.slug}.png`;
 
   useSeo({
     title: city.metaTitle,
     description: city.metaDescription,
     canonical,
+    ogImage,
     jsonLd: buildJsonLd(city),
   });
 
