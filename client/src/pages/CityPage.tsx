@@ -478,10 +478,13 @@ function CityCTA({ city }: { city: CityData }) {
 }
 
 // ─── Page ────────────────────────────────────────────────────────────────────
-export default function CityPage() {
+// Accepts slug as a prop (set by App.tsx where we render one explicit Route per
+// city). Falls back to useParams for backwards compatibility with any caller
+// that still uses the legacy `/sell-my-house-fast-:city` param style.
+export default function CityPage({ slug: slugProp }: { slug?: string } = {}) {
   useReveal();
   const params = useParams<{ city: string }>();
-  const slug = params.city ?? "salt-lake-city-utah";
+  const slug = slugProp ?? params.city ?? "salt-lake-city-utah";
   const city = getCityBySlug(slug) ?? fallbackCityData(slug);
   const canonical = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
   const ogImage = `${BASE_URL}/og/${city.slug}.png`;

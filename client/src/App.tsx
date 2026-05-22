@@ -8,6 +8,7 @@ import HomePage from "@/pages/Home";
 import CityPage from "@/pages/CityPage";
 import BlogPostPage from "@/pages/BlogPost";
 import AccessDeals from "@/pages/AccessDeals";
+import { CITIES } from "@/data/cities";
 
 // TEMPORARY DEBUG BANNER — visible only when ?debug=1 in URL.
 // Shows wouter's pathname + registered routes so we can diagnose city-page 404s.
@@ -32,8 +33,18 @@ function Router() {
       <DebugBanner />
       <Switch>
         <Route path={"/"} component={HomePage} />
-        {/* Dynamic city landing pages — slug is matched in client/src/data/cities.ts */}
-        <Route path={"/sell-my-house-fast-:city"} component={CityPage} />
+        {/* City landing pages — one explicit literal Route per slug.
+            The previous `/sell-my-house-fast-:city` param-style route never
+            matched because wouter's regexparam parser only recognises `:name`
+            params at the START of a path segment (after `/`). With a mid-segment
+            colon, regexparam compiles `:city` as a literal string — silently
+            failing every city URL. Listing each path explicitly avoids the
+            parser quirk entirely and matches bulletproof. */}
+        {CITIES.map((c) => (
+          <Route key={c.slug} path={`/sell-my-house-fast-${c.slug}`}>
+            <CityPage slug={c.slug} />
+          </Route>
+        ))}
         {/* Blog post pages — slug is matched in client/src/content/blog/index.ts */}
         <Route path={"/blog/:slug"} component={BlogPostPage} />
         {/* Cash buyer registration — /deals is canonical; /access-deals kept as alias */}
