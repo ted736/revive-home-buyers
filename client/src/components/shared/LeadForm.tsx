@@ -2,12 +2,11 @@
  * Lead capture form — 3-step: address, contact, situation/timeline.
  * Extracted from Home.tsx so Home and CityPage can share a single instance.
  *
- * NOTE: This component intentionally mirrors the original Home.tsx LeadForm
- * implementation. A separate workstream is wiring Google Places autocomplete
- * into the address input — do not modify the form schema or behavior here
- * without coordinating.
+ * Address input uses Google Places Autocomplete when VITE_GOOGLE_MAPS_API_KEY is
+ * set; falls back to plain text input if the key is missing or the script fails
+ * to load. The form schema is unchanged.
  */
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -39,10 +38,57 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
     timeline: "",
   });
 
+  const addressInputRef = useRef<HTMLInputElement | null>(null);
+
   const set = (field: keyof LeadData, value: string) => {
     setData((d) => ({ ...d, [field]: value }));
     setErrors((e) => ({ ...e, [field]: undefined }));
   };
+
+  useEffect(() => {
+    if (step !== 1) return;
+    const input = addressInputRef.current;
+    if (!input) return;
+    const apiKey = (import.meta as unknown as { env: Record<string, string | undefined> }).env
+      ?.VITE_GOOGLE_MAPS_API_KEY;
+    if (!apiKey) return;
+
+    const w = window as unknown as {
+      google?: { maps?: { places?: { Autocomplete: new (el: HTMLInputElement, opts: unknown) => unknown } } };
+    };
+
+    const init = () => {
+      const Autocomplete = w.google?.maps?.places?.Autocomplete;
+      if (!Autocomplete || !addressInputRef.current) return;
+      const ac = new Autocomplete(addressInputRef.current, {
+        componentRestrictions: { country: ["us"] },
+        fields: ["formatted_address", "geometry"],
+        types: ["address"],
+      }) as { addListener: (ev: string, cb: () => void) => void; getPlace: () => { formatted_address?: string } };
+      ac.addListener("place_changed", () => {
+        const place = ac.getPlace();
+        if (place?.formatted_address) set("address", place.formatted_address);
+      });
+    };
+
+    if (w.google?.maps?.places) {
+      init();
+      return;
+    }
+
+    const existing = document.getElementById("google-maps-places");
+    if (existing) {
+      existing.addEventListener("load", init);
+      return () => existing.removeEventListener("load", init);
+    }
+
+    const script = document.createElement("script");
+    script.id = "google-maps-places";
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&v=weekly`;
+    script.async = true;
+    script.onload = init;
+    document.head.appendChild(script);
+  }, [step]);
 
   const validateStep1 = () => {
     const e: Partial<LeadData> = {};
@@ -168,11 +214,13 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
             <div>
               <label className={labelClass}>Property Address</label>
               <Input
+                ref={addressInputRef}
                 value={data.address}
                 onChange={(e) => set("address", e.target.value)}
                 placeholder="123 Main St, Salt Lake City, UT"
                 className={inputClass("address")}
                 autoFocus
+                autoComplete="off"
               />
               {errors.address && <p className={errClass}>{errors.address}</p>}
             </div>
