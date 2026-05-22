@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { CheckCircle, ArrowRight, Star, Shield } from "lucide-react";
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "@/lib/supabase";
 import {
   trackAddressEntered,
   trackContactStepCompleted,
@@ -160,10 +161,20 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
     trackSituationStepCompleted(data.situation);
     setLoading(true);
     try {
-      await fetch("/api/lead", {
+      await fetch(`${SUPABASE_URL}/functions/v1/leads-create`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify({
+          name: data.name,
+          phone: data.phone,
+          email: data.email || undefined,
+          address: data.address,
+          situation: data.situation,
+          timeline: data.timeline,
+        }),
       });
       trackFormSubmitted(undefined, "lead_form");
     } catch {}
