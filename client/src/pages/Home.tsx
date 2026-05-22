@@ -352,15 +352,17 @@ function Testimonials() {
 }
 
 // ─── Recent Cash Offers ──────────────────────────────────────────────────────
+// Privacy: addresses intentionally omitted. Show property type + city/state only.
+// ARV is optional — surface a range when we have one; otherwise leave blank.
 const RECENT_OFFERS = [
-  { address: "3447 S 3450 W", city: "West Valley City", state: "UT" },
-  { address: "1710 Hemlock St", city: "Rupert", state: "ID" },
-  { address: "730 10th Ave W", city: "Kalispell", state: "MT" },
-  { address: "726 N Sixth Ave", city: "Sandpoint", state: "ID" },
-  { address: "369 N State St", city: "Roosevelt", state: "UT" },
-  { address: "712 E 5th St", city: "Polson", state: "MT" },
-  { address: "120 Anderson St", city: "Caldwell", state: "ID" },
-  { address: "112 Ama Fille Ln", city: "Elk Ridge", state: "UT" },
+  { propertyType: "Single-family residence", city: "West Valley City", state: "UT", arv: "" },
+  { propertyType: "Single-family residence", city: "Rupert", state: "ID", arv: "" },
+  { propertyType: "Single-family residence", city: "Kalispell", state: "MT", arv: "" },
+  { propertyType: "Single-family residence", city: "Sandpoint", state: "ID", arv: "" },
+  { propertyType: "Single-family residence", city: "Roosevelt", state: "UT", arv: "" },
+  { propertyType: "Single-family residence", city: "Polson", state: "MT", arv: "" },
+  { propertyType: "Single-family residence", city: "Caldwell", state: "ID", arv: "" },
+  { propertyType: "Single-family residence", city: "Elk Ridge", state: "UT", arv: "" },
 ];
 
 function RecentOffers() {
@@ -396,9 +398,9 @@ function RecentOffers() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 reveal" style={{ transitionDelay: "80ms" }}>
-          {RECENT_OFFERS.map(({ address, city, state }) => (
+          {RECENT_OFFERS.map(({ propertyType, city, state, arv }, idx) => (
             <div
-              key={`${address}-${city}`}
+              key={`${city}-${state}-${idx}`}
               className="bg-white/05 border border-white/10 px-4 py-3 hover:border-[#2D6A3F]/50 hover:bg-white/08 transition-colors duration-150"
             >
               <div
@@ -407,17 +409,22 @@ function RecentOffers() {
                 Cash Offer Accepted
               </div>
               <div className="text-white/85 text-sm font-medium leading-tight">
-                {address}
+                {propertyType}
               </div>
               <div className="text-white/40 text-xs mt-0.5">
                 {city}, {state}
               </div>
+              {arv && (
+                <div className="text-[#2D6A3F]/80 text-xs mt-1 font-medium">
+                  ARV {arv}
+                </div>
+              )}
             </div>
           ))}
         </div>
 
         <p className="text-white/25 text-xs text-center mt-8 tracking-wide reveal" style={{ transitionDelay: "120ms" }}>
-          Addresses shown with seller permission · Updated periodically
+          Property details shown with seller permission · Updated periodically
         </p>
       </div>
     </section>
