@@ -31,7 +31,7 @@ export default function Footer() {
               Arizona, and Colorado — fast, fair, and hassle-free.
             </p>
             <p className="text-white/30 text-xs mt-4">
-              Licensed Real Estate Investor · America Home Restoration LLC
+              Licensed Real Estate Investor · Revive Home Buyers
             </p>
           </div>
 
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-white/25 text-xs">
-          <p>© {new Date().getFullYear()} America Home Restoration LLC · All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Revive Home Buyers · All rights reserved.</p>
           <p>
             Revive Home Buyers is not a licensed real estate brokerage. We are a direct cash buyer.
           </p>
