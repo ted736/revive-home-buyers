@@ -15,7 +15,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight, Star, Shield } from "lucide-react";
+import {
+  trackAddressEntered,
+  trackContactStepCompleted,
+  trackSituationStepCompleted,
+  trackFormSubmitted,
+} from "@/lib/analytics";
 
 type LeadData = {
   address: string;
@@ -24,6 +30,29 @@ type LeadData = {
   situation: string;
   timeline: string;
 };
+
+// ─── Trust badges (step 1) ────────────────────────────────────────────────────
+function TrustBadges({ dark }: { dark: boolean }) {
+  const baseClass = `flex items-center gap-1.5 text-[10px] font-semibold tracking-wide ${
+    dark ? "text-white/50" : "text-[#3D4145]/45"
+  }`;
+  return (
+    <div className="flex flex-wrap gap-3 mt-3">
+      <span className={baseClass}>
+        <Shield size={11} className="text-[#2D6A3F]" />
+        BBB A+
+      </span>
+      <span className={baseClass}>
+        <Star size={11} className="text-[#2D6A3F]" />
+        Google 4.9★
+      </span>
+      <span className={baseClass}>
+        <CheckCircle size={11} className="text-[#2D6A3F]" />
+        Local team you can meet
+      </span>
+    </div>
+  );
+}
 
 export default function LeadForm({ dark = false }: { dark?: boolean }) {
   const [step, setStep] = useState(1);
@@ -67,7 +96,10 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
       }) as { addListener: (ev: string, cb: () => void) => void; getPlace: () => { formatted_address?: string } };
       ac.addListener("place_changed", () => {
         const place = ac.getPlace();
-        if (place?.formatted_address) set("address", place.formatted_address);
+        if (place?.formatted_address) {
+          set("address", place.formatted_address);
+          trackAddressEntered(place.formatted_address.split(",")[1]?.trim());
+        }
       });
     };
 
@@ -107,8 +139,13 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
   };
 
   const handleNext = () => {
-    if (step === 1 && validateStep1()) setStep(2);
-    else if (step === 2 && validateStep2()) setStep(3);
+    if (step === 1 && validateStep1()) {
+      trackAddressEntered(data.address.split(",")[1]?.trim());
+      setStep(2);
+    } else if (step === 2 && validateStep2()) {
+      trackContactStepCompleted();
+      setStep(3);
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -120,6 +157,7 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
       });
       return;
     }
+    trackSituationStepCompleted(data.situation);
     setLoading(true);
     try {
       await fetch("/api/lead", {
@@ -127,6 +165,7 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      trackFormSubmitted(undefined, "lead_form");
     } catch {}
     setLoading(false);
     setSubmitted(true);
@@ -151,11 +190,15 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
       : "border-[#3D4145]/30 text-[#3D4145] focus:border-[#2D6A3F]"
   }`;
 
+  const urgencyClass = `text-[10px] mt-3 ${dark ? "text-white/35" : "text-[#3D4145]/35"}`;
+
   if (submitted) {
     return (
       <div className={`py-6 max-w-xl ${dark ? "text-white" : "text-[#3D4145]"}`}>
-        <div className="flex items-center gap-3 mb-3">
-          <CheckCircle className="text-[#2D6A3F] w-7 h-7 flex-shrink-0" />
+        <div className="flex items-center gap-3 mb-3 animate-in fade-in slide-in-from-bottom-2 duration-300">
+          <div className="w-10 h-10 rounded-full bg-[#2D6A3F] flex items-center justify-center shrink-0">
+            <CheckCircle className="text-white w-5 h-5" />
+          </div>
           <h3 className="font-semibold text-lg">You're all set, {data.name.split(" ")[0]}!</h3>
         </div>
         <p className={`text-sm leading-relaxed ${dark ? "text-white/70" : "text-[#3D4145]/65"}`}>
@@ -223,6 +266,7 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
                 autoComplete="off"
               />
               {errors.address && <p className={errClass}>{errors.address}</p>}
+              <TrustBadges dark={dark} />
             </div>
             <button
               type="button"
@@ -231,6 +275,9 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
             >
               Next <ArrowRight className="w-4 h-4" />
             </button>
+            <p className={urgencyClass}>
+              500+ Utah, Idaho, and Montana homeowners trusted us last year.
+            </p>
           </div>
         )}
 
@@ -245,6 +292,7 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
                 placeholder="First and last name"
                 className={inputClass("name")}
                 autoFocus
+                autoComplete="name"
               />
               {errors.name && <p className={errClass}>{errors.name}</p>}
             </div>
@@ -255,6 +303,8 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
                 onChange={(e) => set("phone", e.target.value)}
                 placeholder="(801) 555-0100"
                 type="tel"
+                inputMode="tel"
+                autoComplete="tel"
                 className={inputClass("phone")}
               />
               {errors.phone && <p className={errClass}>{errors.phone}</p>}
@@ -279,6 +329,9 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
                 Next <ArrowRight className="w-4 h-4" />
               </button>
             </div>
+            <p className={urgencyClass}>
+              We'll only call you once — no spam, no robocalls.
+            </p>
           </div>
         )}
 
@@ -337,9 +390,19 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
                 disabled={loading}
                 className="flex items-center gap-2 h-12 px-8 bg-[#2D6A3F] text-white text-sm font-semibold tracking-widest uppercase hover:bg-[#1F4D2E] active:scale-[0.97] transition-all duration-150 disabled:opacity-60"
               >
-                {loading ? "Sending..." : "Get My Cash Offer"}
+                {loading ? (
+                  <span className="flex items-center gap-2">
+                    <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    Sending...
+                  </span>
+                ) : (
+                  "Get My Cash Offer"
+                )}
               </button>
             </div>
+            <p className={urgencyClass}>
+              No obligation · Free offer · 24-hour response guaranteed.
+            </p>
           </div>
         )}
       </form>

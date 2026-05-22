@@ -6,6 +6,7 @@
  *   - Cormorant Garamond (display) + Outfit (body)
  *   - Forest green #2D6A3F accent, charcoal #3D4145 text, off-white #F7F5F0 bg
  */
+import { useEffect } from "react";
 import { useParams, Link } from "wouter";
 import { ArrowLeft, Clock, Tag, MapPin } from "lucide-react";
 import Nav from "@/components/shared/Nav";
@@ -14,6 +15,7 @@ import LeadForm from "@/components/shared/LeadForm";
 import RelatedLinks from "@/components/shared/RelatedLinks";
 import { getPostBySlug, BLOG_POSTS } from "@/content/blog";
 import { BLOG_TO_CITY } from "@/data/internalLinks";
+import { initScrollDepthTracking } from "@/lib/analytics";
 import { useSeo } from "@/hooks/useSeo";
 import { useReveal } from "@/hooks/useReveal";
 import type { BlogPost as BlogPostType, BlogSection } from "@/types/blog";
@@ -247,6 +249,13 @@ export default function BlogPostPage() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug ?? "";
   const post = getPostBySlug(slug);
+
+  // Scroll depth + blog read complete tracking
+  useEffect(() => {
+    if (!post) return;
+    const cleanup = initScrollDepthTracking(`blog/${post.slug}`);
+    return cleanup;
+  }, [post?.slug]);
 
   useSeo({
     title: post ? post.metaTitle : "Blog | Revive Home Buyers",

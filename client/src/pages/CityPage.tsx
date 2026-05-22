@@ -14,7 +14,8 @@
  * the form — another track is wiring Google Places autocomplete into it.
  */
 import { useParams, Link } from "wouter";
-import { CheckCircle, MapPin, Phone, ArrowRight } from "lucide-react";
+import { CheckCircle, MapPin, Phone, ArrowRight, Share2, Copy, Check } from "lucide-react";
+import { useState, useCallback } from "react";
 import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";
 import TrustStrip from "@/components/shared/TrustStrip";
@@ -23,6 +24,7 @@ import LeadForm from "@/components/shared/LeadForm";
 import RelatedLinks from "@/components/shared/RelatedLinks";
 import { getCityBySlug, CITIES, type CityData } from "@/data/cities";
 import { CITY_TO_BLOG } from "@/data/internalLinks";
+import { trackPhoneClicked } from "@/lib/analytics";
 import { useReveal } from "@/hooks/useReveal";
 import { useSeo } from "@/hooks/useSeo";
 
@@ -184,6 +186,7 @@ function CityHero({ city }: { city: CityData }) {
           </div>
           <a
             href="tel:8017832011"
+            onClick={() => trackPhoneClicked("hero")}
             className="inline-flex items-center gap-2 mt-6 text-white/80 hover:text-white text-sm transition-colors"
           >
             <Phone className="w-4 h-4" />
@@ -346,6 +349,79 @@ function CityBody({ city }: { city: CityData }) {
   );
 }
 
+// ─── Share Section ────────────────────────────────────────────────────────────
+function ShareSection({ city }: { city: CityData }) {
+  const [copied, setCopied] = useState(false);
+  const url = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
+
+  const copyLink = useCallback(async () => {
+    await navigator.clipboard.writeText(url).catch(() => {});
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, [url]);
+
+  const encodedUrl = encodeURIComponent(url);
+  const encodedMsg = encodeURIComponent(`Know someone who needs to sell their home in ${city.name}, ${city.stateAbbr} fast? Revive Home Buyers pays cash, no repairs needed.`);
+
+  return (
+    <section className="py-12 bg-[#F7F5F0] border-t border-[#3D4145]/08">
+      <div className="container">
+        <div className="max-w-2xl mx-auto text-center reveal">
+          <div className="inline-flex items-center gap-2 text-[#2D6A3F] mb-3">
+            <Share2 size={16} />
+            <span className="text-xs font-semibold tracking-widest uppercase">Share this page</span>
+          </div>
+          <h3
+            className="text-[#3D4145] mb-2"
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "1.6rem",
+              fontWeight: 500,
+              lineHeight: 1.2,
+            }}
+          >
+            Know someone in {city.name}?
+          </h3>
+          <p className="text-[#3D4145]/55 text-sm mb-6 font-light">
+            Share this page with anyone who needs a fast, fair way to sell their home.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <button
+              onClick={copyLink}
+              className="inline-flex items-center gap-2 px-5 h-10 border border-[#3D4145]/20 text-[#3D4145]/70 text-xs font-semibold tracking-widest uppercase hover:border-[#2D6A3F] hover:text-[#2D6A3F] transition-colors duration-150"
+            >
+              {copied ? <Check size={13} className="text-[#2D6A3F]" /> : <Copy size={13} />}
+              {copied ? "Copied!" : "Copy link"}
+            </button>
+            <a
+              href={`https://wa.me/?text=${encodedMsg}%20${encodedUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 h-10 bg-[#25D366] text-white text-xs font-semibold tracking-widest uppercase hover:bg-[#1aab52] transition-colors duration-150"
+            >
+              WhatsApp
+            </a>
+            <a
+              href={`sms:?body=${encodedMsg}%20${encodedUrl}`}
+              className="inline-flex items-center gap-2 px-5 h-10 bg-[#3D4145] text-white text-xs font-semibold tracking-widest uppercase hover:bg-[#2a2d31] transition-colors duration-150"
+            >
+              SMS
+            </a>
+            <a
+              href={`https://x.com/intent/tweet?text=${encodedMsg}&url=${encodedUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 h-10 border border-[#3D4145]/20 text-[#3D4145]/70 text-xs font-semibold tracking-widest uppercase hover:border-[#3D4145] hover:text-[#3D4145] transition-colors duration-150"
+            >
+              𝕏 / Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─── Bottom CTA ──────────────────────────────────────────────────────────────
 function CityCTA({ city }: { city: CityData }) {
   return (
@@ -425,6 +501,7 @@ export default function CityPage() {
       <TrustStrip />
       <CityBody city={city} />
       <FAQ />
+      <ShareSection city={city} />
       <CityCTA city={city} />
       <Footer />
     </div>
