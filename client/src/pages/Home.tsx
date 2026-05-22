@@ -490,33 +490,36 @@ function RecentOffers() {
 }
 
 // ─── Service Area Map (SVG) ───────────────────────────────────────────────────
-// State paths derived from GeoJSON (PublicaMundi/MappingAPI), equirectangular projection
-// ViewBox: 0 0 560 480, bounding box: lon [-120.50,-101.54], lat [30.83,49.50]
+// State paths generated from US Census Bureau TIGER GeoJSON via PublicaMundi/MappingAPI
+// Equirectangular projection — ViewBox: 0 0 560 480
+// Bounding box: lon [-120.00, -102.04], lat [31.33, 49.00]
 const STATE_PATHS = {
-  MT: "M 471.3,31.8 L 471.5,58.6 L 471.3,103.8 L 471.5,126.1 L 471.0,126.1 L 420.1,126.0 L 333.3,126.0 L 279.2,126.0 L 279.3,138.4 L 274.4,136.0 L 270.0,131.8 L 263.7,136.7 L 258.1,137.6 L 256.8,136.3 L 250.3,137.4 L 246.6,136.2 L 240.3,138.3 L 231.7,138.2 L 228.9,140.3 L 225.7,139.1 L 222.1,131.4 L 216.4,131.2 L 213.2,129.2 L 213.4,124.7 L 210.1,123.0 L 205.6,118.3 L 202.9,113.8 L 203.6,111.8 L 198.7,109.5 L 196.0,112.1 L 189.2,115.3 L 183.3,112.9 L 184.7,110.3 L 182.7,107.8 L 187.7,105.2 L 184.8,101.6 L 185.6,96.1 L 189.5,87.3 L 181.5,87.4 L 181.2,85.9 L 174.0,83.4 L 172.8,80.8 L 162.6,74.5 L 162.0,72.8 L 156.4,71.8 L 151.2,69.0 L 151.0,62.5 L 142.2,55.9 L 142.2,31.8 L 266.9,31.9 L 323.0,31.8 L 471.3,31.8 Z",
-  ID: "M 142.2,31.8 L 142.2,55.9 L 151.0,62.5 L 151.2,69.0 L 156.4,71.8 L 162.0,72.8 L 162.6,74.5 L 172.8,80.8 L 174.0,83.4 L 181.2,85.9 L 181.5,87.4 L 189.5,87.3 L 185.6,96.1 L 184.8,101.6 L 187.7,105.2 L 182.7,107.8 L 184.7,110.3 L 183.3,112.9 L 189.2,115.3 L 196.0,112.1 L 198.7,109.5 L 203.6,111.8 L 202.9,113.8 L 205.6,118.3 L 210.1,123.0 L 213.4,124.7 L 213.2,129.2 L 216.4,131.2 L 222.1,131.4 L 225.7,139.1 L 228.9,140.3 L 231.7,138.2 L 240.3,138.3 L 246.6,136.2 L 250.3,137.4 L 256.8,136.3 L 258.1,137.6 L 263.7,136.7 L 270.0,131.8 L 274.4,136.0 L 279.3,138.4 L 279.3,196.8 L 248.7,196.9 L 197.2,196.9 L 115.3,196.8 L 115.3,153.6 L 118.9,145.9 L 116.6,144.0 L 111.4,143.6 L 109.4,140.3 L 115.0,132.0 L 117.8,131.2 L 120.7,127.7 L 120.2,125.5 L 123.4,122.7 L 125.0,118.5 L 130.8,111.6 L 128.5,108.3 L 122.0,106.7 L 118.3,102.7 L 118.1,98.5 L 114.5,94.4 L 115.0,92.5 L 114.8,61.0 L 115.1,31.8 L 142.2,31.8 Z",
-  UT: "M 248.7,196.9 L 279.3,196.8 L 279.3,220.4 L 334.2,220.4 L 334.0,264.5 L 333.9,284.5 L 334.3,287.1 L 334.3,314.6 L 294.3,314.5 L 197.0,314.6 L 197.2,196.9 L 248.7,196.9 Z",
-  NV: "M 115.3,196.8 L 197.2,196.9 L 197.0,314.6 L 197.0,333.6 L 194.1,337.6 L 191.4,337.7 L 188.1,334.9 L 178.1,335.8 L 179.7,349.6 L 182.0,354.1 L 182.6,358.5 L 180.9,361.7 L 147.6,338.9 L 128.7,326.4 L 102.4,309.4 L 69.0,288.7 L 33.7,267.5 L 33.9,237.7 L 33.7,196.9 L 69.5,197.0 L 115.3,196.8 Z",
-  AZ: "M 334.3,314.6 L 334.2,448.2 L 278.6,448.2 L 246.4,439.4 L 176.0,420.8 L 178.5,415.6 L 183.9,414.7 L 185.4,412.6 L 183.9,408.2 L 180.2,408.1 L 178.4,399.3 L 183.9,395.9 L 184.7,392.5 L 183.6,386.9 L 186.9,382.8 L 191.3,381.2 L 194.6,378.1 L 189.2,374.8 L 185.4,368.6 L 180.9,364.7 L 180.9,361.7 L 182.6,358.5 L 182.0,354.1 L 179.7,349.6 L 178.1,335.8 L 188.1,334.9 L 191.4,337.7 L 194.1,337.6 L 197.0,333.6 L 197.0,314.6 L 294.3,314.5 L 334.3,314.6 Z",
-  CO: "M 365.1,220.2 L 425.2,220.4 L 471.2,220.2 L 526.0,220.2 L 526.0,243.9 L 526.3,314.7 L 500.0,314.6 L 463.3,314.7 L 393.9,314.7 L 378.8,314.6 L 334.3,314.6 L 334.3,287.1 L 333.9,284.5 L 334.0,264.5 L 334.2,220.4 L 365.1,220.2 Z",
+  MT: "M 482.0,20.0 L 482.1,48.4 L 482.0,96.1 L 482.1,119.7 L 481.6,119.7 L 427.9,119.6 L 336.2,119.6 L 279.1,119.6 L 279.3,132.7 L 274.1,130.1 L 269.5,125.7 L 262.8,130.9 L 256.9,131.8 L 255.5,130.5 L 248.7,131.6 L 244.7,130.3 L 238.1,132.5 L 229.0,132.4 L 226.0,134.7 L 222.7,133.3 L 218.9,125.3 L 212.8,125.0 L 209.5,123.0 L 209.7,118.2 L 206.2,116.4 L 201.4,111.4 L 198.6,106.6 L 199.4,104.6 L 194.1,102.1 L 191.3,104.8 L 184.1,108.2 L 178.0,105.7 L 179.4,102.9 L 177.3,100.3 L 182.5,97.6 L 179.5,93.8 L 180.3,87.9 L 184.5,78.6 L 176.0,78.8 L 175.7,77.1 L 168.1,74.6 L 166.8,71.8 L 156.1,65.1 L 155.4,63.4 L 149.6,62.3 L 144.0,59.3 L 143.9,52.5 L 134.5,45.5 L 134.5,20.0 L 266.1,20.1 L 325.4,20.0 L 482.0,20.0 Z",
+  ID: "M 134.5,20.0 L 134.5,45.5 L 143.9,52.5 L 144.0,59.3 L 149.6,62.3 L 155.4,63.4 L 156.1,65.1 L 166.8,71.8 L 168.1,74.6 L 175.7,77.1 L 176.0,78.8 L 184.5,78.6 L 180.3,87.9 L 179.5,93.8 L 182.5,97.6 L 177.3,100.3 L 179.4,102.9 L 178.0,105.7 L 184.1,108.2 L 191.3,104.8 L 194.1,102.1 L 199.4,104.6 L 198.6,106.6 L 201.4,111.4 L 206.2,116.4 L 209.7,118.2 L 209.5,123.0 L 212.8,125.0 L 218.9,125.3 L 222.7,133.3 L 226.0,134.7 L 229.0,132.4 L 238.1,132.5 L 244.7,130.3 L 248.7,131.6 L 255.5,130.5 L 256.9,131.8 L 262.8,130.9 L 269.5,125.7 L 274.1,130.1 L 279.3,132.7 L 279.3,194.3 L 246.9,194.4 L 192.5,194.4 L 106.1,194.3 L 106.1,148.8 L 109.9,140.6 L 107.5,138.5 L 102.0,138.1 L 99.9,134.7 L 105.8,125.8 L 108.8,125.0 L 111.8,121.3 L 111.3,119.0 L 114.7,116.0 L 116.4,111.7 L 122.4,104.3 L 120.1,100.9 L 113.2,99.1 L 109.3,94.9 L 109.1,90.5 L 105.3,86.2 L 105.8,84.1 L 105.6,50.8 L 106.0,20.0 L 134.5,20.0 Z",
+  UT: "M 246.9,194.4 L 279.3,194.3 L 279.3,219.3 L 337.2,219.3 L 337.0,265.9 L 336.9,287.1 L 337.3,289.8 L 337.3,318.8 L 295.1,318.7 L 192.4,318.8 L 192.5,194.4 L 246.9,194.4 Z",
+  NV: "M 106.1,194.3 L 192.5,194.4 L 192.4,318.8 L 192.4,338.9 L 189.4,343.1 L 186.5,343.2 L 183.0,340.2 L 172.4,341.2 L 174.1,355.8 L 176.5,360.6 L 177.2,365.2 L 175.4,368.6 L 140.2,344.5 L 120.2,331.2 L 92.5,313.4 L 57.3,291.4 L 20.0,269.1 L 20.2,237.5 L 20.0,194.4 L 57.7,194.6 L 106.1,194.3 Z",
+  AZ: "M 337.3,318.8 L 337.2,460.0 L 278.5,460.0 L 244.6,450.7 L 170.2,431.1 L 172.9,425.5 L 178.6,424.5 L 180.2,422.4 L 178.6,417.7 L 174.6,417.6 L 172.7,408.3 L 178.6,404.8 L 179.4,401.1 L 178.3,395.2 L 181.8,390.8 L 186.4,389.2 L 189.8,385.9 L 184.1,382.4 L 180.2,375.8 L 175.4,371.8 L 175.4,368.6 L 177.2,365.2 L 176.5,360.6 L 174.1,355.8 L 172.4,341.2 L 183.0,340.2 L 186.5,343.2 L 189.4,343.1 L 192.4,338.9 L 192.4,318.8 L 295.1,318.7 L 337.3,318.8 Z",
+  CO: "M 369.8,219.1 L 433.3,219.3 L 481.8,219.1 L 539.7,219.1 L 539.7,244.1 L 540.0,319.0 L 512.2,318.8 L 473.6,319.0 L 400.3,319.0 L 384.3,318.8 L 337.3,318.8 L 337.3,289.8 L 336.9,287.1 L 337.0,265.9 L 337.2,219.3 L 369.8,219.1 Z",
 };
 
 function ServiceArea() {
+  // City dot coordinates projected from real lon/lat using the same equirectangular
+  // projection as STATE_PATHS above (lon [-120.00,-102.04], lat [31.33,49.00], 560×480 viewBox)
   const cities = [
-    { name: "Salt Lake City", state: "UT", x: 256.2, y: 226.0 },
-    { name: "Provo", state: "UT", x: 262.6, y: 238.4 },
-    { name: "Ogden", state: "UT", x: 254.0, y: 215.1 },
-    { name: "Boise", state: "ID", x: 138.0, y: 158.7 },
-    { name: "Idaho Falls", state: "ID", x: 252.3, y: 161.6 },
-    { name: "Twin Falls", state: "ID", x: 185.7, y: 183.5 },
-    { name: "Billings", state: "MT", x: 349.2, y: 107.6 },
-    { name: "Missoula", state: "MT", x: 198.0, y: 81.9 },
-    { name: "Great Falls", state: "MT", x: 272.4, y: 67.1 },
-    { name: "Denver", state: "CO", x: 445.5, y: 250.1 },
-    { name: "Las Vegas", state: "NV", x: 167.1, y: 334.1 },
-    { name: "Reno", state: "NV", x: 38.9, y: 255.0 },
-    { name: "Phoenix", state: "AZ", x: 251.2, y: 398.3 },
-    { name: "Tucson", state: "AZ", x: 282.6, y: 427.2 },
+    { name: "Salt Lake City", state: "UT", x: 254.9, y: 225.2 },
+    { name: "Provo",          state: "UT", x: 261.6, y: 238.3 },
+    { name: "Ogden",          state: "UT", x: 252.4, y: 213.7 },
+    { name: "Boise",          state: "ID", x: 130.0, y: 154.1 },
+    { name: "Idaho Falls",    state: "ID", x: 250.7, y: 157.2 },
+    { name: "Twin Falls",     state: "ID", x: 180.4, y: 180.3 },
+    { name: "Billings",       state: "MT", x: 353.0, y: 100.1 },
+    { name: "Missoula",       state: "MT", x: 194.0, y: 73.0  },
+    { name: "Great Falls",    state: "MT", x: 272.0, y: 57.4  },
+    { name: "Denver",         state: "CO", x: 454.7, y: 250.6 },
+    { name: "Las Vegas",      state: "NV", x: 160.9, y: 339.4 },
+    { name: "Reno",           state: "NV", x: 25.5,  y: 255.9 },
+    { name: "Phoenix",        state: "AZ", x: 249.6, y: 407.3 },
+    { name: "Tucson",         state: "AZ", x: 282.8, y: 437.8 },
   ];
 
   return (
@@ -542,10 +545,10 @@ function ServiceArea() {
               </em>
             </h2>
             <p className="text-[#3D4145]/65 text-sm leading-relaxed font-light mb-8">
-              Our local team operates across Utah, Idaho, Montana, Nevada, Arizona, Colorado, and Wyoming — with deep knowledge of each market and relationships with local title companies for fast, smooth closings.
+              Our local team operates across Utah, Idaho, Montana, Nevada, Arizona, and Colorado — with deep knowledge of each market and relationships with local title companies for fast, smooth closings.
             </p>
             <div className="flex flex-wrap gap-3">
-              {["Utah", "Idaho", "Montana", "Nevada", "Arizona", "Colorado", "Wyoming"].map((state) => (
+              {["Utah", "Idaho", "Montana", "Nevada", "Arizona", "Colorado"].map((state) => (
                 <span
                   key={state}
                   className="border border-[#2D6A3F] text-[#2D6A3F] text-xs font-semibold tracking-widest uppercase px-4 py-2"
@@ -564,29 +567,29 @@ function ServiceArea() {
                 className="w-full"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {/* Montana */}
+                {/* Montana — label centroid: x=308.3, y=77.4 */}
                 <path d={STATE_PATHS.MT} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
-                <text x="294.3" y="83.6" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">MONTANA</text>
+                <text x="308.3" y="77.4" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">MONTANA</text>
 
-                {/* Idaho */}
+                {/* Idaho — label centroid: x=189.6, y=107.2 */}
                 <path d={STATE_PATHS.ID} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
-                <text x="184.6" y="137.9" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">IDAHO</text>
+                <text x="189.6" y="107.2" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">IDAHO</text>
 
-                {/* Utah */}
+                {/* Utah — label centroid: x=264.9, y=256.6 */}
                 <path d={STATE_PATHS.UT} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
-                <text x="248" y="262" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">UTAH</text>
+                <text x="264.9" y="256.6" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">UTAH</text>
 
-                {/* Nevada */}
+                {/* Nevada — label centroid: x=106.3, y=281.5 */}
                 <path d={STATE_PATHS.NV} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
-                <text x="129.8" y="255.7" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">NEVADA</text>
+                <text x="106.3" y="281.5" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">NEVADA</text>
 
-                {/* Arizona */}
+                {/* Arizona — label centroid: x=253.8, y=389.3 */}
                 <path d={STATE_PATHS.AZ} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
-                <text x="255" y="390" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">ARIZONA</text>
+                <text x="253.8" y="389.3" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">ARIZONA</text>
 
-                {/* Colorado */}
+                {/* Colorado — label centroid: x=438.4, y=269.1 */}
                 <path d={STATE_PATHS.CO} fill="#2D6A3F" fillOpacity="0.15" stroke="#2D6A3F" strokeWidth="1" />
-                <text x="431.5" y="267.5" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">COLORADO</text>
+                <text x="438.4" y="269.1" textAnchor="middle" fill="#2D6A3F" fontSize="9" fontFamily="Outfit" fontWeight="600" letterSpacing="2">COLORADO</text>
 
                 {/* City dots */}
                 {cities.map((city) => (
