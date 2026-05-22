@@ -3,22 +3,37 @@
 
   <head>
     <meta charset="UTF-8" />
+    <!-- Fix 1: removed maximum-scale=1 — Lighthouse Accessibility deduction, blocks user zoom -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Revive Home Buyers — The Smarter Way to Sell</title>    
+      content="width=device-width, initial-scale=1.0" />
+    <title>Revive Home Buyers — The Smarter Way to Sell</title>
+
+    <!-- Fix 3: preload hero image to improve LCP -->
+    <link
+      rel="preload"
+      href="https://d2xsxph8kpxj0f.cloudfront.net/310519663302016813/QyqrbgfqY69HNHAj7ykVt6/hero-home-jBz6RHRR8Wk4ds9shb6M9f.png"
+      as="image"
+      fetchpriority="high" />
+
+    <!-- Fix 3: non-blocking Google Fonts load (was render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    </noscript>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <!-- Fix 2: Umami placeholder removed — %VITE_ANALYTICS_ENDPOINT% was not being replaced,
+         causing a broken script load and console errors. GA4 analytics are wired via lib/analytics.ts. -->
   </body>
 
 </html>
