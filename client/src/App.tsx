@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import HomePage from "@/pages/Home";
 import CityPage from "@/pages/CityPage";
+import BlogPostPage from "@/pages/BlogPost";
 
 
 function Router() {
@@ -14,6 +15,8 @@ function Router() {
       <Route path={"/"} component={HomePage} />
       {/* Dynamic city landing pages — slug is matched in client/src/data/cities.ts */}
       <Route path={"/sell-my-house-fast-:city"} component={CityPage} />
+      {/* Blog post pages — slug is matched in client/src/content/blog/index.ts */}
+      <Route path={"/blog/:slug"} component={BlogPostPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
