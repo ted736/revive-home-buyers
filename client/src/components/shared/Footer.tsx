@@ -7,7 +7,6 @@
  */
 import LogoMark from "./LogoMark";
 import { CITIES } from "@/data/cities";
-import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -83,20 +82,25 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Service Areas — one link per city landing page */}
+          {/* Service Areas — one link per city landing page.
+              Plain <a> on purpose: prior Wouter <Link> + literal-routes
+              interaction was unreliable for footer clicks. Full-page
+              navigation here is simpler + bulletproof; Vercel's SPA rewrite
+              serves index.html on the new URL, the bundle re-mounts, and
+              the literal Route matches cleanly. */}
           <div>
-            <h4 className="text-white/70 text-xs font-semibold tracking-widest uppercase mb-4">
+            <h4 className="text-white/70 text-sm font-semibold tracking-widest uppercase mb-4">
               Areas We Serve
             </h4>
-            <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-white/45 text-xs">
+            <div className="grid grid-cols-2 gap-x-3 gap-y-2 text-white/75 text-sm">
               {CITIES.map((c) => (
-                <Link
+                <a
                   key={c.slug}
                   href={`/sell-my-house-fast-${c.slug}`}
-                  className="hover:text-white transition-colors leading-snug"
+                  className="hover:text-[#3d8a55] transition-colors leading-snug"
                 >
                   {c.name}, {c.stateAbbr}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
