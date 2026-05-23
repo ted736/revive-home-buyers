@@ -535,10 +535,10 @@ function ServiceArea() {
                 lineHeight: 1.15,
               }}
             >
-              We buy homes across
+              Reviving communities
               <br />
               <em style={{ fontStyle: "italic", fontWeight: 300 }}>
-                the West.
+                across the West.
               </em>
             </h2>
             <p className="text-[#3D4145]/65 text-sm leading-relaxed font-light mb-8">
