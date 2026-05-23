@@ -219,7 +219,13 @@ export const PROJECTS: Project[] = [
     year_completed: 2024,
     scope_summary: "Whitefish showcase renovation — premium finishes, full kitchen and bath redesign, refinished wood floors, updated exterior in the sought-after Moose Trail neighborhood.",
     scope_tags: ["kitchen", "bathrooms", "flooring", "exterior", "landscaping", "premium finishes"],
-    before_photo_urls: [],
+    before_photo_urls: [
+      `${STORAGE}/whitefish-mt/before-01.png`,
+      `${STORAGE}/whitefish-mt/before-02.png`,
+      `${STORAGE}/whitefish-mt/before-03.png`,
+      `${STORAGE}/whitefish-mt/before-04.png`,
+      `${STORAGE}/whitefish-mt/before-05.png`,
+    ],
     after_photo_urls: [
       `${STORAGE}/whitefish-mt/after-01.jpg`,
       `${STORAGE}/whitefish-mt/after-02.jpg`,
@@ -234,7 +240,7 @@ export const PROJECTS: Project[] = [
     rehab_cost_range: "$120K–$160K",
     final_outcome: "Sold in 14 days · 6 offers",
     display_order: 7,
-    display_mode: "after_only",
+    display_mode: "before_after",
     project_type: "ahr_fix_flip",
     story_situation: "A Whitefish homeowner relocating out of state needed a certain, fast sale — the home had tremendous bones but needed updated finishes to compete in the premium Whitefish market.",
     story_action: "We acquired the property and invested in premium-grade renovations to match Whitefish buyer expectations: full kitchen redesign with quartz and custom cabinetry, two bathroom overhauls, refinished hardwood throughout, new exterior decking, and professional landscaping.",
