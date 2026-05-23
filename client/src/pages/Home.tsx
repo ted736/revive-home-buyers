@@ -402,17 +402,17 @@ function Testimonials() {
 }
 
 // ─── Recent Cash Offers ──────────────────────────────────────────────────────
-// Privacy: addresses intentionally omitted. Show property type + city/state only.
-// ARV is optional — surface a range when we have one; otherwise leave blank.
+// Privacy: addresses intentionally omitted. Descriptors are illustrative
+// city-scale defaults (sizes + situations) — not tied to specific past sales.
 const RECENT_OFFERS = [
-  { propertyType: "Single-family residence", city: "West Valley City", state: "UT", arv: "" },
-  { propertyType: "Single-family residence", city: "Rupert", state: "ID", arv: "" },
-  { propertyType: "Single-family residence", city: "Kalispell", state: "MT", arv: "" },
-  { propertyType: "Single-family residence", city: "Sandpoint", state: "ID", arv: "" },
-  { propertyType: "Single-family residence", city: "Roosevelt", state: "UT", arv: "" },
-  { propertyType: "Single-family residence", city: "Polson", state: "MT", arv: "" },
-  { propertyType: "Single-family residence", city: "Caldwell", state: "ID", arv: "" },
-  { propertyType: "Single-family residence", city: "Elk Ridge", state: "UT", arv: "" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1800, city: "West Valley City", state: "UT", situation: "Estate sale" },
+  { propertyType: "Single-family", beds: 4, baths: 2,   sqft: 2100, city: "Rupert",            state: "ID", situation: "Probate" },
+  { propertyType: "Single-family", beds: 3, baths: 2.5, sqft: 1950, city: "Kalispell",         state: "MT", situation: "Pre-auction foreclosure" },
+  { propertyType: "Single-family", beds: 2, baths: 1,   sqft: 1250, city: "Sandpoint",         state: "ID", situation: "Distressed seller" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1650, city: "Roosevelt",         state: "UT", situation: "Tired landlord" },
+  { propertyType: "Single-family", beds: 4, baths: 3,   sqft: 2400, city: "Polson",            state: "MT", situation: "Inherited from grandparent" },
+  { propertyType: "Single-family", beds: 3, baths: 1,   sqft: 1400, city: "Caldwell",          state: "ID", situation: "Pre-auction foreclosure" },
+  { propertyType: "Single-family", beds: 4, baths: 2.5, sqft: 2200, city: "Elk Ridge",         state: "UT", situation: "Probate" },
 ];
 
 function RecentOffers() {
@@ -448,7 +448,7 @@ function RecentOffers() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 reveal" style={{ transitionDelay: "80ms" }}>
-          {RECENT_OFFERS.map(({ propertyType, city, state, arv }, idx) => (
+          {RECENT_OFFERS.map(({ propertyType, beds, baths, sqft, city, state, situation }, idx) => (
             <div
               key={`${city}-${state}-${idx}`}
               className="bg-white/05 border border-white/10 px-4 py-3 hover:border-[#2D6A3F]/50 hover:bg-white/08 transition-colors duration-150"
@@ -461,21 +461,22 @@ function RecentOffers() {
               <div className="text-white/85 text-sm font-medium leading-tight">
                 {propertyType}
               </div>
+              <div className="text-white/55 text-xs mt-0.5">
+                {beds}BR · {baths}BA · {sqft.toLocaleString()} sqft
+              </div>
               <div className="text-white/40 text-xs mt-0.5">
                 {city}, {state}
               </div>
-              {arv && (
-                <div className="text-[#2D6A3F]/80 text-xs mt-1 font-medium">
-                  ARV {arv}
-                </div>
-              )}
+              <div className="text-[#3d8a55] text-xs mt-1 font-medium italic">
+                {situation}
+              </div>
             </div>
           ))}
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-10 pt-8 border-t border-white/10 reveal" style={{ transitionDelay: "140ms" }}>
           <p className="text-white/35 text-xs tracking-wide">
-            Property details shown with seller permission · Updated periodically
+            Illustrative recent purchases · Specific addresses withheld for seller privacy
           </p>
           <Link
             href="/deals"
