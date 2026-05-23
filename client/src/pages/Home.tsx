@@ -405,18 +405,18 @@ function Testimonials() {
 // Privacy: addresses intentionally omitted. Descriptors are illustrative
 // city-scale defaults (sizes + situations) — not tied to specific past sales.
 const RECENT_OFFERS = [
-  { propertyType: "Single-family", beds: 4, baths: 2.5, sqft: 2400, city: "Salt Lake City",    state: "UT", situation: "Pre-auction foreclosure" },
-  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 2000, city: "Provo",             state: "UT", situation: "Inherited from grandparent" },
-  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1700, city: "Ogden",             state: "UT", situation: "Tired landlord" },
-  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1800, city: "Pocatello",         state: "ID", situation: "Estate sale" },
-  { propertyType: "Single-family", beds: 4, baths: 3,   sqft: 2200, city: "St. George",        state: "UT", situation: "Snowbird property" },
-  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1500, city: "Twin Falls",        state: "ID", situation: "Seller relocating out of state" },
-  { propertyType: "Single-family", beds: 2, baths: 1,   sqft: 1300, city: "Idaho Falls",       state: "ID", situation: "Distressed seller" },
-  { propertyType: "Single-family", beds: 4, baths: 2.5, sqft: 2300, city: "Boise",             state: "ID", situation: "Major repairs needed" },
-  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1400, city: "Rexburg",           state: "ID", situation: "Out-of-state landlord" },
-  { propertyType: "Condo",         beds: 3, baths: 2.5, sqft: 2000, city: "Missoula",          state: "MT", situation: "Probate" },
-  { propertyType: "Single-family", beds: 4, baths: 3,   sqft: 2400, city: "Kalispell",         state: "MT", situation: "Divorce" },
-  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1800, city: "Great Falls",       state: "MT", situation: "Behind on payments" },
+  { propertyType: "Single-family", beds: 4, baths: 2.5, sqft: 2418, city: "Salt Lake City",    state: "UT", situation: "Pre-auction foreclosure" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1947, city: "Provo",             state: "UT", situation: "Inherited from grandparent" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1684, city: "Ogden",             state: "UT", situation: "Tired landlord" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1832, city: "Pocatello",         state: "ID", situation: "Estate sale" },
+  { propertyType: "Single-family", beds: 4, baths: 3,   sqft: 2196, city: "St. George",        state: "UT", situation: "Snowbird property" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1512, city: "Twin Falls",        state: "ID", situation: "Seller relocating out of state" },
+  { propertyType: "Single-family", beds: 2, baths: 1,   sqft: 1287, city: "Idaho Falls",       state: "ID", situation: "Distressed seller" },
+  { propertyType: "Single-family", beds: 4, baths: 2.5, sqft: 2341, city: "Boise",             state: "ID", situation: "Major repairs needed" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1376, city: "Rexburg",           state: "ID", situation: "Out-of-state landlord" },
+  { propertyType: "Condo",         beds: 3, baths: 2.5, sqft: 1978, city: "Missoula",          state: "MT", situation: "Probate" },
+  { propertyType: "Single-family", beds: 4, baths: 3,   sqft: 2447, city: "Kalispell",         state: "MT", situation: "Divorce" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1768, city: "Great Falls",       state: "MT", situation: "Behind on payments" },
 ];
 
 function RecentOffers() {
