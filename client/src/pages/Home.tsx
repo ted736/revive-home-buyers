@@ -462,14 +462,11 @@ function RecentOffers() {
               >
                 Cash Offer Accepted
               </div>
-              <div className="text-white/85 text-sm font-medium leading-tight">
-                {propertyType}
+              <div className="text-white text-base font-semibold leading-tight">
+                {city}, {state}
               </div>
               <div className="text-white/55 text-xs mt-0.5">
-                {beds}BR · {baths}BA · {sqft.toLocaleString()} sqft
-              </div>
-              <div className="text-white/40 text-xs mt-0.5">
-                {city}, {state}
+                {propertyType} · {beds}BR · {baths}BA · {sqft.toLocaleString()} sqft
               </div>
               <div className="text-[#3d8a55] text-xs mt-1 font-medium italic">
                 {situation}
