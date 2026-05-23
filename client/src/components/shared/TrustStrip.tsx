@@ -2,7 +2,7 @@
  * Charcoal-bg trust strip with quick stats. Used on Home and CityPage.
  */
 const ITEMS = [
-  { value: "60+", label: "Homes Purchased" },
+  { value: "60+", label: "Homes Revived" },
   { value: "A+", label: "BBB Rating" },
   { value: "4.9★", label: "Google Reviews" },
   { value: "$16M+", label: "Paid to Sellers" },
