@@ -235,7 +235,7 @@ export default function OurProjects() {
               style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.4rem, 5vw, 4rem)", fontWeight: 500 }}
             >
               We Don't Just Buy Houses —<br />
-              <em style={{ fontStyle: "italic", fontWeight: 300 }}>We Transform Them.</em>
+              <em style={{ fontStyle: "italic", fontWeight: 300 }}>We Revive Them.</em>
             </h1>
             <p className="text-white/65 text-base leading-relaxed max-w-xl">
               Every property we acquire is an opportunity to restore something — for the seller, the neighborhood, and the next family who calls it home.
