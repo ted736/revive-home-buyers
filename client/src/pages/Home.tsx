@@ -406,7 +406,7 @@ function Testimonials() {
 // city-scale defaults (sizes + situations) — not tied to specific past sales.
 const RECENT_OFFERS = [
   { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1800, city: "West Valley City", state: "UT", situation: "Estate sale" },
-  { propertyType: "Single-family", beds: 4, baths: 2,   sqft: 2100, city: "Rupert",            state: "ID", situation: "Probate" },
+  { propertyType: "Single-family", beds: 4, baths: 2,   sqft: 2100, city: "Rupert",            state: "ID", situation: "Out-of-state relocation" },
   { propertyType: "Single-family", beds: 3, baths: 2.5, sqft: 1950, city: "Kalispell",         state: "MT", situation: "Pre-auction foreclosure" },
   { propertyType: "Single-family", beds: 2, baths: 1,   sqft: 1250, city: "Sandpoint",         state: "ID", situation: "Distressed seller" },
   { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1650, city: "Roosevelt",         state: "UT", situation: "Tired landlord" },
