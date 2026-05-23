@@ -8,6 +8,8 @@ import HomePage from "@/pages/Home";
 import CityPage from "@/pages/CityPage";
 import BlogPostPage from "@/pages/BlogPost";
 import AccessDeals from "@/pages/AccessDeals";
+import OurProjects from "@/pages/OurProjects";
+import ProjectDetail from "@/pages/ProjectDetail";
 import { CITIES } from "@/data/cities";
 
 function Router() {
@@ -32,6 +34,9 @@ function Router() {
         {/* Cash buyer registration — /deals is canonical; /access-deals kept as alias */}
         <Route path={"/deals"} component={AccessDeals} />
         <Route path={"/access-deals"} component={AccessDeals} />
+        {/* Remodels gallery */}
+        <Route path={"/our-projects"} component={OurProjects} />
+        <Route path={"/our-projects/:slug"} component={ProjectDetail} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />

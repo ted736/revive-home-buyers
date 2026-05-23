@@ -1,14 +1,5 @@
-/**
- * Top navigation bar. Sticky, semi-transparent dark over hero, opaque on scroll.
- * Extracted from Home.tsx for reuse on city landing pages.
- *
- * On non-home pages, hash links point back to the homepage (e.g. /#process)
- * so users land in the right section.
- *
- * v2 — Cash Buyers link added as a distinct CTA-style pill in the nav.
- */
 import { useEffect, useState } from "react";
-import { Phone, Menu, X, Tag } from "lucide-react";
+import { Phone, Menu, X, Tag, Hammer } from "lucide-react";
 import LogoMark from "./LogoMark";
 
 const NAV_LINKS = [
@@ -66,6 +57,15 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
             </a>
           ))}
 
+          {/* Our Projects */}
+          <a
+            href="/our-projects"
+            className="flex items-center gap-1.5 text-white/70 hover:text-white text-xs font-semibold tracking-widest uppercase transition-colors duration-150"
+          >
+            <Hammer className="w-3 h-3" />
+            Our Work
+          </a>
+
           {/* Cash Buyers — distinct pill treatment */}
           <a
             href="/deals"
@@ -116,6 +116,16 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
               {l.label}
             </a>
           ))}
+
+          {/* Our Projects — mobile */}
+          <a
+            href="/our-projects"
+            className="flex items-center gap-2 text-white/70 text-sm font-semibold py-1"
+            onClick={() => setOpen(false)}
+          >
+            <Hammer className="w-4 h-4" />
+            Our Work
+          </a>
 
           {/* Cash Buyers — highlighted row in mobile menu */}
           <a

@@ -69,8 +69,8 @@ export default function Footer() {
               {[
                 ["How It Works", "/#process"],
                 ["Why Revive", "/#why"],
-                ["Testimonials", "/#testimonials"],
-                ["FAQ", "/#faq"],
+                ["Our Projects", "/our-projects"],
+                ["Cash Buyers", "/deals"],
                 ["Get Cash Offer", "/#hero-form"],
               ].map(([label, href]) => (
                 <div key={label}>

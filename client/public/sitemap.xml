@@ -87,6 +87,61 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Remodels gallery -->
+  <url>
+    <loc>https://revivebuyers.com/our-projects</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/bigfork-mt-highway-83</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/shelby-mt-2nd-st</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/columbia-falls-mt-10th-ave</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/rexburg-id-6300-s</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/twin-falls-id-baker-st</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/twin-falls-id-monroe-st</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/whitefish-mt-moose-trail</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revivebuyers.com/our-projects/salt-lake-city-ut-wholesale</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog posts -->
   <url>
     <loc>https://revivebuyers.com/blog/sell-house-fast-salt-lake-city-without-realtor</loc>
