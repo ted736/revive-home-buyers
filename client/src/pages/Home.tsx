@@ -408,11 +408,11 @@ const RECENT_OFFERS = [
   { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1800, city: "West Valley City", state: "UT", situation: "Estate sale" },
   { propertyType: "Single-family", beds: 4, baths: 2.5, sqft: 2400, city: "Salt Lake City",    state: "UT", situation: "Pre-auction foreclosure" },
   { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1950, city: "Provo",             state: "UT", situation: "Inherited from grandparent" },
-  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1650, city: "Orem",              state: "UT", situation: "Tired landlord" },
-  { propertyType: "Single-family", beds: 4, baths: 3,   sqft: 2200, city: "Spanish Fork",      state: "UT", situation: "Divorce" },
-  { propertyType: "Single-family", beds: 4, baths: 2,   sqft: 2100, city: "Ogden",             state: "UT", situation: "Distressed seller" },
+  { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1650, city: "Ogden",             state: "UT", situation: "Tired landlord" },
   { propertyType: "Single-family", beds: 3, baths: 2,   sqft: 1500, city: "Twin Falls",        state: "ID", situation: "Seller relocating out of state" },
+  { propertyType: "Single-family", beds: 2, baths: 1,   sqft: 1250, city: "Sandpoint",         state: "ID", situation: "Distressed seller" },
   { propertyType: "Single-family", beds: 3, baths: 2.5, sqft: 1950, city: "Kalispell",         state: "MT", situation: "Probate" },
+  { propertyType: "Single-family", beds: 4, baths: 3,   sqft: 2400, city: "Bigfork",           state: "MT", situation: "Divorce" },
 ];
 
 function RecentOffers() {
