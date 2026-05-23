@@ -30,6 +30,8 @@ export type Project = {
   offer_count: number | null;
 };
 
+const STORAGE = "https://scnpwjyjbcmbjzwgivlu.supabase.co/storage/v1/object/public/project-photos";
+
 export const PROJECTS: Project[] = [
   {
     slug: "bigfork-mt-highway-83",
@@ -42,14 +44,14 @@ export const PROJECTS: Project[] = [
     scope_tags: ["kitchen", "bathrooms", "flooring", "exterior", "landscaping", "paint"],
     before_photo_urls: [],
     after_photo_urls: [
-      "/projects/bigfork-mt/after-01.jpg",
-      "/projects/bigfork-mt/after-02.jpg",
-      "/projects/bigfork-mt/after-03.jpg",
-      "/projects/bigfork-mt/after-04.jpg",
-      "/projects/bigfork-mt/after-05.jpg",
-      "/projects/bigfork-mt/after-06.jpg",
-      "/projects/bigfork-mt/after-07.jpg",
-      "/projects/bigfork-mt/after-08.jpg",
+      `${STORAGE}/bigfork-mt/after-01.jpg`,
+      `${STORAGE}/bigfork-mt/after-02.jpg`,
+      `${STORAGE}/bigfork-mt/after-03.jpg`,
+      `${STORAGE}/bigfork-mt/after-04.jpg`,
+      `${STORAGE}/bigfork-mt/after-05.jpg`,
+      `${STORAGE}/bigfork-mt/after-06.jpg`,
+      `${STORAGE}/bigfork-mt/after-07.jpg`,
+      `${STORAGE}/bigfork-mt/after-08.jpg`,
     ],
     during_photo_urls: [],
     arv: 485000,
@@ -127,8 +129,20 @@ export const PROJECTS: Project[] = [
     year_completed: 2024,
     scope_summary: "Full rehab of a Rexburg single-family — complete kitchen remodel, new baths, HVAC replacement, flooring, and exterior siding.",
     scope_tags: ["kitchen", "bathrooms", "HVAC", "flooring", "siding", "windows"],
-    before_photo_urls: [],
-    after_photo_urls: [],
+    before_photo_urls: [
+      `${STORAGE}/rexburg-id/before-01.jpg`,
+      `${STORAGE}/rexburg-id/before-02.jpg`,
+      `${STORAGE}/rexburg-id/before-03.jpg`,
+      `${STORAGE}/rexburg-id/before-04.jpg`,
+      `${STORAGE}/rexburg-id/before-05.jpg`,
+    ],
+    after_photo_urls: [
+      `${STORAGE}/rexburg-id/after-01.jpg`,
+      `${STORAGE}/rexburg-id/after-02.jpg`,
+      `${STORAGE}/rexburg-id/after-03.jpg`,
+      `${STORAGE}/rexburg-id/after-04.jpg`,
+      `${STORAGE}/rexburg-id/after-05.jpg`,
+    ],
     during_photo_urls: [],
     arv: 295000,
     rehab_cost_range: "$70K–$90K",
@@ -206,7 +220,15 @@ export const PROJECTS: Project[] = [
     scope_summary: "Whitefish showcase renovation — premium finishes, full kitchen and bath redesign, refinished wood floors, updated exterior in the sought-after Moose Trail neighborhood.",
     scope_tags: ["kitchen", "bathrooms", "flooring", "exterior", "landscaping", "premium finishes"],
     before_photo_urls: [],
-    after_photo_urls: [],
+    after_photo_urls: [
+      `${STORAGE}/whitefish-mt/after-01.jpg`,
+      `${STORAGE}/whitefish-mt/after-02.jpg`,
+      `${STORAGE}/whitefish-mt/after-03.jpg`,
+      `${STORAGE}/whitefish-mt/after-04.jpg`,
+      `${STORAGE}/whitefish-mt/after-05.jpg`,
+      `${STORAGE}/whitefish-mt/after-06.jpg`,
+      `${STORAGE}/whitefish-mt/after-07.jpg`,
+    ],
     during_photo_urls: [],
     arv: 720000,
     rehab_cost_range: "$120K–$160K",
