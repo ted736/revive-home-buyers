@@ -19,6 +19,20 @@
 
 const GA4_ID = import.meta.env.VITE_GA4_ID as string | undefined;
 const META_PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID as string | undefined;
+// Google Ads conversion tracking. AW-ID + label come from the conversion tag
+// email Google emits when you create a Conversion Action in the Ads UI.
+// Lead-form conversion is the only one wired in this first ship; downstream
+// conversions (Qualified Call, Contract Signed, Closed Deal) need their own
+// labels + values via the OCT API once the CRM stage-transition wiring lands.
+const GADS_ID = import.meta.env.VITE_GOOGLE_ADS_ID as string | undefined;
+const GADS_CONVERSION_LEAD = import.meta.env.VITE_GADS_CONVERSION_LEAD as string | undefined;
+
+// GCLID capture: keep the click ID around for 90 days so any downstream
+// conversion (the lead-form ping below, plus future OCT pushes from the
+// CRM) can be attributed back to the original ad click. Survives full-page
+// reloads via localStorage.
+const GCLID_KEY = "rb_gclid";
+const GCLID_TTL_MS = 90 * 24 * 60 * 60 * 1000;
 
 declare global {
   interface Window {
@@ -29,23 +43,63 @@ declare global {
   }
 }
 
-// ─── GA4 Init ────────────────────────────────────────────────────────────────
+// ─── GA4 + Google Ads Init ───────────────────────────────────────────────────
+// One gtag.js loader serves BOTH GA4 + Google Ads — Google's gtag library
+// multiplexes by ID. We use the GA4 measurement ID as the loader src (since
+// it's almost always set), then issue `config` calls for each product.
 export function initGA4() {
-  if (!GA4_ID || typeof document === "undefined") return;
+  if (typeof document === "undefined") return;
+  if (!GA4_ID && !GADS_ID) return;
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = function (...args: unknown[]) {
     window.dataLayer.push(args);
   };
   window.gtag("js", new Date());
-  window.gtag("config", GA4_ID, {
-    send_page_view: true,
-  });
+  if (GA4_ID) window.gtag("config", GA4_ID, { send_page_view: true });
+  if (GADS_ID) window.gtag("config", GADS_ID);
 
+  const loaderId = GA4_ID || GADS_ID;
   const script = document.createElement("script");
   script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${loaderId}`;
   document.head.appendChild(script);
+
+  // GCLID capture from the URL (Google appends ?gclid=... on ad clicks)
+  captureGclidFromUrl();
+}
+
+// ─── GCLID capture + retrieval ──────────────────────────────────────────────
+function captureGclidFromUrl() {
+  if (typeof window === "undefined") return;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const gclid = params.get("gclid");
+    if (gclid) {
+      window.localStorage.setItem(
+        GCLID_KEY,
+        JSON.stringify({ gclid, ts: Date.now() })
+      );
+    }
+  } catch {
+    // localStorage disabled (private mode / SSR) — no-op
+  }
+}
+
+export function getStoredGclid(): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(GCLID_KEY);
+    if (!raw) return null;
+    const { gclid, ts } = JSON.parse(raw) as { gclid: string; ts: number };
+    if (Date.now() - ts > GCLID_TTL_MS) {
+      window.localStorage.removeItem(GCLID_KEY);
+      return null;
+    }
+    return gclid || null;
+  } catch {
+    return null;
+  }
 }
 
 // ─── Meta Pixel Init ──────────────────────────────────────────────────────────
@@ -120,6 +174,17 @@ export function trackFormSubmitted(citySlug?: string, source?: string) {
   ga4Event("form_submitted", { city_slug: citySlug, source });
   ga4Event("generate_lead", { city_slug: citySlug, source });
   metaEvent("Lead", { content_name: citySlug, content_category: source });
+
+  // Google Ads conversion ping — fires on every form-submit. Smart Bidding
+  // trains on this. Value=1.0 USD is a placeholder until per-stage values
+  // (qualified call / contract / closed) land via the OCT backend.
+  if (GADS_ID && GADS_CONVERSION_LEAD && window.gtag) {
+    window.gtag("event", "conversion", {
+      send_to: `${GADS_ID}/${GADS_CONVERSION_LEAD}`,
+      value: 1.0,
+      currency: "USD",
+    });
+  }
 }
 
 export function trackPhoneClicked(location?: string) {
