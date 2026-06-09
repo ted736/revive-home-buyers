@@ -395,26 +395,10 @@ function ShareSection({ city }: { city: CityData }) {
               {copied ? "Copied!" : "Copy link"}
             </button>
             <a
-              href={`https://wa.me/?text=${encodedMsg}%20${encodedUrl}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 h-10 bg-[#25D366] text-white text-xs font-semibold tracking-widest uppercase hover:bg-[#1aab52] transition-colors duration-150"
-            >
-              WhatsApp
-            </a>
-            <a
               href={`sms:?body=${encodedMsg}%20${encodedUrl}`}
               className="inline-flex items-center gap-2 px-5 h-10 bg-[#3D4145] text-white text-xs font-semibold tracking-widest uppercase hover:bg-[#2a2d31] transition-colors duration-150"
             >
               SMS
-            </a>
-            <a
-              href={`https://x.com/intent/tweet?text=${encodedMsg}&url=${encodedUrl}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 h-10 border border-[#3D4145]/20 text-[#3D4145]/70 text-xs font-semibold tracking-widest uppercase hover:border-[#3D4145] hover:text-[#3D4145] transition-colors duration-150"
-            >
-              𝕏 / Twitter
             </a>
           </div>
         </div>
