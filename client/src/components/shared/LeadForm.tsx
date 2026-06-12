@@ -270,7 +270,7 @@ export default function LeadForm({ dark = false, simplified = false }: { dark?: 
             {s < 3 && <div className={`w-6 h-px ${dark ? "bg-white/20" : "bg-[#3D4145]/15"}`} />}
           </div>
         ))}
-      </div>}
+      </div>
       <form onSubmit={handleSubmit}>
         {/* Step 1: Property Address */}
         {step === 1 && (
