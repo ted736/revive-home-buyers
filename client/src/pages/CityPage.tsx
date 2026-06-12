@@ -180,7 +180,7 @@ function CityHero({ city }: { city: CityData }) {
             <span className="text-white font-medium">7 days</span>.
           </p>
           <div id="hero-form">
-            <LeadForm dark />
+            <LeadForm dark simplified={useSimplifiedCro} />
           </div>
           <div className="flex items-center gap-4 mt-5 text-white/55 text-xs tracking-wide">
             <span>No obligation · No fees · 100% confidential</span>
@@ -341,7 +341,7 @@ function CityBody({ city }: { city: CityData }) {
                 <br />
                 <em style={{ fontStyle: "italic", fontWeight: 300 }}>in 24 hours.</em>
               </h3>
-              <LeadForm />
+              <LeadForm simplified={useSimplifiedCro} />
             </div>
           </div>
         </div>
@@ -471,6 +471,9 @@ export default function CityPage({ slug: slugProp }: { slug?: string } = {}) {
   const params = useParams<{ city: string }>();
   const slug = slugProp ?? params.city ?? "salt-lake-city-utah";
   const city = getCityBySlug(slug) ?? fallbackCityData(slug);
+  // CRO TEST FLAG: enable simplified 1-step form + sticky mobile CALL bar on Orem only.
+  // If conversion lifts, roll out to all cities by removing this slug check.
+  const useSimplifiedCro = slug === "orem-utah";
   const canonical = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
   const ogImage = `${BASE_URL}/og/${city.slug}.png`;
 
@@ -492,6 +495,17 @@ export default function CityPage({ slug: slugProp }: { slug?: string } = {}) {
       <ShareSection city={city} />
       <CityCTA city={city} />
       <Footer />
+      {/* CRO TEST: Sticky mobile CALL-NOW bar (Orem only — A/B variant) */}
+      {useSimplifiedCro && (
+        <a
+          href="tel:8017832011"
+          onClick={() => trackPhoneClicked("sticky_mobile")}
+          className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#2D6A3F] text-white font-semibold text-base py-4 text-center shadow-[0_-4px_12px_rgba(0,0,0,0.25)] active:bg-[#1F4D2E] flex items-center justify-center gap-2"
+          style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom))' }}
+        >
+          <Phone className="w-5 h-5" /> Call Now — (801) 783-2011
+        </a>
+      )}
     </div>
   );
 }

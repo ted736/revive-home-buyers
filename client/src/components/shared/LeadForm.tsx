@@ -55,7 +55,7 @@ function TrustBadges({ dark }: { dark: boolean }) {
   );
 }
 
-export default function LeadForm({ dark = false }: { dark?: boolean }) {
+export default function LeadForm({ dark = false, simplified = false }: { dark?: boolean; simplified?: boolean }) {
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -145,6 +145,17 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
       setStep(2);
     } else if (step === 2 && validateStep2()) {
       trackContactStepCompleted();
+      if (simplified) {
+        // Simplified flow: skip situation/timeline, fill defaults, submit directly
+        setData((d) => ({ ...d, situation: "other", timeline: "flexible" }));
+        // Trigger submit on the form element directly
+        const form = document.querySelector('form') as HTMLFormElement | null;
+        if (form) {
+          // Defer one tick so state update lands first
+          setTimeout(() => form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true })), 0);
+        }
+        return;
+      }
       setStep(3);
     }
   };
@@ -225,7 +236,7 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
   return (
     <div className="w-full max-w-xl">
       {/* Step indicator */}
-      <div className="flex items-center gap-2 mb-6">
+      <div className={`flex items-center gap-2 mb-6 ${simplified ? 'hidden' : ''}`}>
         {[1, 2, 3].map((s) => (
           <div key={s} className="flex items-center gap-2">
             <div
@@ -259,8 +270,7 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
             {s < 3 && <div className={`w-6 h-px ${dark ? "bg-white/20" : "bg-[#3D4145]/15"}`} />}
           </div>
         ))}
-      </div>
-
+      </div>}
       <form onSubmit={handleSubmit}>
         {/* Step 1: Property Address */}
         {step === 1 && (
@@ -337,11 +347,11 @@ export default function LeadForm({ dark = false }: { dark?: boolean }) {
                 onClick={handleNext}
                 className="flex items-center gap-2 h-12 px-8 bg-[#2D6A3F] text-white text-sm font-semibold tracking-widest uppercase hover:bg-[#1F4D2E] active:scale-[0.97] transition-all duration-150"
               >
-                Next <ArrowRight className="w-4 h-4" />
+                {simplified ? "Get My Cash Offer" : "Next"} <ArrowRight className="w-4 h-4" />
               </button>
             </div>
             <p className={urgencyClass}>
-              We'll only call you once — no spam, no robocalls.
+              {simplified ? "Tap below to send your address — we'll call within 24 hours." : "We'll only call you once — no spam, no robocalls."}
             </p>
           </div>
         )}
