@@ -370,7 +370,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["salt-lake-city-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Magna, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Magna, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Magna%2C_Utah_%282018%29.jpg/1920px-Magna%2C_Utah_%282018%29.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/2019_Bingham_Canyon_Mine_04.jpg/1920px-2019_Bingham_Canyon_Mine_04.jpg"
   },
   {
     slug: "lehi-utah",
@@ -396,7 +396,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["provo-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Lehi, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Lehi, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Lehi_Tabernacle.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mount_Timpanogos_-_01-07-08.jpg/1920px-Mount_Timpanogos_-_01-07-08.jpg"
   },
   {
     slug: "layton-utah",
@@ -422,7 +422,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["ogden-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Layton, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Layton, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kays_Crossing_with_Train_Evening.jpg/1920px-Kays_Crossing_with_Train_Evening.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/05/Antelope_Island_Cove_2005.jpg"
   },
   {
     slug: "west-valley-city-utah",
@@ -448,7 +448,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["salt-lake-city-utah", "magna-utah"],
     metaTitle: "Sell My House Fast West Valley City, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in West Valley City, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bryce_Canyon_amphitheater_hoodoos.JPG/1920px-Bryce_Canyon_amphitheater_hoodoos.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/The_Oquirrh_Mountains_%2879047224%29.jpg/1920px-The_Oquirrh_Mountains_%2879047224%29.jpg"
   },
   {
     slug: "sandy-utah",
@@ -474,7 +474,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["salt-lake-city-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Sandy, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Sandy, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sandy%2C_Utah_city_hall.jpg/1920px-Sandy%2C_Utah_city_hall.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Lone_Peak_Cirque_%28Utah%29.jpg"
   },
   {
     slug: "american-fork-utah",
@@ -500,7 +500,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["lehi-utah", "provo-utah"],
     metaTitle: "Sell My House Fast American Fork, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in American Fork, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/American_Fork_Utah_City_Hall.jpeg/1920px-American_Fork_Utah_City_Hall.jpeg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mount_Timpanogos_-_01-07-08.jpg/1920px-Mount_Timpanogos_-_01-07-08.jpg"
   },
   {
     slug: "roy-utah",
@@ -526,7 +526,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["ogden-utah", "layton-utah"],
     metaTitle: "Sell My House Fast Roy, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Roy, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Roy_Utah_Municipal_Center.jpeg/1920px-Roy_Utah_Municipal_Center.jpeg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG/1920px-Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG"
   },
   {
     slug: "saratoga-springs-utah",
@@ -552,7 +552,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["lehi-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Saratoga Springs, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Saratoga Springs, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Saratoga_Springs_signs_on_SR-68_in_Saratoga_Springs%2C_Utah%2C_Oct_16.jpg/1920px-Saratoga_Springs_signs_on_SR-68_in_Saratoga_Springs%2C_Utah%2C_Oct_16.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Utahlake_oli_2017171_lrg.jpeg/1920px-Utahlake_oli_2017171_lrg.jpeg"
   },
   {
     slug: "bountiful-utah",
@@ -578,7 +578,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["salt-lake-city-utah", "layton-utah"],
     metaTitle: "Sell My House Fast Bountiful, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Bountiful, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PXL_20250914_215112073~3.jpg/1920px-PXL_20250914_215112073~3.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG/1920px-Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG"
   },
 
 // ─── ID EXPANSION ────────────────────────────────────────────────────
@@ -606,7 +606,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["idaho-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Blackfoot, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Blackfoot, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/16/Blackfoot%2C_Idaho.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Snake_River_view_near_Twin_Falls%2C_Idaho.jpg/1920px-Snake_River_view_near_Twin_Falls%2C_Idaho.jpg"
   },
   {
     slug: "chubbuck-idaho",
@@ -632,7 +632,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["pocatello-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Chubbuck, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Chubbuck, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Chubbuck%2C_Idaho_entrance.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
     slug: "ammon-idaho",
@@ -658,7 +658,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["idaho-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Ammon, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Ammon, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/QwL7Af1Q.jpg/1920px-QwL7Af1Q.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
     slug: "rigby-idaho",
@@ -684,7 +684,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["idaho-falls-idaho", "rexburg-idaho"],
     metaTitle: "Sell My House Fast Rigby, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Rigby, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
     slug: "sugar-city-idaho",
@@ -710,7 +710,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Sugar City, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Sugar City, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sugar_City%2C_Idaho.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
     slug: "st-anthony-idaho",
@@ -736,7 +736,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast St. Anthony, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in St. Anthony, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fremont_County_Courthouse%2C_St._Anthony.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Henry%27s_Fork_River_from_Last_Chance%2C_Island_Park%2C_Idaho.jpg/1920px-Henry%27s_Fork_River_from_Last_Chance%2C_Island_Park%2C_Idaho.jpg"
   },
   {
     slug: "island-park-idaho",
@@ -762,7 +762,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Island Park, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Island Park, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Us-id-fremont-henrys-lake-aerial.jpg"
   },
   {
     slug: "preston-idaho",
@@ -788,7 +788,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["pocatello-idaho", "logan-utah"],
     metaTitle: "Sell My House Fast Preston, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Preston, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Franklin_County_Courthouse%2C_Preston%2C_Idaho.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/0118_AspensNearWhiteCanyon.jpg/1920px-0118_AspensNearWhiteCanyon.jpg"
   },
   {
     slug: "malad-city-idaho",
@@ -814,7 +814,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["pocatello-idaho", "logan-utah"],
     metaTitle: "Sell My House Fast Malad City, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Malad City, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Malad_Idaho_City_Hall.jpeg/1920px-Malad_Idaho_City_Hall.jpeg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
     slug: "soda-springs-idaho",
@@ -840,7 +840,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["pocatello-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Soda Springs, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Soda Springs, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Caribou_County_Courthouse%2C_Soda_Springs%2C_Idaho.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
     slug: "montpelier-idaho",
@@ -866,7 +866,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["pocatello-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Montpelier, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Montpelier, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Montpelier_Idaha_072417.jpg/1920px-Montpelier_Idaha_072417.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
     slug: "driggs-idaho",
@@ -892,7 +892,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Driggs, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Driggs, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
     slug: "victor-idaho",
@@ -918,7 +918,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Victor, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Victor, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/05/Victor_Idaho_Post_Office.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
     slug: "salmon-idaho",
@@ -944,7 +944,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Salmon, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Salmon, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Salmon_ID_-_aerial.jpg/1920px-Salmon_ID_-_aerial.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Salmon_River.JPG/1920px-Salmon_River.JPG"
   },
   {
     slug: "buhl-idaho",
@@ -970,7 +970,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Buhl, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Buhl, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Buhl_Post_Office_-_Buhl_Idaho.jpg/1920px-Buhl_Post_Office_-_Buhl_Idaho.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Thousand_Springs_2016-10-13_2361.jpg/1920px-Thousand_Springs_2016-10-13_2361.jpg"
   },
   {
     slug: "filer-idaho",
@@ -1022,7 +1022,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Jerome, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Jerome, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/05/Jerome_county_courthouse_2009.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Shoshone_Falls%2C_Idaho.jpg/1920px-Shoshone_Falls%2C_Idaho.jpg"
   },
   {
     slug: "wendell-idaho",
@@ -1048,7 +1048,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Wendell, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Wendell, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Snake_River_view_near_Twin_Falls%2C_Idaho.jpg/1920px-Snake_River_view_near_Twin_Falls%2C_Idaho.jpg"
   },
   {
     slug: "gooding-idaho",
@@ -1074,7 +1074,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Gooding, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Gooding, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gooding%2C_Idaho_2011.07.09.jpg/1920px-Gooding%2C_Idaho_2011.07.09.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Outside_of_Ketchum%2C_Idaho.jpg/1920px-Outside_of_Ketchum%2C_Idaho.jpg"
   },
   {
     slug: "heyburn-idaho",
@@ -1100,7 +1100,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["burley-idaho", "twin-falls-idaho"],
     metaTitle: "Sell My House Fast Heyburn, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Heyburn, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Heyburn_Idaho_Looking_South.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
     slug: "rupert-idaho",
@@ -1126,7 +1126,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["burley-idaho", "twin-falls-idaho"],
     metaTitle: "Sell My House Fast Rupert, ID | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Rupert, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/89/Wilsontheatrerupertidaho.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8e/MinidokaDam2005USBOR.jpg"
   },
 
 // ─── MT EXPANSION ────────────────────────────────────────────────────
@@ -1154,7 +1154,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Kalispell, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Kalispell, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Kalispell_Main_Street.jpg/1920px-Kalispell_Main_Street.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
   },
   {
     slug: "whitefish-montana",
@@ -1180,7 +1180,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Whitefish, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Whitefish, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Downtown-whitefish-2006.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/92/WhitefishMountainResortAerialView.jpg"
   },
   {
     slug: "bigfork-montana",
@@ -1206,7 +1206,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Bigfork, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Bigfork, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bigfork%2C_Montana.jpg/1920px-Bigfork%2C_Montana.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flathead_Lake.jpeg"
   },
   {
     slug: "columbia-falls-montana",
@@ -1232,7 +1232,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Columbia Falls, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Columbia Falls, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Flathead_River.jpg/1920px-Flathead_River.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
   },
   {
     slug: "polson-montana",
@@ -1258,7 +1258,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Polson, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Polson, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/10/Polson2.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flathead_Lake.jpeg"
   },
   {
     slug: "bozeman-montana",
@@ -1284,7 +1284,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Bozeman, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Bozeman, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Main_St%2C_Bozeman%2C_Montana_%281%29.JPG/1920px-Main_St%2C_Bozeman%2C_Montana_%281%29.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BelgradeBridgers.JPG/1920px-BelgradeBridgers.JPG"
   },
   {
     slug: "belgrade-montana",
@@ -1310,7 +1310,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Belgrade, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Belgrade, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BelgradeBridgers.JPG/1920px-BelgradeBridgers.JPG"
   },
   {
     slug: "livingston-montana",
@@ -1336,7 +1336,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Livingston, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Livingston, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Livingston%2C_Montana.jpg/1920px-Livingston%2C_Montana.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c9/YellowstonefallJUN05.JPG"
   },
   {
     slug: "butte-montana",
@@ -1362,7 +1362,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Butte, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Butte, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/31/Butte_uptown.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Berkeley_Pit_Butte%2C_Montana.jpg"
   },
   {
     slug: "helena-montana",
@@ -1388,7 +1388,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Helena, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Helena, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Montana_State_Capitol_by_T._Elizabeth.jpg/1920px-Montana_State_Capitol_by_T._Elizabeth.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/MK01799_Montana_State_Capitol.jpg/1920px-MK01799_Montana_State_Capitol.jpg"
   },
   {
     slug: "hamilton-montana",
@@ -1414,7 +1414,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Hamilton, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Hamilton, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hamilton_MT_Main_Street.jpg/1920px-Hamilton_MT_Main_Street.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d7/BitterrootMtnsMT.jpg"
   },
   {
     slug: "three-forks-montana",
@@ -1440,7 +1440,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Three Forks, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Three Forks, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MadisionJeffersonConfluence.jpg/1920px-MadisionJeffersonConfluence.jpg"
   },
   {
     slug: "big-sky-montana",
@@ -1466,7 +1466,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Big Sky, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Big Sky, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Lone_Mountain_Sunset_%2832727260230%29.jpg/1920px-Lone_Mountain_Sunset_%2832727260230%29.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
   },
   {
     slug: "west-yellowstone-montana",
@@ -1492,7 +1492,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast West Yellowstone, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in West Yellowstone, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Westyellowstone.jpg/1920px-Westyellowstone.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Yellowstone_National_Park_%28WY%2C_USA%29%2C_Old_Faithful_Geyser_--_2022_--_2599.jpg/1920px-Yellowstone_National_Park_%28WY%2C_USA%29%2C_Old_Faithful_Geyser_--_2022_--_2599.jpg"
   },
   {
     slug: "lakeside-montana",
@@ -1518,7 +1518,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Lakeside, MT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Lakeside, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flathead_Lake.jpeg"
   },
   {
     slug: "orem-utah",
@@ -1544,7 +1544,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["provo-utah", "lehi-utah"],
     metaTitle: "Sell My House Fast Orem, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Orem, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Orem_Utah_City_Center.jpeg/1920px-Orem_Utah_City_Center.jpeg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mount_Timpanogos_-_01-07-08.jpg/1920px-Mount_Timpanogos_-_01-07-08.jpg"
   },
   {
     slug: "vineyard-utah",
@@ -1570,7 +1570,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["lehi-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Vineyard, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Vineyard, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vineyard_Utah_Town_Office.jpeg/1920px-Vineyard_Utah_Town_Office.jpeg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Utahlake_oli_2017171_lrg.jpeg/1920px-Utahlake_oli_2017171_lrg.jpeg"
   },
   {
     slug: "midvale-utah",
@@ -1596,7 +1596,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["salt-lake-city-utah", "sandy-utah"],
     metaTitle: "Sell My House Fast Midvale, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Midvale, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bryce_Canyon_amphitheater_hoodoos.JPG/1920px-Bryce_Canyon_amphitheater_hoodoos.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG/1920px-Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG"
   },
   {
     slug: "tooele-utah",
@@ -1622,7 +1622,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["magna-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Tooele, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Tooele, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Tooele_Utah_City_Hall.jpeg/1920px-Tooele_Utah_City_Hall.jpeg"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Deseret_Peak.jpg/1920px-Deseret_Peak.jpg"
   },
   {
     slug: "price-utah",
@@ -1648,7 +1648,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["provo-utah"],
     metaTitle: "Sell My House Fast Price, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in Price, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bryce_Canyon_amphitheater_hoodoos.JPG/1920px-Bryce_Canyon_amphitheater_hoodoos.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Book_Cliffs_above_Helper%2C_Utah.jpg/1920px-Book_Cliffs_above_Helper%2C_Utah.jpg"
   },
   {
     slug: "east-carbon-utah",
@@ -1674,7 +1674,7 @@ export const CITIES: CityData[] = [
     nearbyCities: ["provo-utah"],
     metaTitle: "Sell My House Fast East Carbon, UT | Cash in 24 Hours | Revive Home Buyers",
     metaDescription: "We buy houses in East Carbon, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bryce_Canyon_amphitheater_hoodoos.JPG/1920px-Bryce_Canyon_amphitheater_hoodoos.JPG"
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Book_Cliffs_above_Helper%2C_Utah.jpg/1920px-Book_Cliffs_above_Helper%2C_Utah.jpg"
   },
 ,
 ,
