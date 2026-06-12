@@ -28,6 +28,10 @@ import { trackPhoneClicked } from "@/lib/analytics";
 import { useReveal } from "@/hooks/useReveal";
 import { useSeo } from "@/hooks/useSeo";
 
+// CRO global rollout: simplified 1-step form + sticky mobile CALL bar on all cities.
+// Module-scope so CityHero/CityBody/CityPage (sibling functions) can all read it.
+const useSimplifiedCro = true;
+
 const BASE_URL = "https://revivebuyers.com";
 
 const HERO_IMG =
@@ -471,9 +475,6 @@ export default function CityPage({ slug: slugProp }: { slug?: string } = {}) {
   const params = useParams<{ city: string }>();
   const slug = slugProp ?? params.city ?? "salt-lake-city-utah";
   const city = getCityBySlug(slug) ?? fallbackCityData(slug);
-  // CRO TEST FLAG: enable simplified 1-step form + sticky mobile CALL bar on Orem only.
-  // If conversion lifts, roll out to all cities by removing this slug check.
-  const useSimplifiedCro = true; // CRO global rollout authorized by Ted after Orem test approval
   const canonical = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
   const ogImage = `${BASE_URL}/og/${city.slug}.png`;
 
