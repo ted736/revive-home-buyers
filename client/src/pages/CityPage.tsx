@@ -473,7 +473,7 @@ export default function CityPage({ slug: slugProp }: { slug?: string } = {}) {
   const city = getCityBySlug(slug) ?? fallbackCityData(slug);
   // CRO TEST FLAG: enable simplified 1-step form + sticky mobile CALL bar on Orem only.
   // If conversion lifts, roll out to all cities by removing this slug check.
-  const useSimplifiedCro = slug === "orem-utah";
+  const useSimplifiedCro = true; // CRO global rollout authorized by Ted after Orem test approval
   const canonical = `${BASE_URL}/sell-my-house-fast-${city.slug}`;
   const ogImage = `${BASE_URL}/og/${city.slug}.png`;
 
