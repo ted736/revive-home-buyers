@@ -7,6 +7,7 @@
 import { useState } from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { BUYERS_EDGE_FN, SUPABASE_ANON_KEY } from "@/lib/supabase";
+import { getStoredGclid, getStoredUtms } from "@/lib/analytics";
 
 export default function QuickCaptureForm() {
   const [firstName, setFirstName] = useState("");
@@ -25,6 +26,15 @@ export default function QuickCaptureForm() {
     }
     setLoading(true);
     setError("");
+    // ─── Attribution payload (added 2026-06-17) ──────────────────────────────
+    // Mirror the seller-side LeadForm pattern: pull GCLID + UTM params captured
+    // at page load (analytics.ts persists them in localStorage on URL hit,
+    // 90-day TTL) and include them in the POST. Without this the CRM has no
+    // way to attribute a buyer signup back to the campaign/city/keyword that
+    // produced it — Google Ads dashboard would still show conversions, but
+    // per-city ROI inside crm/public.buyers would be invisible.
+    const gclid = getStoredGclid();
+    const utm = getStoredUtms();
     try {
       const res = await fetch(BUYERS_EDGE_FN, {
         method: "POST",
@@ -38,6 +48,14 @@ export default function QuickCaptureForm() {
           phone: phone.trim(),
           tier: "interested",
           source: "homepage quick capture",
+          gclid: gclid ?? undefined,
+          utm_source: utm.utm_source,
+          utm_medium: utm.utm_medium,
+          utm_campaign: utm.utm_campaign,
+          utm_content: utm.utm_content,
+          utm_term: utm.utm_term,
+          landing_page: typeof window !== "undefined" ? window.location.pathname : undefined,
+          referrer: typeof document !== "undefined" ? document.referrer || undefined : undefined,
         }),
       });
       const json = await res.json();
