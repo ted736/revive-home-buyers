@@ -72,7 +72,12 @@ export function initGA4() {
   };
   window.gtag("js", new Date());
   if (GA4_ID) window.gtag("config", GA4_ID, { send_page_view: true });
-  if (GADS_ID) window.gtag("config", GADS_ID);
+  if (GADS_ID) {
+    window.gtag("config", GADS_ID, { send_page_view: true });
+    // Explicit remarketing page_view so the Google Ads audience grows
+    // independent of the GA4 <-> Ads link being healthy.
+    window.gtag("event", "page_view", { send_to: GADS_ID });
+  }
 
   const loaderId = GA4_ID || GADS_ID;
   const script = document.createElement("script");

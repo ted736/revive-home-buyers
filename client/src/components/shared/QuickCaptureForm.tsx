@@ -7,7 +7,7 @@
 import { useState } from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { BUYERS_EDGE_FN, SUPABASE_ANON_KEY } from "@/lib/supabase";
-import { getStoredGclid, getStoredUtms } from "@/lib/analytics";
+import { getStoredGclid, getStoredUtms, trackFormSubmitted } from "@/lib/analytics";
 
 export default function QuickCaptureForm() {
   const [firstName, setFirstName] = useState("");
@@ -64,6 +64,8 @@ export default function QuickCaptureForm() {
         return;
       }
       setDone(true);
+      // Fire Google Ads conversion + GA4 lead event for buyer-side homepage submits.
+      trackFormSubmitted(undefined, "quick_capture_buyer");
     } catch {
       setError("Network error — try again.");
     } finally {
