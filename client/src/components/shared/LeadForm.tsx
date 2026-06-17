@@ -22,6 +22,8 @@ import {
   trackContactStepCompleted,
   trackSituationStepCompleted,
   trackFormSubmitted,
+  getStoredGclid,
+  getStoredUtms,
 } from "@/lib/analytics";
 
 type LeadData = {
@@ -171,6 +173,14 @@ export default function LeadForm({ dark = false, simplified = false }: { dark?: 
     }
     trackSituationStepCompleted(data.situation);
     setLoading(true);
+    // ─── Attribution payload (added 2026-06-17) ──────────────────────────────
+    // Pull GCLID + UTM params captured at page load (analytics.ts persists
+    // them in localStorage on URL hit, 90-day TTL). Without this the CRM has
+    // no way to attribute a lead back to the campaign/city/keyword that
+    // produced it — Google Ads dashboard would still show conversions, but
+    // per-city ROI inside crm/public.leads would be invisible.
+    const gclid = getStoredGclid();
+    const utm = getStoredUtms();
     try {
       await fetch(`${SUPABASE_URL}/functions/v1/leads-create`, {
         method: "POST",
@@ -181,10 +191,17 @@ export default function LeadForm({ dark = false, simplified = false }: { dark?: 
         body: JSON.stringify({
           name: data.name,
           phone: data.phone,
-          email: data.email || undefined,
           address: data.address,
           situation: data.situation,
           timeline: data.timeline,
+          gclid: gclid ?? undefined,
+          utm_source: utm.utm_source,
+          utm_medium: utm.utm_medium,
+          utm_campaign: utm.utm_campaign,
+          utm_content: utm.utm_content,
+          utm_term: utm.utm_term,
+          landing_page: typeof window !== "undefined" ? window.location.pathname : undefined,
+          referrer: typeof document !== "undefined" ? document.referrer || undefined : undefined,
         }),
       });
       trackFormSubmitted(undefined, "lead_form");

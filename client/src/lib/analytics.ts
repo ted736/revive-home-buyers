@@ -34,6 +34,21 @@ const GADS_CONVERSION_LEAD = import.meta.env.VITE_GADS_CONVERSION_LEAD as string
 const GCLID_KEY = "rb_gclid";
 const GCLID_TTL_MS = 90 * 24 * 60 * 60 * 1000;
 
+// UTM capture: mirror the GCLID pattern so per-campaign/city/keyword
+// attribution survives multi-page browsing before a lead submits the form.
+// Added 2026-06-17 alongside the 63-city Google Ads launch — without this,
+// CRM rows had no way to identify which campaign produced the lead.
+const UTM_KEY = "rb_utm";
+const UTM_TTL_MS = 90 * 24 * 60 * 60 * 1000;
+const UTM_FIELDS = [
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+] as const;
+export type UtmParams = Partial<Record<(typeof UTM_FIELDS)[number], string>>;
+
 declare global {
   interface Window {
     dataLayer: unknown[];
@@ -67,6 +82,9 @@ export function initGA4() {
 
   // GCLID capture from the URL (Google appends ?gclid=... on ad clicks)
   captureGclidFromUrl();
+  // UTM capture from the URL (Google Ads tracking_url_template appends
+  // utm_source, utm_medium, utm_campaign, utm_content, utm_term on click)
+  captureUtmFromUrl();
 }
 
 // ─── GCLID capture + retrieval ──────────────────────────────────────────────
@@ -99,6 +117,43 @@ export function getStoredGclid(): string | null {
     return gclid || null;
   } catch {
     return null;
+  }
+}
+
+// ─── UTM capture + retrieval ─────────────────────────────────────────────────
+function captureUtmFromUrl() {
+  if (typeof window === "undefined") return;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const utm: UtmParams = {};
+    for (const k of UTM_FIELDS) {
+      const v = params.get(k);
+      if (v) utm[k] = v;
+    }
+    if (Object.keys(utm).length > 0) {
+      window.localStorage.setItem(
+        UTM_KEY,
+        JSON.stringify({ utm, ts: Date.now() })
+      );
+    }
+  } catch {
+    // localStorage disabled (private mode / SSR) — no-op
+  }
+}
+
+export function getStoredUtms(): UtmParams {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = window.localStorage.getItem(UTM_KEY);
+    if (!raw) return {};
+    const { utm, ts } = JSON.parse(raw) as { utm: UtmParams; ts: number };
+    if (Date.now() - ts > UTM_TTL_MS) {
+      window.localStorage.removeItem(UTM_KEY);
+      return {};
+    }
+    return utm ?? {};
+  } catch {
+    return {};
   }
 }
 
