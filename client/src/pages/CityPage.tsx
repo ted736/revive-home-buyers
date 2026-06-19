@@ -67,7 +67,7 @@ function fallbackCityData(slug: string): CityData {
     headline: `Sell Your ${name} Home for Cash in 24 Hours`,
     subheadline: `A fair, no-obligation cash offer from a local team.`,
     body1: `Looking to sell your house fast in ${name}, ${stateInfo.full}? Revive Home Buyers purchases homes throughout ${name} for cash — as-is, on your timeline. No agents. No fees. No repairs.`,
-    body2: `Call us at (801) 783-2011 or fill out the form and we'll send a fair cash offer within 24 hours. If you take it, we can close in as few as 7 days through a local title company.`,
+    body2: `Call us at (385) 488-0220 or fill out the form and we'll send a fair cash offer within 24 hours. If you take it, we can close in as few as 7 days through a local title company.`,
     situations: [
       "Foreclosure or behind on payments",
       "Inherited property",
@@ -79,7 +79,7 @@ function fallbackCityData(slug: string): CityData {
     nearbyAreas: [],
     nearbyCities: [],
     metaTitle: `Sell My House Fast ${name}, ${stateInfo.abbr} | Cash in 24 Hours | Revive Home Buyers`,
-    metaDescription: `We buy houses in ${name}, ${stateInfo.full} for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (801) 783-2011.`,
+    metaDescription: `We buy houses in ${name}, ${stateInfo.full} for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (385) 488-0220.`,
   };
 }
 
@@ -95,7 +95,7 @@ function buildJsonLd(city: CityData) {
         "name": `Revive Home Buyers — ${city.name}`,
         "image": HERO_IMG,
         "url": pageUrl,
-        "telephone": "+1-801-783-2011",
+        "telephone": "+1-385-488-0220",
         "priceRange": "$$",
         "description": city.metaDescription,
         "address": {
@@ -190,12 +190,12 @@ function CityHero({ city }: { city: CityData }) {
             <span>No obligation · No fees · 100% confidential</span>
           </div>
           <a
-            href="tel:8017832011"
+            href="tel:3854880220"
             onClick={() => trackPhoneClicked("hero")}
             className="inline-flex items-center gap-2 mt-6 text-white/80 hover:text-white text-sm transition-colors"
           >
             <Phone className="w-4 h-4" />
-            <span className="font-medium">(801) 783-2011</span>
+            <span className="font-medium">(385) 488-0220</span>
           </a>
         </div>
       </div>
@@ -453,11 +453,12 @@ function CityCTA({ city }: { city: CityData }) {
               Get My Cash Offer <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="tel:8017832011"
+              href="tel:3854880220"
+              onClick={() => trackPhoneClicked("city_mid_cta")}
               className="inline-flex items-center gap-2 px-8 h-12 border border-white/30 text-white text-sm font-semibold tracking-widest uppercase hover:bg-white/10 transition-colors duration-150"
             >
               <Phone className="w-4 h-4" />
-              (801) 783-2011
+              (385) 488-0220
             </a>
           </div>
         </div>
@@ -499,12 +500,12 @@ export default function CityPage({ slug: slugProp }: { slug?: string } = {}) {
       {/* CRO TEST: Sticky mobile CALL-NOW bar (Orem only — A/B variant) */}
       {useSimplifiedCro && (
         <a
-          href="tel:8017832011"
+          href="tel:3854880220"
           onClick={() => trackPhoneClicked("sticky_mobile")}
           className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#2D6A3F] text-white font-semibold text-base py-4 text-center shadow-[0_-4px_12px_rgba(0,0,0,0.25)] active:bg-[#1F4D2E] flex items-center justify-center gap-2"
           style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom))' }}
         >
-          <Phone className="w-5 h-5" /> Call Now — (801) 783-2011
+          <Phone className="w-5 h-5" /> Call Now — (385) 488-0220
         </a>
       )}
     </div>

@@ -26,6 +26,7 @@ const META_PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID as string | undefined;
 // labels + values via the OCT API once the CRM stage-transition wiring lands.
 const GADS_ID = import.meta.env.VITE_GOOGLE_ADS_ID as string | undefined;
 const GADS_CONVERSION_LEAD = import.meta.env.VITE_GADS_CONVERSION_LEAD as string | undefined;
+const GADS_CONVERSION_PHONE_CLICK = import.meta.env.VITE_GADS_CONVERSION_PHONE_CLICK as string | undefined;
 
 // GCLID capture: keep the click ID around for 90 days so any downstream
 // conversion (the lead-form ping below, plus future OCT pushes from the
@@ -190,6 +191,14 @@ export function trackFormSubmitted(citySlug?: string, source?: string) {
 export function trackPhoneClicked(location?: string) {
   ga4Event("phone_clicked", { location });
   metaCustomEvent("phone_clicked", { location });
+
+  if (GADS_ID && GADS_CONVERSION_PHONE_CLICK && window.gtag) {
+    window.gtag("event", "conversion", {
+      send_to: `${GADS_ID}/${GADS_CONVERSION_PHONE_CLICK}`,
+      value: 1.0,
+      currency: "USD",
+    });
+  }
 }
 
 export function trackBlogReadComplete(slug?: string) {

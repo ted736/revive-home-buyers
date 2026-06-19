@@ -26,6 +26,7 @@ import LeadForm from "@/components/shared/LeadForm";
 import QuickCaptureForm from "@/components/shared/QuickCaptureForm";
 import { useReveal } from "@/hooks/useReveal";
 import { Link } from "wouter";
+import { trackPhoneClicked } from "@/lib/analytics";
 
 // ─── Asset URLs ──────────────────────────────────────────────────────────────
 const HERO_IMG =
@@ -652,10 +653,11 @@ function FinalCTA() {
           <p className="text-white/40 text-xs mt-5 tracking-wide">
             Or call us directly:{" "}
             <a
-              href="tel:8017832011"
+              href="tel:3854880220"
+              onClick={() => trackPhoneClicked("home_final_cta")}
               className="text-white/60 hover:text-white transition-colors underline underline-offset-2"
             >
-              (801) 783-2011
+              (385) 488-0220
             </a>
           </p>
         </div>

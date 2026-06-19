@@ -47,7 +47,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Salt Lake City Home for Cash in 24 Hours",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Selling a home along the Wasatch Front shouldn't take six months and 6% in commissions. Revive Home Buyers purchases houses anywhere in Salt Lake City — from the Avenues to Rose Park to Sugar House — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home on Sunday afternoon.",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days through a local Salt Lake title company. If you don't, that's fine too — no pressure, no follow-up emails for a year.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days through a local Salt Lake title company. If you don't, that's fine too — no pressure, no follow-up emails for a year.",
     homesPurchased: "60+ homes purchased across the Wasatch Front",
     situations: [
       "Foreclosure or behind on mortgage payments",
@@ -60,7 +60,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["West Valley City", "Sandy", "West Jordan", "Murray", "Taylorsville", "Millcreek", "Cottonwood Heights", "Holladay"],
     nearbyCities: ["provo-utah", "ogden-utah"],
     metaTitle: "Sell My House Fast Salt Lake City, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Salt Lake City, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Salt Lake City, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/YdWezwBzFqWgHTIe.jpg",
   },
   {
@@ -73,7 +73,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Provo Home Fast — Cash Offer, No Repairs",
     subheadline: "A straightforward cash sale, built for Utah Valley homeowners.",
     body1: "Provo's market moves fast, but a traditional sale still means weeks of showings, repairs, and waiting on a buyer's financing to clear. Revive Home Buyers cuts that down to days. We buy homes anywhere in Utah Valley — Provo, Orem, Springville, Spanish Fork — for cash, in any condition.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make a fair offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make a fair offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Active across Utah Valley since 2015",
     situations: [
       "Foreclosure or behind on payments",
@@ -86,7 +86,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Orem", "Springville", "Spanish Fork", "Payson", "Mapleton", "Lindon", "Pleasant Grove", "American Fork"],
     nearbyCities: ["salt-lake-city-utah", "st-george-utah"],
     metaTitle: "Sell My House Fast Provo, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Provo and Utah Valley for cash. As-is, no fees, close in 7 days. Get a fair cash offer in 24 hours. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Provo and Utah Valley for cash. As-is, no fees, close in 7 days. Get a fair cash offer in 24 hours. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/gZRtPKquwalLCXsZ.jpg",
   },
   {
@@ -99,7 +99,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Ogden for Cash — Close in 7 Days",
     subheadline: "Northern Utah's straightforward way to sell a home, fast.",
     body1: "Ogden has some of the most character-rich housing in Northern Utah — and also some of the toughest to sell traditionally. Older homes, deferred maintenance, inherited properties from grandparents who lived on the bench for 50 years. Revive Home Buyers handles all of it. We pay cash, buy as-is, and close on your schedule.",
-    body2: "We've worked with sellers in East Bench, downtown Ogden, and out toward Roy and Riverdale. Whatever the property's condition, we'll send a fair offer within 24 hours. Call (801) 783-2011 — a real person on our team will answer.",
+    body2: "We've worked with sellers in East Bench, downtown Ogden, and out toward Roy and Riverdale. Whatever the property's condition, we'll send a fair offer within 24 hours. Call (385) 488-0220 — a real person on our team will answer.",
     homesPurchased: "Active across Weber County since 2015",
     situations: [
       "Inherited a parent's home you can't manage",
@@ -112,7 +112,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Roy", "Layton", "Clearfield", "South Ogden", "Washington Terrace", "Riverdale", "North Ogden", "Pleasant View"],
     nearbyCities: ["salt-lake-city-utah", "logan-utah"],
     metaTitle: "Sell My House Fast Ogden, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "Sell your Ogden home for cash. We buy houses as-is in Weber County — no fees, no repairs, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "Sell your Ogden home for cash. We buy houses as-is in Weber County — no fees, no repairs, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/lEDgxEWziSiQQsof.jpg",
   },
   {
@@ -125,7 +125,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Logan Home for Cash — Cache Valley's Fastest Option",
     subheadline: "Skip the showings. Skip the repairs. Get a fair cash offer.",
     body1: "Logan and the broader Cache Valley have a tight market, but that doesn't help much if you're an out-of-state heir, a divorcing couple, or a USU professor relocating in 30 days. Revive Home Buyers buys homes throughout the valley — from Island Logan to River Heights to North Logan — for cash, on the closing date you choose.",
-    body2: "We're not a national iBuyer with a one-size-fits-all algorithm. We're a local team that understands Cache Valley housing stock and pricing. Call (801) 783-2011 or fill out the form for a 24-hour cash offer.",
+    body2: "We're not a national iBuyer with a one-size-fits-all algorithm. We're a local team that understands Cache Valley housing stock and pricing. Call (385) 488-0220 or fill out the form for a 24-hour cash offer.",
     situations: [
       "USU faculty/staff relocation",
       "Inherited family home",
@@ -137,7 +137,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["North Logan", "River Heights", "Hyrum", "Smithfield", "Providence", "Nibley", "Wellsville"],
     nearbyCities: ["ogden-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Logan, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Logan and Cache Valley for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Logan and Cache Valley for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/vXlNPGotydoqpVsM.jpg",
   },
   {
@@ -150,7 +150,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your St. George Home for Cash — No Repairs, No Hassle",
     subheadline: "Southern Utah's straightforward cash sale.",
     body1: "St. George has boomed, but a fast-moving market doesn't mean a fast-closing one. Traditional sales still take 30–60 days, plus inspections, repairs, and buyer financing risk. Revive Home Buyers cuts straight to a cash close — usually 7 to 14 days from offer accepted.",
-    body2: "We buy homes anywhere in Washington County: St. George, Washington City, Hurricane, Santa Clara. Inherited a snowbird's place? Divorcing and need to liquidate? Just want out of a vacation rental? Call (801) 783-2011.",
+    body2: "We buy homes anywhere in Washington County: St. George, Washington City, Hurricane, Santa Clara. Inherited a snowbird's place? Divorcing and need to liquidate? Just want out of a vacation rental? Call (385) 488-0220.",
     situations: [
       "Snowbird property no one's using",
       "Inherited home from a parent",
@@ -162,7 +162,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Washington", "Hurricane", "Santa Clara", "Ivins", "La Verkin", "Toquerville", "Bloomington"],
     nearbyCities: ["provo-utah"],
     metaTitle: "Sell My House Fast St. George, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in St. George and Washington County for cash. As-is, no fees, close in 7 days. Call (801) 783-2011 for a 24-hour offer.",
+    metaDescription: "We buy houses in St. George and Washington County for cash. As-is, no fees, close in 7 days. Call (385) 488-0220 for a 24-hour offer.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/DgcBwDfgREmjKHfe.jpg",
   },
 
@@ -177,7 +177,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Idaho Falls Home Fast — Cash Offer in 24 Hours",
     subheadline: "Eastern Idaho's local cash buyer. Real people, real offers.",
     body1: "Idaho Falls homeowners deserve a sale that doesn't drag on for months. Revive Home Buyers purchases homes throughout Bonneville County for cash — whether you're in Ammon, Rigby, or central Idaho Falls. We close in as few as 7 days, pay all closing costs, and take the property as-is.",
-    body2: "No commissions, no buyer financing fall-through, no last-minute repair demands. Just a fair cash offer based on real local comps. Call (801) 783-2011 — same team that handles our Utah deals; we cover Eastern Idaho directly.",
+    body2: "No commissions, no buyer financing fall-through, no last-minute repair demands. Just a fair cash offer based on real local comps. Call (385) 488-0220 — same team that handles our Utah deals; we cover Eastern Idaho directly.",
     situations: [
       "INL relocation",
       "Inherited family home",
@@ -189,7 +189,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Ammon", "Iona", "Ucon", "Rigby", "Shelley", "Lewisville"],
     nearbyCities: ["rexburg-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Idaho Falls, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Idaho Falls and Bonneville County for cash. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Idaho Falls and Bonneville County for cash. As-is, no fees, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/sRKSDpBRIoqZVeWf.jpg",
   },
   {
@@ -202,7 +202,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Pocatello for Cash",
     subheadline: "Bannock County's straightforward cash sale.",
     body1: "Pocatello's housing stock skews older, and a lot of homes here come with a long list of deferred maintenance. That's a tough sell on the MLS. Revive Home Buyers doesn't care about cosmetic issues, foundation cracks, or outdated kitchens. We buy as-is, pay cash, and handle the repairs ourselves after closing.",
-    body2: "Whether you own a bungalow on the Bench, a rental near ISU, or an inherited home in Old Town, we'll send a fair offer within 24 hours. Call (801) 783-2011.",
+    body2: "Whether you own a bungalow on the Bench, a rental near ISU, or an inherited home in Old Town, we'll send a fair offer within 24 hours. Call (385) 488-0220.",
     situations: [
       "Older home with deferred maintenance",
       "Inherited property",
@@ -214,7 +214,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Chubbuck", "Inkom", "McCammon", "Lava Hot Springs", "Arimo"],
     nearbyCities: ["idaho-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Pocatello, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Pocatello and Bannock County for cash, as-is. Close in 7 days, no fees. Call (801) 783-2011 for a 24-hour offer.",
+    metaDescription: "We buy houses in Pocatello and Bannock County for cash, as-is. Close in 7 days, no fees. Call (385) 488-0220 for a 24-hour offer.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/AeTDStkLeSxeQDKr.jpg",
   },
   {
@@ -227,7 +227,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Twin Falls Home for Cash — Magic Valley's Cash Buyer",
     subheadline: "A local team that knows the Magic Valley market.",
     body1: "Twin Falls and the broader Magic Valley have a unique market — strong demand, but slow on certain property types: rural acreage, older farmhouses, homes outside city limits. Revive Home Buyers buys all of it. Cash, as-is, on your closing date.",
-    body2: "We work with sellers in Twin Falls, Jerome, Buhl, Kimberly, and the surrounding farming communities. Call (801) 783-2011 and a real person will answer — we're not a call center.",
+    body2: "We work with sellers in Twin Falls, Jerome, Buhl, Kimberly, and the surrounding farming communities. Call (385) 488-0220 and a real person will answer — we're not a call center.",
     situations: [
       "Rural acreage that's hard to list",
       "Inherited farmhouse",
@@ -239,7 +239,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Jerome", "Buhl", "Kimberly", "Filer", "Hansen", "Murtaugh", "Eden"],
     nearbyCities: ["burley-idaho", "boise-idaho"],
     metaTitle: "Sell My House Fast Twin Falls, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Twin Falls and the Magic Valley for cash, as-is. Close in 7 days, no fees. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Twin Falls and the Magic Valley for cash, as-is. Close in 7 days, no fees. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/MnnCSBCLdHAwWklS.jpg",
   },
   {
@@ -252,7 +252,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Burley Home for Cash — Cassia County's Cash Buyer",
     subheadline: "A fair offer for homes in South-Central Idaho.",
     body1: "Burley and the surrounding Mini-Cassia area sit in a market most national cash buyers ignore. Revive Home Buyers doesn't. We actively buy homes throughout Cassia and Minidoka Counties — Burley, Rupert, Heyburn, Paul — for cash, as-is, on your timeline.",
-    body2: "If your home would sit on the MLS for 90+ days, or if you just want out fast without showings or repairs, we can help. Call (801) 783-2011 for a no-obligation cash offer within 24 hours.",
+    body2: "If your home would sit on the MLS for 90+ days, or if you just want out fast without showings or repairs, we can help. Call (385) 488-0220 for a no-obligation cash offer within 24 hours.",
     situations: [
       "Rural or small-town property hard to market",
       "Inherited home",
@@ -264,7 +264,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Rupert", "Heyburn", "Paul", "Declo", "Oakley", "Albion"],
     nearbyCities: ["twin-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Burley, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Burley, Rupert, and the Mini-Cassia area for cash. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Burley, Rupert, and the Mini-Cassia area for cash. As-is, no fees, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/KKZHYGoUJeJKmckg.jpg",
   },
   {
@@ -277,7 +277,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Rexburg for Cash",
     subheadline: "Madison County's straightforward way to sell.",
     body1: "Rexburg has a unique housing market driven by BYU-Idaho — lots of student rentals, lots of out-of-state owners, lots of turnover. Revive Home Buyers buys all of it. Single-family homes, rentals near campus, inherited properties. Cash, as-is, fast.",
-    body2: "Whether you're a tired landlord done with student tenants or a family wanting to relocate quickly, we'll send a fair cash offer in 24 hours. Call (801) 783-2011.",
+    body2: "Whether you're a tired landlord done with student tenants or a family wanting to relocate quickly, we'll send a fair cash offer in 24 hours. Call (385) 488-0220.",
     situations: [
       "Tired landlord done with student rentals",
       "Out-of-state owner",
@@ -289,7 +289,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Sugar City", "St. Anthony", "Teton", "Salem", "Newdale", "Parker"],
     nearbyCities: ["idaho-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Rexburg, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Rexburg and Madison County for cash, including rentals. As-is, no fees, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Rexburg and Madison County for cash, including rentals. As-is, no fees, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/rNXxyDRnSTqXOeHZ.jpg",
   },
   {
@@ -302,7 +302,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Boise Home for Cash in 24 Hours",
     subheadline: "Treasure Valley's local cash buyer — fair offers, fast closings.",
     body1: "The Boise market has cooled from peak, and homes that would have sold in days now sit for weeks. Revive Home Buyers gives sellers an alternative: a guaranteed cash offer with no contingencies, no showings, and no waiting on buyer financing. We close in as few as 7 days.",
-    body2: "We buy throughout the Treasure Valley: Boise, Meridian, Nampa, Caldwell, Eagle, Star. Whatever the condition, whatever your timeline, call (801) 783-2011 and we'll talk through your specific situation.",
+    body2: "We buy throughout the Treasure Valley: Boise, Meridian, Nampa, Caldwell, Eagle, Star. Whatever the condition, whatever your timeline, call (385) 488-0220 and we'll talk through your specific situation.",
     homesPurchased: "Active across the Treasure Valley",
     situations: [
       "Home sat on the MLS too long",
@@ -315,7 +315,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Meridian", "Nampa", "Caldwell", "Eagle", "Star", "Kuna", "Garden City"],
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Boise, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Boise and the Treasure Valley for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Boise and the Treasure Valley for cash. As-is, no fees, close in 7 days. Fair offer in 24 hours. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/ZVKXhMqQGlLzBwMZ.jpg",
   },
 
@@ -330,7 +330,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Missoula Home for Cash — Fast, Fair, Local",
     subheadline: "Western Montana's straightforward cash sale.",
     body1: "Missoula's market is competitive but not always quick. A traditional sale through a realtor still means 30–60 days, plus inspection negotiations and buyer financing risk. Revive Home Buyers offers a guaranteed cash close in as few as 7 days. No agents, no commissions, no surprises.",
-    body2: "We buy homes throughout Missoula County — University District, Rattlesnake, Lower Rattlesnake, Target Range, plus Lolo, Bonner, and surrounding communities. Call (801) 783-2011.",
+    body2: "We buy homes throughout Missoula County — University District, Rattlesnake, Lower Rattlesnake, Target Range, plus Lolo, Bonner, and surrounding communities. Call (385) 488-0220.",
     situations: [
       "Inherited home from a parent",
       "U of M staff/faculty relocation",
@@ -342,7 +342,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Lolo", "Bonner", "East Missoula", "Frenchtown", "Florence", "Stevensville"],
     nearbyCities: [],
     metaTitle: "Sell My House Fast Missoula, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Missoula for cash. As-is, no fees, close in 7 days. Fair cash offer in 24 hours. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Missoula for cash. As-is, no fees, close in 7 days. Fair cash offer in 24 hours. Call (385) 488-0220.",
     heroImage: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663556483152/uqlGzGyEWlaOEwar.jpg",
   },
 // ─── UT EXPANSION ────────────────────────────────────────────────────
@@ -356,7 +356,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Magna Home for Cash in 24 Hours",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Magna homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Salt Lake County — West Valley City, Kearns, Salt Lake City — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Active buyers across Salt Lake County's west side",
     situations: [
       "Foreclosure or behind on mortgage payments",
@@ -369,7 +369,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["West Valley City", "Kearns", "Salt Lake City", "Tooele"],
     nearbyCities: ["salt-lake-city-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Magna, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Magna, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Magna, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/2019_Bingham_Canyon_Mine_04.jpg/1920px-2019_Bingham_Canyon_Mine_04.jpg"
   },
   {
@@ -382,7 +382,7 @@ export const CITIES: CityData[] = [
     headline: "Lehi Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A straightforward cash sale, built for Utah homeowners.",
     body1: "Selling a home in Lehi the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Utah County for cash, in any condition. Silicon Slopes — fast-growing tech corridor, mix of new builds + 1950s ranch inventory",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Local team based in Lehi — your home market",
     situations: [
       "Inherited a home you don't want to keep",
@@ -395,7 +395,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["American Fork", "Saratoga Springs", "Eagle Mountain", "Pleasant Grove"],
     nearbyCities: ["provo-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Lehi, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Lehi, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Lehi, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mount_Timpanogos_-_01-07-08.jpg/1920px-Mount_Timpanogos_-_01-07-08.jpg"
   },
   {
@@ -408,7 +408,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Layton Home — Close in 7 Days",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "A traditional listing in Layton can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Davis County — Clearfield, Kaysville, Syracuse — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Davis County cash buyers since 2015",
     situations: [
       "Going through a divorce",
@@ -421,7 +421,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Clearfield", "Kaysville", "Syracuse", "Roy"],
     nearbyCities: ["ogden-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Layton, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Layton, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Layton, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/05/Antelope_Island_Cove_2005.jpg"
   },
   {
@@ -434,7 +434,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your West Valley City House As-Is for Cash",
     subheadline: "Local cash buyers who know the Utah market — fair offers, fast close.",
     body1: "Largest SLC suburb by population, dense mid-century inventory, diverse neighborhoods. We're a local cash-buying team that knows Salt Lake County and the surrounding area, and we buy houses in West Valley City year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "60+ Wasatch Front purchases including West Valley",
     situations: [
       "Out-of-state landlord with problem tenants",
@@ -447,7 +447,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Salt Lake City", "Taylorsville", "Kearns", "Magna"],
     nearbyCities: ["salt-lake-city-utah", "magna-utah"],
     metaTitle: "Sell My House Fast West Valley City, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in West Valley City, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in West Valley City, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/The_Oquirrh_Mountains_%2879047224%29.jpg/1920px-The_Oquirrh_Mountains_%2879047224%29.jpg"
   },
   {
@@ -460,7 +460,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Sandy Home for Cash in 24 Hours",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Sandy homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Salt Lake County — Draper, Cottonwood Heights, Midvale — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Trusted SLC-area cash buyer",
     situations: [
       "Home needs major repairs you can't afford",
@@ -473,7 +473,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Draper", "Cottonwood Heights", "Midvale", "South Jordan"],
     nearbyCities: ["salt-lake-city-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Sandy, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Sandy, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Sandy, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Lone_Peak_Cirque_%28Utah%29.jpg"
   },
   {
@@ -486,7 +486,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in American Fork — No Repairs, No Commissions",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Selling a home in American Fork the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Utah County for cash, in any condition. Utah Valley city between Lehi + Pleasant Grove, established neighborhoods plus growing east-side development",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Utah Valley cash sales since 2015",
     situations: [
       "Relocating for work or retirement",
@@ -499,7 +499,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Lehi", "Pleasant Grove", "Lindon", "Highland"],
     nearbyCities: ["lehi-utah", "provo-utah"],
     metaTitle: "Sell My House Fast American Fork, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in American Fork, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in American Fork, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mount_Timpanogos_-_01-07-08.jpg/1920px-Mount_Timpanogos_-_01-07-08.jpg"
   },
   {
@@ -512,7 +512,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Roy Home — Close in 7 Days",
     subheadline: "A straightforward cash sale, built for Utah homeowners.",
     body1: "A traditional listing in Roy can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Weber County — Clearfield, Ogden, Sunset — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Weber County buyers since 2015",
     situations: [
       "Tired of being a landlord",
@@ -525,7 +525,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Clearfield", "Ogden", "Sunset", "Riverdale"],
     nearbyCities: ["ogden-utah", "layton-utah"],
     metaTitle: "Sell My House Fast Roy, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Roy, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Roy, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG/1920px-Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG"
   },
   {
@@ -538,7 +538,7 @@ export const CITIES: CityData[] = [
     headline: "Saratoga Springs Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "Fast-growing west Utah Valley lakeside community, newer construction, family corridor. We're a local cash-buying team that knows Utah County and the surrounding area, and we buy houses in Saratoga Springs year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Active across Saratoga Springs + Eagle Mountain",
     situations: [
       "Inherited an estate with multiple heirs",
@@ -551,7 +551,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Eagle Mountain", "Lehi", "American Fork", "Cedar Hills"],
     nearbyCities: ["lehi-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Saratoga Springs, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Saratoga Springs, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Saratoga Springs, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Utahlake_oli_2017171_lrg.jpeg/1920px-Utahlake_oli_2017171_lrg.jpeg"
   },
   {
@@ -564,7 +564,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Bountiful Home for Cash in 24 Hours",
     subheadline: "Local cash buyers who know the Utah market — fair offers, fast close.",
     body1: "Bountiful homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Davis County — North Salt Lake, Centerville, Woods Cross — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Davis County cash buyers",
     situations: [
       "Vacant property you can't sell traditionally",
@@ -577,7 +577,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["North Salt Lake", "Centerville", "Woods Cross", "West Bountiful"],
     nearbyCities: ["salt-lake-city-utah", "layton-utah"],
     metaTitle: "Sell My House Fast Bountiful, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Bountiful, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Bountiful, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG/1920px-Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG"
   },
 
@@ -592,7 +592,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Blackfoot House As-Is for Cash",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Selling a home in Blackfoot the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Bingham County for cash, in any condition. Bingham County seat between Idaho Falls + Pocatello, ag-economy core, distressed inventory + lots of acreage homes",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Eastern Idaho cash buyers",
     situations: [
       "Behind on property taxes",
@@ -605,7 +605,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Idaho Falls", "Shelley", "Aberdeen", "Pocatello"],
     nearbyCities: ["idaho-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Blackfoot, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Blackfoot, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Blackfoot, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Snake_River_view_near_Twin_Falls%2C_Idaho.jpg/1920px-Snake_River_view_near_Twin_Falls%2C_Idaho.jpg"
   },
   {
@@ -618,7 +618,7 @@ export const CITIES: CityData[] = [
     headline: "Chubbuck Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "A traditional listing in Chubbuck can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Bannock County — Pocatello, Inkom, Fort Hall — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Pocatello-area cash sales",
     situations: [
       "Code violations or condemned property",
@@ -631,7 +631,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Pocatello", "Inkom", "Fort Hall", "American Falls"],
     nearbyCities: ["pocatello-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Chubbuck, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Chubbuck, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Chubbuck, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
@@ -644,7 +644,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Ammon Home for Cash in 24 Hours",
     subheadline: "A straightforward cash sale, built for Idaho homeowners.",
     body1: "Idaho Falls' eastern suburb, growing residential, mix of new builds + 80s family homes. We're a local cash-buying team that knows Bonneville County and the surrounding area, and we buy houses in Ammon year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Idaho Falls metro cash buyers",
     situations: [
       "Hoarder-condition home",
@@ -657,7 +657,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Idaho Falls", "Iona", "Ucon", "Lincoln"],
     nearbyCities: ["idaho-falls-idaho", "pocatello-idaho"],
     metaTitle: "Sell My House Fast Ammon, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Ammon, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Ammon, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
@@ -670,7 +670,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Rigby Home — Close in 7 Days",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "Rigby homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Jefferson County — Idaho Falls, Ucon, Roberts — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Eastern Idaho rural specialists",
     situations: [
       "Probate property that's been sitting",
@@ -683,7 +683,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Idaho Falls", "Ucon", "Roberts", "Menan"],
     nearbyCities: ["idaho-falls-idaho", "rexburg-idaho"],
     metaTitle: "Sell My House Fast Rigby, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Rigby, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Rigby, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
@@ -696,7 +696,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Sugar City House As-Is for Cash",
     subheadline: "Local cash buyers who know the Idaho market — fair offers, fast close.",
     body1: "Selling a home in Sugar City the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Madison County for cash, in any condition. Tiny college-town-adjacent rural ID community near Rexburg + BYU-Idaho",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Rexburg-area cash buyers",
     situations: [
       "Foreclosure or behind on mortgage payments",
@@ -709,7 +709,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Rexburg", "St Anthony", "Salem", "Newdale"],
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Sugar City, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Sugar City, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Sugar City, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
@@ -722,7 +722,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in St. Anthony — No Repairs, No Commissions",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "A traditional listing in St. Anthony can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Fremont County — Rexburg, Sugar City, Ashton — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Fremont County cash buyers",
     situations: [
       "Inherited a home you don't want to keep",
@@ -735,7 +735,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Rexburg", "Sugar City", "Ashton", "Driggs"],
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast St. Anthony, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in St. Anthony, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in St. Anthony, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Henry%27s_Fork_River_from_Last_Chance%2C_Island_Park%2C_Idaho.jpg/1920px-Henry%27s_Fork_River_from_Last_Chance%2C_Island_Park%2C_Idaho.jpg"
   },
   {
@@ -748,7 +748,7 @@ export const CITIES: CityData[] = [
     headline: "Island Park Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Yellowstone-adjacent recreation corridor, mix of second-homes + permanent residents. We're a local cash-buying team that knows Fremont County and the surrounding area, and we buy houses in Island Park year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "We buy cabins + recreation homes too",
     situations: [
       "Going through a divorce",
@@ -761,7 +761,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Ashton", "Macks Inn", "West Yellowstone", "Driggs"],
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Island Park, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Island Park, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Island Park, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Us-id-fremont-henrys-lake-aerial.jpg"
   },
   {
@@ -774,7 +774,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Preston Home — Close in 7 Days",
     subheadline: "A straightforward cash sale, built for Idaho homeowners.",
     body1: "Preston homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Franklin County — Logan, Smithfield, Franklin — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Franklin County + N Cache Valley cash buyers",
     situations: [
       "Out-of-state landlord with problem tenants",
@@ -787,7 +787,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Logan", "Smithfield", "Franklin", "Whitney"],
     nearbyCities: ["pocatello-idaho", "logan-utah"],
     metaTitle: "Sell My House Fast Preston, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Preston, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Preston, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/0118_AspensNearWhiteCanyon.jpg/1920px-0118_AspensNearWhiteCanyon.jpg"
   },
   {
@@ -800,7 +800,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Malad City House As-Is for Cash",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "Selling a home in Malad City the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Oneida County for cash, in any condition. Oneida County seat between UT + Pocatello on I-15 corridor, true small-town rural ID",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Oneida County specialists — we know Malad",
     situations: [
       "Home needs major repairs you can't afford",
@@ -813,7 +813,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Pocatello", "Downey", "Stone", "Holbrook"],
     nearbyCities: ["pocatello-idaho", "logan-utah"],
     metaTitle: "Sell My House Fast Malad City, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Malad City, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Malad City, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
@@ -826,7 +826,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Soda Springs — No Repairs, No Commissions",
     subheadline: "Local cash buyers who know the Idaho market — fair offers, fast close.",
     body1: "A traditional listing in Soda Springs can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Caribou County — Lava Hot Springs, Bancroft, Grace — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Caribou County cash buyers",
     situations: [
       "Relocating for work or retirement",
@@ -839,7 +839,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Lava Hot Springs", "Bancroft", "Grace", "Montpelier"],
     nearbyCities: ["pocatello-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Soda Springs, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Soda Springs, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Soda Springs, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
@@ -852,7 +852,7 @@ export const CITIES: CityData[] = [
     headline: "Montpelier Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Bear Lake County town in SE Idaho near WY border, recreation + ranch country. We're a local cash-buying team that knows Bear Lake County and the surrounding area, and we buy houses in Montpelier year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "SE Idaho rural specialists",
     situations: [
       "Tired of being a landlord",
@@ -865,7 +865,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Paris", "Bear Lake", "Soda Springs", "Afton"],
     nearbyCities: ["pocatello-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Montpelier, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Montpelier, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Montpelier, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
@@ -878,7 +878,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Driggs Home for Cash in 24 Hours",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Driggs homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Teton County — Victor, Tetonia, Alta — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Teton Valley cash buyers",
     situations: [
       "Inherited an estate with multiple heirs",
@@ -891,7 +891,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Victor", "Tetonia", "Alta", "Jackson"],
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Driggs, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Driggs, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Driggs, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
@@ -904,7 +904,7 @@ export const CITIES: CityData[] = [
     headline: "Victor Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A straightforward cash sale, built for Idaho homeowners.",
     body1: "Selling a home in Victor the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Teton County for cash, in any condition. Teton Valley south of Driggs, Wyoming-commuter town + recreation residents",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Teton Valley cash sales",
     situations: [
       "Vacant property you can't sell traditionally",
@@ -917,7 +917,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Driggs", "Alta", "Jackson", "Tetonia"],
     nearbyCities: ["rexburg-idaho", "idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Victor, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Victor, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Victor, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
@@ -930,7 +930,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Salmon House As-Is for Cash",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "A traditional listing in Salmon can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Lemhi County — North Fork, Carmen, Tendoy — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Central Idaho rural cash buyers",
     situations: [
       "Behind on property taxes",
@@ -943,7 +943,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["North Fork", "Carmen", "Tendoy", "Leadore"],
     nearbyCities: ["idaho-falls-idaho"],
     metaTitle: "Sell My House Fast Salmon, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Salmon, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Salmon, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Salmon_River.JPG/1920px-Salmon_River.JPG"
   },
   {
@@ -956,7 +956,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Buhl Home — Close in 7 Days",
     subheadline: "Local cash buyers who know the Idaho market — fair offers, fast close.",
     body1: "Twin Falls County ag town west of TF, dairy country + smaller-budget rural inventory. We're a local cash-buying team that knows Twin Falls County and the surrounding area, and we buy houses in Buhl year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Magic Valley cash buyers",
     situations: [
       "Code violations or condemned property",
@@ -969,7 +969,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Twin Falls", "Filer", "Castleford", "Hagerman"],
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Buhl, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Buhl, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Buhl, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Thousand_Springs_2016-10-13_2361.jpg/1920px-Thousand_Springs_2016-10-13_2361.jpg"
   },
   {
@@ -982,7 +982,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Filer — No Repairs, No Commissions",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Filer homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Twin Falls County — Twin Falls, Buhl, Murtaugh — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Magic Valley specialists",
     situations: [
       "Hoarder-condition home",
@@ -995,7 +995,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Twin Falls", "Buhl", "Murtaugh", "Hansen"],
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Filer, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Filer, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Filer, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sawtooth_Mountains_at_Stanley_Lake.jpg/1920px-Sawtooth_Mountains_at_Stanley_Lake.jpg"
   },
   {
@@ -1008,7 +1008,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Jerome Home for Cash in 24 Hours",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Selling a home in Jerome the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Jerome County for cash, in any condition. Jerome County seat just north of Twin Falls, ag corridor with growing residential",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Jerome + N Twin Falls cash buyers",
     situations: [
       "Probate property that's been sitting",
@@ -1021,7 +1021,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Twin Falls", "Wendell", "Eden", "Hazelton"],
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Jerome, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Jerome, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Jerome, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Shoshone_Falls%2C_Idaho.jpg/1920px-Shoshone_Falls%2C_Idaho.jpg"
   },
   {
@@ -1034,7 +1034,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Wendell House As-Is for Cash",
     subheadline: "A straightforward cash sale, built for Idaho homeowners.",
     body1: "A traditional listing in Wendell can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Gooding County — Jerome, Gooding, Hagerman — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Gooding/Jerome County cash buyers",
     situations: [
       "Foreclosure or behind on mortgage payments",
@@ -1047,7 +1047,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Jerome", "Gooding", "Hagerman", "Bliss"],
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Wendell, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Wendell, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Wendell, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Snake_River_view_near_Twin_Falls%2C_Idaho.jpg/1920px-Snake_River_view_near_Twin_Falls%2C_Idaho.jpg"
   },
   {
@@ -1060,7 +1060,7 @@ export const CITIES: CityData[] = [
     headline: "Gooding Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "Gooding County seat in S Idaho ag belt, historic small town. We're a local cash-buying team that knows Gooding County and the surrounding area, and we buy houses in Gooding year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Magic Valley rural buyers",
     situations: [
       "Inherited a home you don't want to keep",
@@ -1073,7 +1073,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Wendell", "Bliss", "Hagerman", "Jerome"],
     nearbyCities: ["twin-falls-idaho", "burley-idaho"],
     metaTitle: "Sell My House Fast Gooding, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Gooding, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Gooding, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Outside_of_Ketchum%2C_Idaho.jpg/1920px-Outside_of_Ketchum%2C_Idaho.jpg"
   },
   {
@@ -1086,7 +1086,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Heyburn Home — Close in 7 Days",
     subheadline: "Local cash buyers who know the Idaho market — fair offers, fast close.",
     body1: "Heyburn homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Minidoka County — Burley, Rupert, Paul — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Mini-Cassia cash buyers",
     situations: [
       "Going through a divorce",
@@ -1099,7 +1099,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Burley", "Rupert", "Paul", "Acequia"],
     nearbyCities: ["burley-idaho", "twin-falls-idaho"],
     metaTitle: "Sell My House Fast Heyburn, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Heyburn, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Heyburn, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1920px-Adams_The_Tetons_and_the_Snake_River.jpg"
   },
   {
@@ -1112,7 +1112,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Rupert — No Repairs, No Commissions",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Selling a home in Rupert the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Minidoka County for cash, in any condition. Minidoka County seat north of Burley, ag economy + smaller-budget inventory",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Mini-Cassia specialists",
     situations: [
       "Out-of-state landlord with problem tenants",
@@ -1125,7 +1125,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Burley", "Heyburn", "Paul", "Acequia"],
     nearbyCities: ["burley-idaho", "twin-falls-idaho"],
     metaTitle: "Sell My House Fast Rupert, ID | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Rupert, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Rupert, ID for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/8e/MinidokaDam2005USBOR.jpg"
   },
 
@@ -1140,7 +1140,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Kalispell Home for Cash in 24 Hours",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "A traditional listing in Kalispell can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Flathead County — Whitefish, Columbia Falls, Bigfork — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Active operators in Flathead County since 2018",
     situations: [
       "Home needs major repairs you can't afford",
@@ -1153,7 +1153,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Whitefish", "Columbia Falls", "Bigfork", "Somers"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Kalispell, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Kalispell, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Kalispell, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
   },
   {
@@ -1166,7 +1166,7 @@ export const CITIES: CityData[] = [
     headline: "Whitefish Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A straightforward cash sale, built for Montana homeowners.",
     body1: "Flathead Valley resort town north of Kalispell, Big Mountain skiing, mix of full-time + second-home. We're a local cash-buying team that knows Flathead County and the surrounding area, and we buy houses in Whitefish year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Flathead Valley cash buyers",
     situations: [
       "Relocating for work or retirement",
@@ -1179,7 +1179,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Kalispell", "Columbia Falls", "Coram", "Olney"],
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Whitefish, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Whitefish, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Whitefish, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/9/92/WhitefishMountainResortAerialView.jpg"
   },
   {
@@ -1192,7 +1192,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Bigfork House As-Is for Cash",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "Bigfork homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Flathead County — Kalispell, Polson, Somers — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Flathead Lake area specialists",
     situations: [
       "Tired of being a landlord",
@@ -1205,7 +1205,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Kalispell", "Polson", "Somers", "Lakeside"],
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Bigfork, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Bigfork, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Bigfork, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flathead_Lake.jpeg"
   },
   {
@@ -1218,7 +1218,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Columbia Falls — No Repairs, No Commissions",
     subheadline: "Local cash buyers who know the Montana market — fair offers, fast close.",
     body1: "Selling a home in Columbia Falls the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Flathead County for cash, in any condition. Gateway to Glacier National Park, working-class + growing tourism inventory",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Flathead County cash buyers",
     situations: [
       "Inherited an estate with multiple heirs",
@@ -1231,7 +1231,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Kalispell", "Whitefish", "Hungry Horse", "Martin City"],
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Columbia Falls, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Columbia Falls, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Columbia Falls, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
   },
   {
@@ -1244,7 +1244,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Polson Home for Cash in 24 Hours",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "A traditional listing in Polson can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Lake County — Pablo, Ronan, Bigfork — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Flathead Lake area cash buyers",
     situations: [
       "Vacant property you can't sell traditionally",
@@ -1257,7 +1257,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Pablo", "Ronan", "Bigfork", "Charlo"],
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Polson, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Polson, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Polson, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flathead_Lake.jpeg"
   },
   {
@@ -1270,7 +1270,7 @@ export const CITIES: CityData[] = [
     headline: "Bozeman Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Gallatin County seat, MSU + Bridger Bowl, fast-growing tech/recreation market. We're a local cash-buying team that knows Gallatin County and the surrounding area, and we buy houses in Bozeman year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Gallatin Valley cash buyers",
     situations: [
       "Behind on property taxes",
@@ -1283,7 +1283,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Belgrade", "Manhattan", "Three Forks", "Livingston"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Bozeman, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Bozeman, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Bozeman, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BelgradeBridgers.JPG/1920px-BelgradeBridgers.JPG"
   },
   {
@@ -1296,7 +1296,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Belgrade Home — Close in 7 Days",
     subheadline: "A straightforward cash sale, built for Montana homeowners.",
     body1: "Belgrade homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Gallatin County — Bozeman, Manhattan, Four Corners — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Gallatin Valley specialists",
     situations: [
       "Code violations or condemned property",
@@ -1309,7 +1309,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Bozeman", "Manhattan", "Four Corners", "Three Forks"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Belgrade, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Belgrade, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Belgrade, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BelgradeBridgers.JPG/1920px-BelgradeBridgers.JPG"
   },
   {
@@ -1322,7 +1322,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Livingston House As-Is for Cash",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "Selling a home in Livingston the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Park County for cash, in any condition. Park County seat on the Yellowstone River, character town + arts community, mix of historic + ranch inventory",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Park County cash buyers",
     situations: [
       "Hoarder-condition home",
@@ -1335,7 +1335,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Bozeman", "Emigrant", "Gardiner", "Wilsall"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Livingston, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Livingston, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Livingston, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/c9/YellowstonefallJUN05.JPG"
   },
   {
@@ -1348,7 +1348,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Butte — No Repairs, No Commissions",
     subheadline: "Local cash buyers who know the Montana market — fair offers, fast close.",
     body1: "A traditional listing in Butte can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Silver Bow County — Anaconda, Walkerville, Whitehall — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "SW Montana cash buyers",
     situations: [
       "Probate property that's been sitting",
@@ -1361,7 +1361,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Anaconda", "Walkerville", "Whitehall", "Twin Bridges"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Butte, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Butte, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Butte, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Berkeley_Pit_Butte%2C_Montana.jpg"
   },
   {
@@ -1374,7 +1374,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Helena Home for Cash in 24 Hours",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Montana's capital city, mix of historic neighborhoods + newer residential. We're a local cash-buying team that knows Lewis and Clark County and the surrounding area, and we buy houses in Helena year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Helena-area cash buyers",
     situations: [
       "Foreclosure or behind on mortgage payments",
@@ -1387,7 +1387,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["East Helena", "Townsend", "Boulder", "Lincoln"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Helena, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Helena, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Helena, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/MK01799_Montana_State_Capitol.jpg/1920px-MK01799_Montana_State_Capitol.jpg"
   },
   {
@@ -1400,7 +1400,7 @@ export const CITIES: CityData[] = [
     headline: "Hamilton Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Hamilton homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Ravalli County — Stevensville, Corvallis, Darby — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Bitterroot Valley specialists",
     situations: [
       "Inherited a home you don't want to keep",
@@ -1413,7 +1413,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Stevensville", "Corvallis", "Darby", "Florence"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Hamilton, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Hamilton, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Hamilton, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/d/d7/BitterrootMtnsMT.jpg"
   },
   {
@@ -1426,7 +1426,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Three Forks Home — Close in 7 Days",
     subheadline: "A straightforward cash sale, built for Montana homeowners.",
     body1: "Selling a home in Three Forks the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Gallatin County for cash, in any condition. Gallatin County small town at the headwaters of the Missouri, ag + small-town rural",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Gallatin County rural cash buyers",
     situations: [
       "Going through a divorce",
@@ -1439,7 +1439,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Manhattan", "Willow Creek", "Belgrade", "Logan"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Three Forks, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Three Forks, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Three Forks, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MadisionJeffersonConfluence.jpg/1920px-MadisionJeffersonConfluence.jpg"
   },
   {
@@ -1452,7 +1452,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Big Sky House As-Is for Cash",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "A traditional listing in Big Sky can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Madison County — West Yellowstone, Bozeman, Ennis — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Big Sky + Madison Valley cash buyers",
     situations: [
       "Out-of-state landlord with problem tenants",
@@ -1465,7 +1465,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["West Yellowstone", "Bozeman", "Ennis", "Cameron"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast Big Sky, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Big Sky, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Big Sky, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Lake_McDonald_-_Glacier_National_Park.jpg/1920px-Lake_McDonald_-_Glacier_National_Park.jpg"
   },
   {
@@ -1478,7 +1478,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in West Yellowstone — No Repairs, No Commissions",
     subheadline: "Local cash buyers who know the Montana market — fair offers, fast close.",
     body1: "Gateway to Yellowstone NP, tourism-driven small town, mix of rental + permanent inventory. We're a local cash-buying team that knows Gallatin County and the surrounding area, and we buy houses in West Yellowstone year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Yellowstone-gateway cash buyers",
     situations: [
       "Home needs major repairs you can't afford",
@@ -1491,7 +1491,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Big Sky", "Island Park", "Gardiner", "Cooke City"],
     nearbyCities: ["missoula-montana"],
     metaTitle: "Sell My House Fast West Yellowstone, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in West Yellowstone, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in West Yellowstone, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Yellowstone_National_Park_%28WY%2C_USA%29%2C_Old_Faithful_Geyser_--_2022_--_2599.jpg/1920px-Yellowstone_National_Park_%28WY%2C_USA%29%2C_Old_Faithful_Geyser_--_2022_--_2599.jpg"
   },
   {
@@ -1504,7 +1504,7 @@ export const CITIES: CityData[] = [
     headline: "Lakeside Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Lakeside homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Flathead County — Kalispell, Bigfork, Somers — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Flathead Lake west-side specialists",
     situations: [
       "Relocating for work or retirement",
@@ -1517,7 +1517,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Kalispell", "Bigfork", "Somers", "Polson"],
     nearbyCities: ["missoula-montana", "kalispell-montana"],
     metaTitle: "Sell My House Fast Lakeside, MT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Lakeside, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Lakeside, MT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flathead_Lake.jpeg"
   },
   {
@@ -1530,7 +1530,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Orem Home for Cash in 24 Hours",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Orem homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Utah County — Provo, Lindon, Vineyard — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "60+ Utah Valley purchases",
     situations: [
       "Behind on property taxes",
@@ -1543,7 +1543,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Provo", "Lindon", "Vineyard", "Pleasant Grove"],
     nearbyCities: ["provo-utah", "lehi-utah"],
     metaTitle: "Sell My House Fast Orem, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Orem, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Orem, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mount_Timpanogos_-_01-07-08.jpg/1920px-Mount_Timpanogos_-_01-07-08.jpg"
   },
   {
@@ -1556,7 +1556,7 @@ export const CITIES: CityData[] = [
     headline: "Vineyard Cash Home Buyers — Fair Offer, No Repairs",
     subheadline: "A straightforward cash sale, built for Utah homeowners.",
     body1: "Selling a home in Vineyard the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Utah County for cash, in any condition. Fast-growing planned community on the east shore of Utah Lake, newer construction + lakefront access",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Active across Vineyard + Orem",
     situations: [
       "Code violations or condemned property",
@@ -1569,7 +1569,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Orem", "Lindon", "Lehi", "American Fork"],
     nearbyCities: ["lehi-utah", "provo-utah"],
     metaTitle: "Sell My House Fast Vineyard, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Vineyard, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Vineyard, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Utahlake_oli_2017171_lrg.jpeg/1920px-Utahlake_oli_2017171_lrg.jpeg"
   },
   {
@@ -1582,7 +1582,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your Midvale House As-Is for Cash",
     subheadline: "No agents. No open houses. No commissions. Just a real offer.",
     body1: "A traditional listing in Midvale can mean months of repairs, photos, showings, and waiting on financing. Revive Home Buyers cuts that to days. We buy homes anywhere in Salt Lake County — Sandy, Murray, West Jordan — for cash, as-is, in any condition.",
-    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (801) 783-2011 to get a cash offer this week.",
+    body2: "Our offer is real, written, and based on local comps — not a national algorithm. Accept it and we close in as few as 7 days at a local title company. Decline it and you'll never hear from us again. Call (385) 488-0220 to get a cash offer this week.",
     homesPurchased: "Salt Lake Valley cash buyers",
     situations: [
       "Hoarder-condition home",
@@ -1595,7 +1595,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Sandy", "Murray", "West Jordan", "Cottonwood Heights"],
     nearbyCities: ["salt-lake-city-utah", "sandy-utah"],
     metaTitle: "Sell My House Fast Midvale, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Midvale, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Midvale, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG/1920px-Jan_14_06_eastern_Salt_Lake_County_UT_USA.JPG"
   },
   {
@@ -1608,7 +1608,7 @@ export const CITIES: CityData[] = [
     headline: "We Buy Houses in Tooele — No Repairs, No Commissions",
     subheadline: "Local cash buyers who know the Utah market — fair offers, fast close.",
     body1: "Tooele County seat west of SLC across the Oquirrhs, working-class housing + growing residential. We're a local cash-buying team that knows Tooele County and the surrounding area, and we buy houses in Tooele year-round — fast, fair, and on your timeline.",
-    body2: "Call (801) 783-2011 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
+    body2: "Call (385) 488-0220 or fill out the form for a fair cash offer in 24 hours. We pay all standard closing costs and choose a local title company you trust. No commissions, no junk fees, no surprises at the closing table.",
     homesPurchased: "Tooele Valley cash buyers",
     situations: [
       "Probate property that's been sitting",
@@ -1621,7 +1621,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Grantsville", "Stansbury Park", "Lake Point", "Erda"],
     nearbyCities: ["magna-utah", "salt-lake-city-utah"],
     metaTitle: "Sell My House Fast Tooele, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Tooele, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Tooele, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Deseret_Peak.jpg/1920px-Deseret_Peak.jpg"
   },
   {
@@ -1634,7 +1634,7 @@ export const CITIES: CityData[] = [
     headline: "Cash Offer in 24 Hours for Your Price Home — Close in 7 Days",
     subheadline: "Skip the showings. Skip the repairs. Get a real cash offer this week.",
     body1: "Price homeowners shouldn't have to wait six months and pay 6% in commissions to sell. Revive Home Buyers purchases houses anywhere in Carbon County — Helper, Wellington, East Carbon — for cash, as-is, on your timeline. No agents. No open houses. No strangers tracking through your home.",
-    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (801) 783-2011 to get started.",
+    body2: "Whether your house is move-in ready or needs a full renovation, we'll make an offer based on real comps and current market data. If you accept, we close in as little as 7 days at a local title company. Call (385) 488-0220 to get started.",
     homesPurchased: "Carbon County cash buyers",
     situations: [
       "Foreclosure or behind on mortgage payments",
@@ -1647,7 +1647,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Helper", "Wellington", "East Carbon", "Castle Dale"],
     nearbyCities: ["provo-utah"],
     metaTitle: "Sell My House Fast Price, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in Price, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in Price, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Book_Cliffs_above_Helper%2C_Utah.jpg/1920px-Book_Cliffs_above_Helper%2C_Utah.jpg"
   },
   {
@@ -1660,7 +1660,7 @@ export const CITIES: CityData[] = [
     headline: "Sell Your East Carbon House As-Is for Cash",
     subheadline: "A fair, no-obligation cash offer from a local team you can actually meet.",
     body1: "Selling a home in East Carbon the traditional way means weeks of showings, contingencies, and waiting on a buyer's lender. We take a different approach. Revive Home Buyers buys houses across Carbon County for cash, in any condition. Small Carbon County town in central UT coal country, true rural distressed market",
-    body2: "We're a local team, not a national algorithm. Call us at (801) 783-2011 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
+    body2: "We're a local team, not a national algorithm. Call us at (385) 488-0220 or fill out the form and we'll have a fair cash offer to you within 24 hours. If you take it, we can close in as few as 7 days. If you don't, that's fine — no pressure.",
     homesPurchased: "Carbon County rural specialists",
     situations: [
       "Inherited a home you don't want to keep",
@@ -1673,7 +1673,7 @@ export const CITIES: CityData[] = [
     nearbyAreas: ["Sunnyside", "Price", "Wellington", "Helper"],
     nearbyCities: ["provo-utah"],
     metaTitle: "Sell My House Fast East Carbon, UT | Cash in 24 Hours | Revive Home Buyers",
-    metaDescription: "We buy houses in East Carbon, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (801) 783-2011.",
+    metaDescription: "We buy houses in East Carbon, UT for cash. No fees, no repairs, no agents. Fair cash offer in 24 hours, close in 7 days. Call (385) 488-0220.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Book_Cliffs_above_Helper%2C_Utah.jpg/1920px-Book_Cliffs_above_Helper%2C_Utah.jpg"
   },
 ,

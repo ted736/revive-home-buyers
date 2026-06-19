@@ -82,7 +82,7 @@ It also works well for Idaho homes in difficult-to-sell conditions: older farmho
 
 If your home is in move-in condition and you have 60–90 days of flexibility, a traditional listing may net more. If time is the constraint, a direct cash sale is often the smarter path.
 
-Revive Home Buyers closes homes throughout Idaho — Idaho Falls, Pocatello, Twin Falls, Boise, Rexburg, Burley, and the surrounding areas. Call (801) 783-2011 or request an offer at [revivebuyers.com](/). We'll confirm whether a 7-day close is realistic for your specific property and get you a written offer within 24 hours.`
+Revive Home Buyers closes homes throughout Idaho — Idaho Falls, Pocatello, Twin Falls, Boise, Rexburg, Burley, and the surrounding areas. Call (385) 488-0220 or request an offer at [revivebuyers.com](/). We'll confirm whether a 7-day close is realistic for your specific property and get you a written offer within 24 hours.`
     }
   ]
 };

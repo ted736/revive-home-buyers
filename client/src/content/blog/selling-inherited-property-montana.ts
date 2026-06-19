@@ -96,7 +96,7 @@ The MLS is the right path when:
 
 **3. How are the co-heirs aligned?** If all heirs want a quick resolution, a cash sale is cleanest. If one heir wants to keep the property, that conversation needs to happen before you engage any buyer.
 
-Revive Home Buyers works with Montana estates regularly — in Billings, Missoula, Great Falls, and the surrounding areas. We can work around probate timelines, close as-is, and give you a fair written offer within 24 hours. Call (801) 783-2011 or request an offer at [revivebuyers.com](/).`
+Revive Home Buyers works with Montana estates regularly — in Billings, Missoula, Great Falls, and the surrounding areas. We can work around probate timelines, close as-is, and give you a fair written offer within 24 hours. Call (385) 488-0220 or request an offer at [revivebuyers.com](/).`
     }
   ]
 };

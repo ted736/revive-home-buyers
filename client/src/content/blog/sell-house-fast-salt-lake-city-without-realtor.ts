@@ -84,7 +84,7 @@ Revive Home Buyers covers all of these scenarios. We buy homes anywhere in the S
       heading: "Bottom Line",
       body: `Selling without a realtor in Salt Lake City can work, but it's not automatically the right choice. FSBO and flat-fee MLS save commissions but require your time, expertise, and negotiation skill. iBuyers offer convenience at a significant price discount. A direct cash sale offers speed and certainty — and on homes needing work, can net you more than a traditional sale after repair costs are factored in.
 
-Get a free, no-obligation cash offer at [revivebuyers.com](/) or call (801) 783-2011. We'll give you an honest number within 24 hours, and you decide from there.`
+Get a free, no-obligation cash offer at [revivebuyers.com](/) or call (385) 488-0220. We'll give you an honest number within 24 hours, and you decide from there.`
     }
   ]
 };

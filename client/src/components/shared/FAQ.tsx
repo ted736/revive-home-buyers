@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { trackPhoneClicked } from "@/lib/analytics";
 
 const FAQS = [
   {
@@ -59,10 +60,11 @@ export default function FAQ() {
             <p className="text-[#3D4145]/60 text-sm leading-relaxed font-light mt-4">
               Still have questions? Call us directly at{" "}
               <a
-                href="tel:8017832011"
+                href="tel:3854880220"
+                onClick={() => trackPhoneClicked("faq")}
                 className="text-[#2D6A3F] underline underline-offset-2"
               >
-                (801) 783-2011
+                (385) 488-0220
               </a>
               .
             </p>

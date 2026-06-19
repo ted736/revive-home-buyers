@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Phone, Menu, X, Tag, Hammer } from "lucide-react";
 import LogoMark from "./LogoMark";
+import { trackPhoneClicked } from "@/lib/analytics";
 
 const NAV_LINKS = [
   { label: "How It Works", anchor: "#process" },
@@ -79,11 +80,12 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
         {/* Phone + CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="tel:8017832011"
+            href="tel:3854880220"
+            onClick={() => trackPhoneClicked("header_desktop")}
             className="flex items-center gap-2 text-white/90 hover:text-white text-sm transition-colors"
           >
             <Phone className="w-4 h-4" />
-            <span className="font-medium">(801) 783-2011</span>
+            <span className="font-medium">(385) 488-0220</span>
           </a>
           <a
             href={ctaHref}
@@ -137,9 +139,13 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
             Cash Buyers — Off-Market Deals
           </a>
 
-          <a href="tel:8017832011" className="flex items-center gap-2 text-white/80 text-sm py-1">
+          <a
+            href="tel:3854880220"
+            onClick={() => trackPhoneClicked("header_mobile")}
+            className="flex items-center gap-2 text-white/80 text-sm py-1"
+          >
             <Phone className="w-4 h-4" />
-            (801) 783-2011
+            (385) 488-0220
           </a>
           <a
             href={ctaHref}

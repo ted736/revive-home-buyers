@@ -7,6 +7,7 @@
  */
 import LogoMark from "./LogoMark";
 import { CITIES } from "@/data/cities";
+import { trackPhoneClicked } from "@/lib/analytics";
 
 export default function Footer() {
   return (
@@ -42,8 +43,12 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 text-white/45 text-xs">
               <div>
-                <a href="tel:8017832011" className="hover:text-white transition-colors">
-                  (801) 783-2011
+                <a
+                  href="tel:3854880220"
+                  onClick={() => trackPhoneClicked("footer")}
+                  className="hover:text-white transition-colors"
+                >
+                  (385) 488-0220
                 </a>
               </div>
               <div>

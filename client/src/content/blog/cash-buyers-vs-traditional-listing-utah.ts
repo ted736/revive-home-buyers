@@ -100,7 +100,7 @@ If your home is turn-key, in a hot neighborhood, and you have 60–90 days to tr
 
 Revive Home Buyers serves the full Utah market — Salt Lake City, Provo, Ogden, Logan, St. George, and everywhere in between. There's no obligation, no fee to request an offer, and no pressure to accept.
 
-Call (801) 783-2011 or fill out the form at [revivebuyers.com](/) to get your number. Then decide which path makes more sense for your situation.`
+Call (385) 488-0220 or fill out the form at [revivebuyers.com](/) to get your number. Then decide which path makes more sense for your situation.`
     }
   ]
 };

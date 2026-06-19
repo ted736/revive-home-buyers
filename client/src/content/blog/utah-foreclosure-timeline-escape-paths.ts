@@ -102,7 +102,7 @@ The critical thing: call a cash buyer before the Notice of Sale is recorded, not
 
 Revive Home Buyers works with Utah homeowners in foreclosure regularly. We understand the timeline, work with title companies that can move quickly, and can structure closings that work around your specific situation.
 
-Call (801) 783-2011 or fill out the form at [revivebuyers.com](/). We can have a written offer to you within 24 hours and tell you honestly whether a cash sale will give you the time you need.`
+Call (385) 488-0220 or fill out the form at [revivebuyers.com](/). We can have a written offer to you within 24 hours and tell you honestly whether a cash sale will give you the time you need.`
     }
   ]
 };
