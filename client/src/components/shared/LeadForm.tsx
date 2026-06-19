@@ -139,37 +139,13 @@ export default function LeadForm({ dark = false, simplified = false }: { dark?: 
     return Object.keys(e).length === 0;
   };
 
-  const handleNext = () => {
-    if (step === 1 && validateStep1()) {
-      trackAddressEntered(data.address.split(",")[1]?.trim());
-      setStep(2);
-    } else if (step === 2 && validateStep2()) {
-      trackContactStepCompleted();
-      if (simplified) {
-        // Simplified flow: skip situation/timeline, fill defaults, submit directly
-        setData((d) => ({ ...d, situation: "other", timeline: "flexible" }));
-        // Trigger submit on the form element directly
-        const form = document.querySelector('form') as HTMLFormElement | null;
-        if (form) {
-          // Defer one tick so state update lands first
-          setTimeout(() => form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true })), 0);
-        }
-        return;
-      }
-      setStep(3);
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!data.situation || !data.timeline) {
-      setErrors({
-        situation: !data.situation ? "Please select your situation." : undefined,
-        timeline: !data.timeline ? "Please select your timeline." : undefined,
-      });
-      return;
-    }
-    trackSituationStepCompleted(data.situation);
+  // Submission core — takes explicit data so the simplified flow can pass
+  // synthesized values without waiting for setState to flush. Prior version
+  // setState + setTimeout(form.dispatchEvent) raced: handleSubmit read stale
+  // data.situation, early-returned with hidden errors, and the user saw the
+  // form silently freeze at step 2.
+  const submitLead = async (formData: LeadData) => {
+    trackSituationStepCompleted(formData.situation);
     setLoading(true);
     try {
       await fetch(`${SUPABASE_URL}/functions/v1/leads-create`, {
@@ -179,18 +155,45 @@ export default function LeadForm({ dark = false, simplified = false }: { dark?: 
           "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
         },
         body: JSON.stringify({
-          name: data.name,
-          phone: data.phone,
-          email: data.email || undefined,
-          address: data.address,
-          situation: data.situation,
-          timeline: data.timeline,
+          name: formData.name,
+          phone: formData.phone,
+          address: formData.address,
+          situation: formData.situation,
+          timeline: formData.timeline,
         }),
       });
       trackFormSubmitted(undefined, "lead_form");
     } catch {}
     setLoading(false);
     setSubmitted(true);
+  };
+
+  const handleNext = () => {
+    if (step === 1 && validateStep1()) {
+      trackAddressEntered(data.address.split(",")[1]?.trim());
+      setStep(2);
+    } else if (step === 2 && validateStep2()) {
+      trackContactStepCompleted();
+      if (simplified) {
+        const completeData: LeadData = { ...data, situation: "other", timeline: "flexible" };
+        setData(completeData);
+        void submitLead(completeData);
+        return;
+      }
+      setStep(3);
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!data.situation || !data.timeline) {
+      setErrors({
+        situation: !data.situation ? "Please select your situation." : undefined,
+        timeline: !data.timeline ? "Please select your timeline." : undefined,
+      });
+      return;
+    }
+    void submitLead(data);
   };
 
   const inputClass = (field: keyof LeadData) =>
