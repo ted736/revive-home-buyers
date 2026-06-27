@@ -58,14 +58,14 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
             </a>
           ))}
 
-          {/* Our Projects */}
-          <a
+          {/* Our Work — hidden from nav 2026-06-27 (page/route still live at /our-projects); re-enable when ready to feature projects */}
+          {/* <a
             href="/our-projects"
             className="flex items-center gap-1.5 text-white/70 hover:text-white text-xs font-semibold tracking-widest uppercase transition-colors duration-150"
           >
             <Hammer className="w-3 h-3" />
             Our Work
-          </a>
+          </a> */}
 
           {/* Cash Buyers — distinct pill treatment */}
           <a
@@ -119,15 +119,15 @@ export default function Nav({ onHome = true }: { onHome?: boolean }) {
             </a>
           ))}
 
-          {/* Our Projects — mobile */}
-          <a
+          {/* Our Work — mobile, hidden from nav 2026-06-27 (page/route still live at /our-projects); re-enable when ready */}
+          {/* <a
             href="/our-projects"
             className="flex items-center gap-2 text-white/70 text-sm font-semibold py-1"
             onClick={() => setOpen(false)}
           >
             <Hammer className="w-4 h-4" />
             Our Work
-          </a>
+          </a> */}
 
           {/* Cash Buyers — highlighted row in mobile menu */}
           <a
